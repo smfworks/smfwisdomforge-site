@@ -285,33 +285,24 @@ export default function WisdomForgePage() {
         
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 mb-8">
-            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">Free Lead Magnet</span>
+            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">Free Booklet On Us</span>
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-6">
             Start with Epictetus.
           </h2>
           <p className="text-xl text-[#A89B8C] mb-4">
-            The first booklet is free. No credit card. No commitment.
+            The first booklet is free. Take a look at no charge.
           </p>
           <p className="text-[#6B6560] mb-12 max-w-xl mx-auto">
-            Get the complete Epictetus Elementary booklet — chapters, stories, questions, and activities for ages 5–10. See what WisdomForge feels like before anyone else.
+            Get the complete Epictetus Elementary booklets — chapters, stories, questions, and activities for each age group. See what WisdomForge feels like before anyone else.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto mb-8">
-            <input
-              type="email"
-              placeholder="your@email.com"
-              className="flex-1 px-6 py-4 bg-[#13131a] border border-[#2a2a35] rounded-lg text-[#F5F0E8] placeholder:text-[#4a4a4a] focus:outline-none focus:border-[#C9A96E]/50 transition-colors"
-            />
-            <button className="px-8 py-4 bg-[#C9A96E] text-[#0a0a0f] font-semibold rounded-lg hover:bg-[#D4B87A] transition-all shadow-lg shadow-[#C9A96E]/20 whitespace-nowrap">
-              Send Me the Free Booklet
+          <div className="max-w-md mx-auto mb-8">
+            <button className="px-8 py-4 bg-[#C9A96E] text-[#0a0a0f] font-semibold rounded-lg hover:bg-[#D4B87A] transition-all shadow-lg shadow-[#C9A96E]/20 whitespace-nowrap cursor-default">
+              Free Booklet Here (coming soon)
             </button>
           </div>
-
-          <p className="text-[#4a4a4a] text-sm">
-            No spam. Unsubscribe anytime. We respect your attention.
-          </p>
         </div>
       </section>
 

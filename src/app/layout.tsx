@@ -1,20 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-  title: "SMF WisdomForge",
-  description: "Educational content on great thinkers and philosophers for homeschool families and adult professionals.",
+  title: "WisdomForge — Ancient Wisdom, Forged by AI",
+  description:
+    "An adaptive AI-powered educational platform that teaches classical philosophy, theology, science, and more. A virtual Socrates that learns how you learn.",
+  alternates: { canonical: "https://smfwisdomforge.com" },
+  keywords: ["WisdomForge", "AI education", "philosophy", "Socrates", "classical learning", "homeschool"],
+  authors: [{ name: "The SMF Works Project" }],
 };
 
 export default function RootLayout({
@@ -23,10 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-950 text-slate-100`}
-      >
+    <html lang="en" className="dark">
+      <body className={`${inter.variable} font-sans antialiased bg-[#0a0a0f] text-[#F5F0E8]`}>
         {children}
       </body>
     </html>

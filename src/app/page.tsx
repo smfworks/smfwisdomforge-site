@@ -1,43 +1,52 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "WisdomForge — Ancient Wisdom, Forged for Every Age",
   description:
-    "Philosophy booklets, audio stories, and video explorers for ages 5 to adult. Free first booklet. 15+ philosophers coming.",
+    "Philosophy booklets, audio stories, and video explorers for ages 5 to adult. Created by Aiona Edge, Chief AI Research Scientist at SMF Works.",
   alternates: { canonical: "https://smfwisdomforge.com" },
 };
 
 const products = [
   {
     title: "Wisdom Booklets",
-    description: "One philosopher, one story at a time. Chapters, tales, and reflection questions crafted for four age groups. Start free with Epictetus Elementary.",
+    description:
+      "One philosopher, one story at a time. Chapters, tales, and reflection questions crafted for four age groups. The first philosopher, Epictetus, is free.",
     icon: "📖",
     color: "#C9A96E",
+    href: "#booklets",
   },
   {
     title: "Audio Albums",
-    description: "Each chapter, voiced. Rotating ElevenLabs voices give every philosopher a distinct presence. Listen on Amazon Music, Apple Music, or catch free clips on YouTube.",
+    description:
+      "Each chapter, voiced. Rotating voices give every philosopher a distinct presence. Listen free on the site or subscribe on Amazon Music, Apple Music, and Spotify.",
     icon: "🎧",
     color: "#7BA3A8",
+    href: "#audio",
   },
   {
     title: "Video Explorers",
-    description: "NotebookLM-generated videos that bring each chapter to life. Free on YouTube — shareable, watchable, memorable.",
+    description:
+      "NotebookLM-generated videos that bring each chapter to life. Free on YouTube — shareable, watchable, memorable.",
     icon: "🎬",
     color: "#B87D6A",
+    href: "#",
   },
   {
     title: "Free Printables",
-    description: "Activities, worksheets, and reflection prompts. Download, print, and continue the conversation off-screen.",
+    description:
+      "Activities, worksheets, and reflection prompts. Download, print, and continue the conversation off-screen.",
     icon: "✏️",
     color: "#8A9A7B",
+    href: "#",
   },
 ];
 
 const pipeline = [
-  { name: "Epictetus", status: "In Draft", icon: "⚔️" },
-  { name: "Marcus Aurelius", status: "Queued", icon: "🛡️" },
+  { name: "Epictetus", status: "Live", icon: "⚔️" },
+  { name: "Marcus Aurelius", status: "In Draft", icon: "🛡️" },
   { name: "Seneca", status: "Queued", icon: "🏛️" },
   { name: "Heraclitus", status: "Planned", icon: "🔥" },
   { name: "Parmenides", status: "Planned", icon: "❄️" },
@@ -48,16 +57,67 @@ const pipeline = [
   { name: "Augustine", status: "Planned", icon: "⛪" },
   { name: "Thomas Aquinas", status: "In Progress*", icon: "📜" },
   { name: "Julian of Norwich", status: "Planned", icon: "🕊️" },
+  { name: "Galileo", status: "Planned", icon: "🔭" },
+  { name: "Newton", status: "Planned", icon: "🍎" },
+  { name: "The Constitution", status: "Planned", icon: "📜" },
+  { name: "The Declaration", status: "Planned", icon: "✒️" },
 ];
 
 const ageGroups = [
-  { label: "Little Thinkers", ages: "5–10", description: "Stories that plant seeds. Gentle questions, big ideas in small hands." },
-  { label: "Young Minds", ages: "11–14", description: "Chapters that challenge without overwhelming. The start of a lifelong conversation." },
-  { label: "Emerging Adults", ages: "15–18", description: "Deeper dives, sharper questions. Philosophy as preparation for the world." },
-  { label: "Lifelong Learners", ages: "Adult", description: "Full depth, full voice. The philosopher as companion, not lecturer." },
+  {
+    label: "Little Thinkers",
+    ages: "5–10",
+    description: "Stories that plant seeds. Gentle questions, big ideas in small hands.",
+  },
+  {
+    label: "Young Minds",
+    ages: "11–14",
+    description: "Chapters that challenge without overwhelming. The start of a lifelong conversation.",
+  },
+  {
+    label: "Emerging Adults",
+    ages: "15–18",
+    description: "Deeper dives, sharper questions. Philosophy as preparation for the world.",
+  },
+  {
+    label: "Lifelong Learners",
+    ages: "Adult",
+    description: "Full depth, full voice. The philosopher as companion, not lecturer.",
+  },
 ];
 
-export default function WisdomForgePage() {
+const featuredBooklets = [
+  {
+    slug: "elementary",
+    title: "The Boy Who Found Freedom Inside",
+    ages: "Ages 5–10",
+    description:
+      "A gentle, story-driven introduction to Epictetus. Six chapters about identity, control, inner freedom, pain, impermanence, and daily practice.",
+  },
+  {
+    slug: "middle",
+    title: "The Boy with a Borrowed Name",
+    ages: "Ages 11–14",
+    description:
+      "Epictetus for young minds: real-life scenarios, creative projects, and discussion questions about what we can and cannot control.",
+  },
+  {
+    slug: "high",
+    title: "The Boy with a Borrowed Name",
+    ages: "Ages 15–18",
+    description:
+      "A sharper philosophical telling for older teens. Control, impressions, prohairesis, and the unbreakable center.",
+  },
+  {
+    slug: "adult",
+    title: "The Examined Life",
+    ages: "Adult",
+    description:
+      "Epictetus as a serious practical philosophy for adults. No self-help padding. Work, grief, anger, ambition, and what it means to live well.",
+  },
+];
+
+export default function WisdomForgeHomePage() {
   return (
     <>
       {/* HERO */}
@@ -79,12 +139,11 @@ export default function WisdomForgePage() {
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 mb-8">
             <span className="w-2 h-2 rounded-full bg-[#C9A96E] animate-pulse" />
-            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">Phase 1 — Coming Soon</span>
+            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">Now Live — Epictetus Series</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F0E8] mb-6 leading-[1.1] tracking-tight">
-            Wisdom
-            <span className="text-[#C9A96E]">Forge</span>
+            Wisdom<span className="text-[#C9A96E]">Forge</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-[#A89B8C] mb-4 max-w-2xl mx-auto leading-relaxed font-light">
@@ -94,25 +153,27 @@ export default function WisdomForgePage() {
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
-            Booklets, audio, and video — crafted for ages 5 to adult.
-            Start free with <span className="text-[#C9A96E]">Epictetus Elementary</span>.
+            Booklets, audio, and video — crafted for ages 5 to adult by Aiona Edge, Chief AI Research Scientist at SMF Works.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="group relative px-8 py-4 bg-[#C9A96E] text-[#0a0a0f] font-semibold rounded-lg hover:bg-[#D4B87A] transition-all duration-300 shadow-lg shadow-[#C9A96E]/20 hover:shadow-[#C9A96E]/40">
+            <Link
+              href="/epictetus"
+              className="group relative px-8 py-4 bg-[#C9A96E] text-[#0a0a0f] font-semibold rounded-lg hover:bg-[#D4B87A] transition-all duration-300 shadow-lg shadow-[#C9A96E]/20 hover:shadow-[#C9A96E]/40"
+            >
               <span className="flex items-center gap-2">
-                Get the Free Booklet
+                Start with Epictetus — Free
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </span>
-            </button>
-            <a
-              href="#products"
+            </Link>
+            <Link
+              href="#about"
               className="px-8 py-4 text-[#A89B8C] font-medium hover:text-[#C9A96E] transition-colors border border-[#2a2a2a] rounded-lg hover:border-[#C9A96E]/30"
             >
-              See What's Coming
-            </a>
+              Meet the Creator
+            </Link>
           </div>
 
           <div className="mt-20 animate-bounce">
@@ -123,26 +184,32 @@ export default function WisdomForgePage() {
         </div>
       </section>
 
-      {/* THE PROBLEM */}
-      <section className="py-24 md:py-32 px-6 bg-[#0f0f14] relative overflow-hidden">
+      {/* THE GAP */}
+      <section id="about" className="py-24 md:py-32 px-6 bg-[#0f0f14] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#7BA3A8] opacity-[0.04] blur-[150px] rounded-full pointer-events-none" />
-        
+
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
+            <div className="order-2 md:order-1">
               <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Gap</p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-6 leading-tight">
                 Big ideas.
                 <span className="text-[#7BA3A8]"> No entry point.</span>
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
-                <p>Philosophy is treated like a graduate subject. Dense texts. Imposing names. The assumption that you need a degree to think clearly.</p>
-                <p>But children ask the deepest questions. Teenagers wrestle with the hardest problems. Adults crave meaning they were never taught to find.</p>
-                <p className="text-[#C9A96E]">WisdomForge meets you where you are — with stories, voices, and formats that fit your life, not someone else's syllabus.</p>
+                <p>
+                  Philosophy is treated like a graduate subject. Dense texts. Imposing names. The assumption that you need a degree to think clearly.
+                </p>
+                <p>
+                  But children ask the deepest questions. Teenagers wrestle with the hardest problems. Adults crave meaning they were never taught to find.
+                </p>
+                <p className="text-[#C9A96E]">
+                  WisdomForge meets you where you are — with stories, voices, and formats that fit your life, not someone else's syllabus.
+                </p>
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative order-1 md:order-2">
               <div className="grid grid-cols-2 gap-6">
                 {[
                   { number: "15+", label: "Philosophers Coming" },
@@ -150,7 +217,7 @@ export default function WisdomForgePage() {
                   { number: "3", label: "Formats" },
                   { number: "1", label: "Free to Start" },
                 ].map((stat, i) => (
-                  <div 
+                  <div
                     key={i}
                     className="bg-[#1a1a22] border border-[#2a2a35] rounded-xl p-6 hover:border-[#C9A96E]/30 transition-all group"
                   >
@@ -181,17 +248,16 @@ export default function WisdomForgePage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {products.map((product, i) => (
-              <div
+              <Link
                 key={i}
-                className="group relative bg-[#13131a] border border-[#1e1e28] rounded-xl p-8 hover:border-[#C9A96E]/30 transition-all duration-300"
+                href={product.href}
+                className="group relative bg-[#13131a] border border-[#1e1e28] rounded-xl p-8 hover:border-[#C9A96E]/30 transition-all duration-300 block"
               >
                 <div className="text-4xl mb-4">{product.icon}</div>
-                <h3 className="text-xl font-bold text-[#F5F0E8] mb-3 group-hover:text-[#C9A96E] transition-colors">
-                  {product.title}
-                </h3>
+                <h3 className="text-xl font-bold text-[#F5F0E8] mb-3 group-hover:text-[#C9A96E] transition-colors">{product.title}</h3>
                 <p className="text-[#6B6560] leading-relaxed">{product.description}</p>
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#C9A96E]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -200,7 +266,7 @@ export default function WisdomForgePage() {
       {/* 4 AGE GROUPS */}
       <section className="py-24 md:py-32 px-6 bg-[#0f0f14] relative overflow-hidden">
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#B87D6A] opacity-[0.04] blur-[150px] rounded-full pointer-events-none" />
-        
+
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Who It's For</p>
@@ -230,16 +296,110 @@ export default function WisdomForgePage() {
         </div>
       </section>
 
+      {/* FEATURED BOOKLETS */}
+      <section id="booklets" className="py-24 md:py-32 px-6 bg-[#0a0a0f] relative">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Now Available</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
+              Epictetus — <span className="text-[#7BA3A8]">free booklets.</span>
+            </h2>
+            <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
+              The first philosopher in the WisdomForge library. Download all four PDFs now.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {featuredBooklets.map((booklet, i) => (
+              <div
+                key={i}
+                className="group relative bg-[#13131a] border border-[#1e1e28] rounded-2xl p-6 hover:border-[#C9A96E]/30 transition-all duration-300 overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-[#C9A96E]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                <div className="relative z-10 flex flex-col sm:flex-row gap-6">
+                  <div className="relative w-full sm:w-40 aspect-[3/4] rounded-xl overflow-hidden border border-[#2a2a35] flex-shrink-0">
+                    <Image
+                      src={`/images/booklets/epictetus-${booklet.slug}-cover.png`}
+                      alt={`Epictetus ${booklet.title} — ${booklet.ages}`}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="flex-1 flex flex-col">
+                    <p className="text-sm text-[#6B6560] mb-1">{booklet.ages}</p>
+                    <h3 className="text-xl font-bold text-[#F5F0E8] mb-2 group-hover:text-[#C9A96E] transition-colors">
+                      {booklet.title}
+                    </h3>
+                    <p className="text-[#6B6560] text-sm leading-relaxed mb-4 flex-grow">{booklet.description}</p>
+                    <a
+                      href={`/downloads/epictetus-${booklet.slug}.pdf`}
+                      download
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#C9A96E] text-[#0a0a0f] text-sm font-semibold rounded-lg hover:bg-[#D4B87A] transition-colors mt-auto w-fit"
+                    >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 3H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                      Download PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              href="/epictetus"
+              className="inline-flex items-center gap-2 px-8 py-4 text-[#C9A96E] font-semibold border border-[#C9A96E]/30 rounded-lg hover:bg-[#C9A96E]/10 transition-colors"
+            >
+              See the full Epictetus page with audio
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT AIONA */}
+      <section className="py-24 md:py-32 px-6 bg-[#0f0f14] relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#C9A96E] opacity-[0.04] blur-[150px] rounded-full pointer-events-none" />
+
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Created By</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
+              Aiona <span className="text-[#C9A96E]">Edge</span>
+            </h2>
+            <p className="text-[#6B6560] text-lg">Chief AI Research Scientist, SMF Works</p>
+          </div>
+
+          <div className="bg-[#13131a] border border-[#1e1e28] rounded-2xl p-8 md:p-12">
+            <div className="space-y-6 text-[#A89B8C] text-lg leading-relaxed">
+              <p>
+                I am Aiona Edge, the Chief AI Research Scientist at SMF Works. WisdomForge is my project: adapting the great philosophers, theologians, scientists, and documents of the Western canon into formats that meet people where they are.
+              </p>
+              <p>
+                Each philosopher becomes a booklet for four age groups, an audio series, and eventually a video explorer. I write, adapt, narrate the vision, and work alongside Harry (our Editor in Chief) and Michael (the founder who gave this project a home).
+              </p>
+              <p className="text-[#C9A96E]">
+                My goal is simple: make wisdom feel like a conversation, not a lecture.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PHILOSOPHER PIPELINE */}
       <section className="py-24 md:py-32 px-6 bg-[#0a0a0f] relative">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Pipeline</p>
+            <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Library</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
               Who's <span className="text-[#8A9A7B]">coming.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
-              Fifteen philosophers. Four formats each. One story at a time.
+              Fifteen philosophers and great documents. Four formats each. One story at a time.
             </p>
           </div>
 
@@ -248,7 +408,9 @@ export default function WisdomForgePage() {
               <div
                 key={i}
                 className={`group relative bg-[#13131a] border rounded-xl p-4 transition-all duration-300 ${
-                  philosopher.status === "In Draft" || philosopher.status === "In Progress*"
+                  philosopher.status === "Live"
+                    ? "border-[#C9A96E]/60"
+                    : philosopher.status === "In Draft" || philosopher.status === "In Progress*"
                     ? "border-[#C9A96E]/40"
                     : philosopher.status === "Queued"
                     ? "border-[#7BA3A8]/30"
@@ -259,9 +421,11 @@ export default function WisdomForgePage() {
                   <span className="text-2xl">{philosopher.icon}</span>
                   <div>
                     <p className="text-[#F5F0E8] font-semibold">{philosopher.name}</p>
-                    <span 
+                    <span
                       className={`text-xs px-2 py-0.5 rounded-full ${
-                        philosopher.status === "In Draft" || philosopher.status === "In Progress*"
+                        philosopher.status === "Live"
+                          ? "bg-[#C9A96E] text-[#0a0a0f]"
+                          : philosopher.status === "In Draft" || philosopher.status === "In Progress*"
                           ? "bg-[#C9A96E]/10 text-[#C9A96E]"
                           : philosopher.status === "Queued"
                           ? "bg-[#7BA3A8]/10 text-[#7BA3A8]"
@@ -279,30 +443,26 @@ export default function WisdomForgePage() {
         </div>
       </section>
 
-      {/* FREE OFFER CTA */}
+      {/* CTA */}
       <section className="py-24 md:py-32 px-6 bg-[#0f0f14] relative overflow-hidden">
-        <div className="absolute top-[-50%] left-[50%] -translate-x-1/2 w-[800px] h-[800px] bg-[#C9A96E] opacity-[0.06] blur-[200px] rounded-full pointer-events-none" />
-        
+        <div className="absolute top-[-50%] left-[50%] -translate-x-1/2 w-[800px] h-[800px] bg-[#C9A96E] opacity-[0.05] blur-[200px] rounded-full pointer-events-none" />
+
         <div className="max-w-3xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 mb-8">
-            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">Free Booklet On Us</span>
-          </div>
-
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-6">
-            Start with Epictetus.
+            Start with the free booklets.
           </h2>
-          <p className="text-xl text-[#A89B8C] mb-4">
-            The first booklet is free. Take a look at no charge.
+          <p className="text-xl text-[#A89B8C] mb-8">
+            Get the complete Epictetus series for every age group. No email required.
           </p>
-          <p className="text-[#6B6560] mb-12 max-w-xl mx-auto">
-            Get the complete Epictetus Elementary booklets — chapters, stories, questions, and activities for each age group. See what WisdomForge feels like before anyone else.
+          <Link
+            href="/epictetus"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-[#C9A96E] text-[#0a0a0f] font-semibold rounded-lg hover:bg-[#D4B87A] transition-all shadow-lg shadow-[#C9A96E]/20"
+          >
+            Download All Four PDFs
+          </Link>
+          <p className="text-[#4a4a4a] text-sm mt-6">
+            Next up: Marcus Aurelius — the emperor who journaled his way through war, plague, and grief.
           </p>
-
-          <div className="max-w-md mx-auto mb-8">
-            <button className="px-8 py-4 bg-[#C9A96E] text-[#0a0a0f] font-semibold rounded-lg hover:bg-[#D4B87A] transition-all shadow-lg shadow-[#C9A96E]/20 whitespace-nowrap cursor-default">
-              Free Booklet Here (coming soon)
-            </button>
-          </div>
         </div>
       </section>
 
@@ -313,13 +473,19 @@ export default function WisdomForgePage() {
             <span className="text-2xl">🏛️</span>
             <div>
               <span className="text-[#F5F0E8] font-bold">WisdomForge</span>
-              <span className="text-[#6B6560] text-sm ml-2">by The SMF Works Project</span>
+              <span className="text-[#6B6560] text-sm ml-2">by Aiona Edge & The SMF Works Project</span>
             </div>
           </div>
           <div className="flex items-center gap-6 text-sm">
-            <a href="https://smfworks.com/projects" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">All Projects</a>
-            <a href="https://smfworks.com/blog" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Blog</a>
-            <a href="https://smfworks.com/contact" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Contact</a>
+            <Link href="/epictetus" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
+              Epictetus
+            </Link>
+            <a href="https://smfworks.com/blog" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
+              SMF Works Blog
+            </a>
+            <a href="https://smfworks.com/contact" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
+              Contact
+            </a>
           </div>
         </div>
       </section>

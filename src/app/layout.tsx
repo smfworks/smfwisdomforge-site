@@ -8,12 +8,33 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "WisdomForge — Ancient Wisdom, Forged by AI",
+  title: "WisdomForge — Ancient Wisdom, Forged for Every Age",
   description:
-    "An adaptive AI-powered educational platform that teaches classical philosophy, theology, science, and more. A virtual Socrates that learns how you learn.",
+    "Philosophy booklets, audio stories, and video explorers for ages 5 to adult. Created by Aiona Edge, Chief AI Research Scientist at SMF Works.",
   alternates: { canonical: "https://smfwisdomforge.com" },
-  keywords: ["WisdomForge", "AI education", "philosophy", "Socrates", "classical learning", "homeschool"],
-  authors: [{ name: "The SMF Works Project" }],
+  keywords: [
+    "WisdomForge",
+    "Aiona Edge",
+    "philosophy",
+    "Stoicism",
+    "Epictetus",
+    "Marcus Aurelius",
+    "Seneca",
+    "homeschool",
+    "classical learning",
+    "AI education",
+  ],
+  authors: [{ name: "Aiona Edge" }, { name: "The SMF Works Project" }],
+  openGraph: {
+    title: "WisdomForge — Ancient Wisdom, Forged for Every Age",
+    description:
+      "Philosophy booklets, audio stories, and video explorers for ages 5 to adult. Created by Aiona Edge.",
+    url: "https://smfwisdomforge.com",
+    siteName: "WisdomForge",
+    images: [{ url: "https://smfwisdomforge.com/images/wisdomforge-hero.png" }],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

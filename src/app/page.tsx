@@ -153,7 +153,7 @@ export default function WisdomForgeHomePage() {
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
-            Booklets, audio, and video — crafted for ages 5 to adult by Aiona Edge, Chief AI Research Scientist at SMF Works.
+            Booklets, audio, and video — crafted for ages 5 to adult by Aiona Edge, Chief AI Research Scientist at SMF Works. Now live.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -46,7 +46,7 @@ const products = [
 
 const pipeline = [
   { name: "Epictetus", status: "Live", icon: "⚔️" },
-  { name: "Marcus Aurelius", status: "In Draft", icon: "🛡️" },
+  { name: "Marcus Aurelius", status: "Live", icon: "🛡️" },
   { name: "Seneca", status: "Queued", icon: "🏛️" },
   { name: "Heraclitus", status: "Planned", icon: "🔥" },
   { name: "Parmenides", status: "Planned", icon: "❄️" },
@@ -479,6 +479,9 @@ export default function WisdomForgeHomePage() {
           <div className="flex items-center gap-6 text-sm">
             <Link href="/epictetus" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
               Epictetus
+            </Link>
+            <Link href="/marcus-aurelius" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
+              Marcus Aurelius
             </Link>
             <a href="https://smfworks.com/blog" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
               SMF Works Blog

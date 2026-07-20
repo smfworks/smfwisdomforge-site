@@ -3,17 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Epictetus — WisdomForge by Aiona Edge",
+  title: "Zeno of Citium — WisdomForge by Aiona Edge",
   description:
-    "Free WisdomForge booklets and audio chapters on Epictetus for ages 5 to adult. Download PDFs, listen to the audio series, and explore Stoic wisdom.",
-  alternates: { canonical: "https://smfwisdomforge.com/epictetus" },
+    "Free WisdomForge booklets on Zeno of Citium, the shipwrecked merchant who founded Stoicism. Four age-adapted PDFs for ages 5 to adult. Download, read, share.",
+  alternates: { canonical: "https://smfwisdomforge.com/zeno-of-citium" },
   openGraph: {
-    title: "Epictetus — WisdomForge by Aiona Edge",
+    title: "Zeno of Citium — WisdomForge by Aiona Edge",
     description:
-      "Free WisdomForge booklets and audio chapters on Epictetus for ages 5 to adult.",
-    url: "https://smfwisdomforge.com/epictetus",
+      "Free WisdomForge booklets on Zeno of Citium, the founder of Stoicism. Four age-adapted PDFs for ages 5 to adult.",
+    url: "https://smfwisdomforge.com/zeno-of-citium",
     siteName: "WisdomForge",
-    images: [{ url: "https://smfwisdomforge.com/images/booklets/epictetus-adult-cover.png" }],
+    images: [{ url: "https://smfwisdomforge.com/images/booklets/zeno-of-citium-adult-cover.png" }],
     locale: "en_US",
     type: "article",
   },
@@ -23,60 +23,51 @@ const ageGroups = [
   {
     label: "Little Thinkers",
     ages: "Ages 5–10",
-    title: "The Boy Who Found Freedom Inside",
+    title: "The Man Who Lost Everything and Found What Matters",
     slug: "elementary",
     description:
-      "Gentle stories about a boy born into slavery who discovered something no one could take away: the freedom inside his own mind. Six chapters, activities, and conversation starters for young readers.",
+      "Gentle stories about a merchant who lost his ship in a storm and discovered that the most important things can never be taken away. Six chapters, activities, and conversation starters for young readers.",
     color: "#C9A96E",
   },
   {
     label: "Young Minds",
     ages: "Ages 11–14",
-    title: "The Boy with a Borrowed Name",
+    title: "The Shipwrecked Philosopher",
     slug: "middle",
     description:
-      "Epictetus for middle-school readers: identity, choice, and the difference between what happens to you and what you make of it. Real-life scenarios, creative projects, and discussion questions.",
+      "Zeno for middle-school readers: the shipwreck that started everything, the four virtues, the indifferents, and what it means to be a citizen of the world. Real-life scenarios, discussion questions, and exercises.",
     color: "#7BA3A8",
   },
   {
     label: "Emerging Adults",
     ages: "Ages 15–18",
-    title: "The Boy with a Borrowed Name",
+    title: "The Founder",
     slug: "high",
     description:
-      "A sharper, more philosophical telling for older teens. Control, impressions, and the unbreakable center. Designed for readers ready to wrestle with hard questions.",
+      "A serious philosophical examination for older teens. Zeno's founding claims — virtue is the only good, externals are indifferent, the cosmopolis — traced through six chapters with scholarly precision and practical application.",
     color: "#B87D6A",
   },
   {
     label: "Lifelong Learners",
     ages: "Adult",
-    title: "The Examined Life",
+    title: "The Founder",
     slug: "adult",
     description:
-      "Epictetus as a serious practical philosophy for adults. No self-help padding. Six chapters on work, grief, anger, ambition, and what it means to live according to nature.",
+      "Zeno as a serious ethical thinker for adults. No self-help padding. Six chapters on the shipwreck, virtue monism, the indifferents, living according to nature, the cosmopolis, and the painted porch where it all began.",
     color: "#8A9A7B",
   },
 ];
 
-const audioClips = [
-  { ch: 1, title: "The Boy with No Name" },
-  { ch: 2, title: "The Circle You Control" },
-  { ch: 3, title: "The Unbreakable Center" },
-  { ch: 4, title: "The Two Arrows" },
-  { ch: 5, title: "The Guest at the Banquet" },
-  { ch: 6, title: "Practice Makes Strong" },
-];
-
 const chapterThemes = [
-  { n: 1, title: "The Boy with No Name", theme: "Identity & origins" },
-  { n: 2, title: "The Circle You Control", theme: "Dichotomy of control" },
-  { n: 3, title: "The Unbreakable Center", theme: "Prohairesis & inner freedom" },
-  { n: 4, title: "The Two Arrows", theme: "Pain vs. suffering" },
-  { n: 5, title: "The Guest at the Banquet", theme: "Impermanence & acceptance" },
-  { n: 6, title: "Practice Makes Strong", theme: "Habit & daily exercise" },
+  { n: 1, title: "The Shipwreck", theme: "Catastrophe as beginning" },
+  { n: 2, title: "The Only Good", theme: "Virtue as the sole good" },
+  { n: 3, title: "The Indifferents", theme: "What can be lost and what can't" },
+  { n: 4, title: "Living According to Nature", theme: "Reason, society, acceptance" },
+  { n: 5, title: "Citizen of the World", theme: "Cosmopolitanism & oikeiosis" },
+  { n: 6, title: "The Painted Porch", theme: "Philosophy in public" },
 ];
 
-export default function EpictetusPage() {
+export default function ZenoOfCitiumPage() {
   return (
     <>
       {/* HERO */}
@@ -100,11 +91,11 @@ export default function EpictetusPage() {
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F0E8] mb-6 leading-[1.1] tracking-tight">
-            Epictetus
+            Zeno of Citium
           </h1>
 
           <p className="text-xl md:text-2xl text-[#A89B8C] mb-4 max-w-2xl mx-auto leading-relaxed font-light">
-            Born enslaved. Leg broken by his owner. Still became one of the most influential teachers in Rome.
+            Shipwrecked. Stripped of everything. Founded the most influential philosophical school in the Western tradition.
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
@@ -124,10 +115,10 @@ export default function EpictetusPage() {
               </span>
             </Link>
             <Link
-              href="#audio"
+              href="/epictetus"
               className="px-8 py-4 text-[#A89B8C] font-medium hover:text-[#C9A96E] transition-colors border border-[#2a2a2a] rounded-lg hover:border-[#C9A96E]/30"
             >
-              Listen Free
+              Explore Epictetus Too
             </Link>
           </div>
         </div>
@@ -139,8 +130,8 @@ export default function EpictetusPage() {
           <div className="grid md:grid-cols-[1fr_1.5fr] gap-12 items-start">
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
               <Image
-                src="/images/booklets/epictetus-adult-cover.png"
-                alt="Epictetus: The Examined Life — book cover"
+                src="/images/booklets/zeno-of-citium-adult-cover.png"
+                alt="Zeno of Citium: The Founder — book cover"
                 fill
                 className="object-cover"
               />
@@ -149,17 +140,20 @@ export default function EpictetusPage() {
             <div className="space-y-6">
               <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Philosopher</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F5F0E8] leading-tight">
-                The teacher who said freedom begins inside the mind.
+                The shipwrecked merchant who founded Stoicism.
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  Epictetus (c. 50–135 CE) was born enslaved in Hierapolis, taken to Rome as a child, and had his leg broken by his owner before he was a teenager. He was later freed, studied under the Stoic Musonius Rufus, and opened a school in Nicopolis that drew students from across the Roman Empire.
+                  Zeno of Citium (c. 334–262 BCE) was a Phoenician merchant who traded in Tyrian purple — the most valuable commodity in the ancient world. His ship sank off the coast of Athens. He lost everything. He wandered into a bookshop, read about Socrates, and followed a Cynic philosopher named Crates.
                 </p>
                 <p>
-                  He wrote nothing himself. His student Arrian recorded the <em>Discourses</em> and compiled the <em>Enchiridion</em> — a short handbook of reminders. The central teaching is simple and demanding: some things are in our power (judgments, impulses, desires) and some things are not (bodies, property, reputation). Peace comes from learning the difference and committing to what we control.
+                  He studied with three teachers — Crates the Cynic, Stilpo the Megarian, Polemo the Academic — and synthesized their teachings into something new: Stoicism. Around 300 BCE, he began teaching in the Stoa Poikile, the Painted Colonnade in the Athenian marketplace. His students were called &quot;Stoics&quot; — people of the porch. The name has lasted 2,300 years.
+                </p>
+                <p>
+                  Every Stoic idea traces back to him. Epictetus&apos; dichotomy of control. Seneca&apos;s consolations. Marcus Aurelius&apos; inner citadel. All are developments of Zeno&apos;s founding claims: <em>virtue is the only good, externals are indifferent, and all humans are fellow citizens.</em>
                 </p>
                 <p className="text-[#C9A96E]">
-                  WisdomForge adapts Epictetus across four age levels so the same core ideas grow with the reader.
+                  WisdomForge adapts Zeno across four age levels so the same core ideas grow with the reader.
                 </p>
               </div>
             </div>
@@ -190,8 +184,8 @@ export default function EpictetusPage() {
                 <div className="relative z-10 flex flex-col sm:flex-row gap-6">
                   <div className="relative w-full sm:w-40 aspect-[3/4] rounded-xl overflow-hidden border border-[#2a2a35] flex-shrink-0">
                     <Image
-                      src={`/images/booklets/epictetus-${group.slug}-cover.png`}
-                      alt={`Epictetus ${group.title} — ${group.ages}`}
+                      src={`/images/booklets/zeno-of-citium-${group.slug}-cover.png`}
+                      alt={`Zeno of Citium ${group.title} — ${group.ages}`}
                       fill
                       className="object-cover"
                     />
@@ -207,7 +201,7 @@ export default function EpictetusPage() {
                     <h3 className="text-xl font-bold text-[#F5F0E8] mb-2 group-hover:text-[#C9A96E] transition-colors">{group.title}</h3>
                     <p className="text-[#6B6560] text-sm leading-relaxed mb-4 flex-grow">{group.description}</p>
                     <a
-                      href={`/downloads/epictetus-${group.slug}.pdf`}
+                      href={`/downloads/zeno-of-citium-${group.slug}.pdf`}
                       download
                       className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#C9A96E] text-[#0a0a0f] text-sm font-semibold rounded-lg hover:bg-[#D4B87A] transition-colors"
                     >
@@ -224,54 +218,17 @@ export default function EpictetusPage() {
         </div>
       </section>
 
-      {/* AUDIO */}
-      <section id="audio" className="py-24 md:py-32 px-6 bg-[#0f0f14] relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#7BA3A8] opacity-[0.04] blur-[150px] rounded-full pointer-events-none" />
-
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-[#7BA3A8] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Audio Series</p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              Listen to <span className="text-[#7BA3A8]">Epictetus</span>
-            </h2>
-            <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
-              Twenty-four free audio chapters — six for each age group — read by George, a warm storyteller voice.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {["elementary", "middle", "high", "adult"].map((age) => (
-              <div key={age} className="bg-[#13131a] border border-[#1e1e28] rounded-xl p-6">
-                <h3 className="text-lg font-bold text-[#F5F0E8] mb-4 capitalize">
-                  {age === "high" ? "Ages 15–18" : age === "adult" ? "Adult" : `Ages ${age === "elementary" ? "5–10" : "11–14"}`}
-                </h3>
-                <div className="space-y-3">
-                  {audioClips.map((clip) => (
-                    <div key={`${age}-${clip.ch}`} className="flex items-center gap-3 text-sm">
-                      <span className="text-[#6B6560] w-6">{clip.ch}.</span>
-                      <a
-                        href={`/audio/epictetus/epictetus-${age}-ch0${clip.ch}.mp3`}
-                        className="text-[#A89B8C] hover:text-[#7BA3A8] transition-colors truncate"
-                      >
-                        {clip.title}
-                      </a>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CHAPTER THEMES */}
-      <section className="py-24 md:py-32 px-6 bg-[#0a0a0f] relative">
+      <section className="py-24 md:py-32 px-6 bg-[#0f0f14] relative">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Arc</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
               Six chapters. <span className="text-[#B87D6A]">One path.</span>
             </h2>
+            <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
+              From the shipwreck that started everything to the painted porch where Zeno taught the world.
+            </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -287,7 +244,7 @@ export default function EpictetusPage() {
       </section>
 
       {/* ABOUT THE CREATOR */}
-      <section className="py-24 md:py-32 px-6 bg-[#0f0f14] relative overflow-hidden">
+      <section className="py-24 md:py-32 px-6 bg-[#0a0a0f] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#C9A96E] opacity-[0.04] blur-[150px] rounded-full pointer-events-none" />
 
         <div className="max-w-4xl mx-auto">
@@ -312,7 +269,7 @@ export default function EpictetusPage() {
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-6">Start with the free booklets.</h2>
           <p className="text-xl text-[#A89B8C] mb-8">
-            Get the complete Epictetus series for every age group. No email required.
+            Get the complete Zeno of Citium series for every age group. No email required.
           </p>
           <Link
             href="#booklets"
@@ -321,7 +278,7 @@ export default function EpictetusPage() {
             Download All Four PDFs
           </Link>
           <p className="text-[#4a4a4a] text-sm mt-6">
-            Next up: Marcus Aurelius — the emperor who journaled his way through war, plague, and grief.
+            Also explore: <Link href="/epictetus" className="text-[#C9A96E] hover:underline">Epictetus</Link> and <Link href="/marcus-aurelius" className="text-[#C9A96E] hover:underline">Marcus Aurelius</Link>.
           </p>
         </div>
       </section>

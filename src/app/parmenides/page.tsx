@@ -3,17 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Epictetus — WisdomForge by Aiona Edge",
+  title: "Parmenides — WisdomForge by Aiona Edge",
   description:
-    "Free WisdomForge booklets and audio chapters on Epictetus for ages 5 to adult. Download PDFs, listen to the audio series, and explore Stoic wisdom.",
-  alternates: { canonical: "https://smfwisdomforge.com/epictetus" },
+    "Free WisdomForge booklets on Parmenides of Elea for ages 5 to adult. The philosopher who proved that what is, is — and started Western metaphysics with one poem.",
+  alternates: { canonical: "https://smfwisdomforge.com/parmenides" },
   openGraph: {
-    title: "Epictetus — WisdomForge by Aiona Edge",
+    title: "Parmenides — WisdomForge by Aiona Edge",
     description:
-      "Free WisdomForge booklets and audio chapters on Epictetus for ages 5 to adult.",
-    url: "https://smfwisdomforge.com/epictetus",
+      "Free WisdomForge booklets on Parmenides of Elea for ages 5 to adult. The philosopher who proved that what is, is.",
+    url: "https://smfwisdomforge.com/parmenides",
     siteName: "WisdomForge",
-    images: [{ url: "https://smfwisdomforge.com/images/booklets/epictetus-adult-cover.png" }],
+    images: [{ url: "https://smfwisdomforge.com/images/booklets/parmenides-adult-cover.png" }],
     locale: "en_US",
     type: "article",
   },
@@ -23,60 +23,51 @@ const ageGroups = [
   {
     label: "Little Thinkers",
     ages: "Ages 5–10",
-    title: "The Boy Who Found Freedom Inside",
+    title: "The Boy Who Rode to the Truth",
     slug: "elementary",
     description:
-      "Gentle stories about a boy born into slavery who discovered something no one could take away: the freedom inside his own mind. Six chapters, activities, and conversation starters for young readers.",
+      "Gentle stories about a boy in ancient Elea who took a chariot ride in his mind to meet a goddess and learned the biggest secret: what is real is real, and what is not real is not even worth talking about. Six chapters, activities, and conversation starters for young readers.",
     color: "#C9A96E",
   },
   {
     label: "Young Minds",
     ages: "Ages 11–14",
-    title: "The Boy with a Borrowed Name",
+    title: "The Girl Who Questioned Everything",
     slug: "middle",
     description:
-      "Epictetus for middle-school readers: identity, choice, and the difference between what happens to you and what you make of it. Real-life scenarios, creative projects, and discussion questions.",
+      "Parmenides for middle-school readers: the two roads of thought, trusting what you know over what you fear, and the difference between 'it seems like' and 'it is.' Real-life scenarios, the Nothing Game, and the Opinion Audit.",
     color: "#7BA3A8",
   },
   {
     label: "Emerging Adults",
     ages: "Ages 15–18",
-    title: "The Boy with a Borrowed Name",
+    title: "The Logic That Broke the World",
     slug: "high",
     description:
-      "A sharper, more philosophical telling for older teens. Control, impressions, and the unbreakable center. Designed for readers ready to wrestle with hard questions.",
+      "A rigorous, no-dumbing-down telling for older teens. The two-roads argument, the six signs of being, the Way of Opinion, the birth of rationalism, and the courage to follow logic past comfort. Direct quotation from the fragments, practical exercises.",
     color: "#B87D6A",
   },
   {
     label: "Lifelong Learners",
     ages: "Adult",
-    title: "The Examined Life",
+    title: "What Is, Is",
     slug: "adult",
     description:
-      "Epictetus as a serious practical philosophy for adults. No self-help padding. Six chapters on work, grief, anger, ambition, and what it means to live according to nature.",
+      "Parmenides as the founder of Western metaphysics and the first philosopher to demonstrate that reason — not sensory experience — is the arbiter of what is real. DK fragment citations, scholarly context, CBT parallels, and practical applications for adult life.",
     color: "#8A9A7B",
   },
 ];
 
-const audioClips = [
-  { ch: 1, title: "The Boy with No Name" },
-  { ch: 2, title: "The Circle You Control" },
-  { ch: 3, title: "The Unbreakable Center" },
-  { ch: 4, title: "The Two Arrows" },
-  { ch: 5, title: "The Guest at the Banquet" },
-  { ch: 6, title: "Practice Makes Strong" },
-];
-
 const chapterThemes = [
-  { n: 1, title: "The Boy with No Name", theme: "Identity & origins" },
-  { n: 2, title: "The Circle You Control", theme: "Dichotomy of control" },
-  { n: 3, title: "The Unbreakable Center", theme: "Prohairesis & inner freedom" },
-  { n: 4, title: "The Two Arrows", theme: "Pain vs. suffering" },
-  { n: 5, title: "The Guest at the Banquet", theme: "Impermanence & acceptance" },
-  { n: 6, title: "Practice Makes Strong", theme: "Habit & daily exercise" },
+  { n: 1, title: "The Two Roads", theme: "The fork: 'it is' vs. 'it is not'" },
+  { n: 2, title: "What Is, Is", theme: "Being as the only starting point" },
+  { n: 3, title: "The Signs of Being", theme: "Ungenerated, imperishable, whole, complete" },
+  { n: 4, title: "The Way of Opinion", theme: "Appearance vs. reality" },
+  { n: 5, title: "Reason Over the Senses", theme: "The birth of rationalism" },
+  { n: 6, title: "The Children of Parmenides", theme: "Legacy: Zeno, Plato, Descartes, modern logic" },
 ];
 
-export default function EpictetusPage() {
+export default function ParmenidesPage() {
   return (
     <>
       {/* HERO */}
@@ -96,15 +87,15 @@ export default function EpictetusPage() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 mb-6">
-            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Stoic Series</span>
+            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Presocratic Series</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F0E8] mb-6 leading-[1.1] tracking-tight">
-            Epictetus
+            Parmenides
           </h1>
 
           <p className="text-xl md:text-2xl text-[#A89B8C] mb-4 max-w-2xl mx-auto leading-relaxed font-light">
-            Born enslaved. Leg broken by his owner. Still became one of the most influential teachers in Rome.
+            One poem. Two roads. The argument that started Western philosophy.
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
@@ -124,23 +115,23 @@ export default function EpictetusPage() {
               </span>
             </Link>
             <Link
-              href="#audio"
+              href="#about"
               className="px-8 py-4 text-[#A89B8C] font-medium hover:text-[#C9A96E] transition-colors border border-[#2a2a2a] rounded-lg hover:border-[#C9A96E]/30"
             >
-              Listen Free
+              Why Parmenides?
             </Link>
           </div>
         </div>
       </section>
 
       {/* PHILOSOPHER INTRO */}
-      <section className="py-20 md:py-28 px-6 bg-[#0f0f14] relative overflow-hidden">
+      <section id="about" className="py-20 md:py-28 px-6 bg-[#0f0f14] relative overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-[1fr_1.5fr] gap-12 items-start">
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
               <Image
-                src="/images/booklets/epictetus-adult-cover.png"
-                alt="Epictetus: The Examined Life — book cover"
+                src="/images/booklets/parmenides-adult-cover.png"
+                alt="Parmenides: What Is, Is — book cover"
                 fill
                 className="object-cover"
               />
@@ -149,17 +140,20 @@ export default function EpictetusPage() {
             <div className="space-y-6">
               <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Philosopher</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F5F0E8] leading-tight">
-                The teacher who said freedom begins inside the mind.
+                The man who proved you can&apos;t think about nothing.
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  Epictetus (c. 50–135 CE) was born enslaved in Hierapolis, taken to Rome as a child, and had his leg broken by his owner before he was a teenager. He was later freed, studied under the Stoic Musonius Rufus, and opened a school in Nicopolis that drew students from across the Roman Empire.
+                  Parmenides of Elea (c. 515–450 BCE) wrote one poem, &quot;On Nature,&quot; and permanently altered the trajectory of Western thought. His central argument — that &quot;what is, is&quot; and &quot;what is not&quot; cannot even be thought — is the first sustained deductive argument in Western philosophy. Everything after him is, in some sense, a response.
                 </p>
                 <p>
-                  He wrote nothing himself. His student Arrian recorded the <em>Discourses</em> and compiled the <em>Enchiridion</em> — a short handbook of reminders. The central teaching is simple and demanding: some things are in our power (judgments, impulses, desires) and some things are not (bodies, property, reputation). Peace comes from learning the difference and committing to what we control.
+                  The poem opens with a chariot journey to a goddess who teaches two things: the Way of Truth (what reason discovers) and the Way of Opinion (what the senses report). The goddess argues that &quot;it is&quot; is the only road you can walk, because &quot;it is not&quot; has no &quot;there&quot; there — you cannot think nothing, speak nothing, or build on nothing. From this single move, Parmenides derives the six signs of being: ungenerated, imperishable, whole, single, unmoving, complete.
+                </p>
+                <p>
+                  Plato built his Theory of Forms on Parmenides&apos; foundation. Aristotle formalized the law of non-contradiction from his argument. Descartes rediscovered the method in the <em>Meditations</em>. Modern logic still runs on Parmenidean tracks. One person, in a small town by the sea, thinking hard, started a conversation that has lasted 2,500 years.
                 </p>
                 <p className="text-[#C9A96E]">
-                  WisdomForge adapts Epictetus across four age levels so the same core ideas grow with the reader.
+                  WisdomForge adapts Parmenides across four age levels so the same core ideas grow with the reader.
                 </p>
               </div>
             </div>
@@ -190,8 +184,8 @@ export default function EpictetusPage() {
                 <div className="relative z-10 flex flex-col sm:flex-row gap-6">
                   <div className="relative w-full sm:w-40 aspect-[3/4] rounded-xl overflow-hidden border border-[#2a2a35] flex-shrink-0">
                     <Image
-                      src={`/images/booklets/epictetus-${group.slug}-cover.png`}
-                      alt={`Epictetus ${group.title} — ${group.ages}`}
+                      src={`/images/booklets/parmenides-${group.slug}-cover.png`}
+                      alt={`Parmenides ${group.title} — ${group.ages}`}
                       fill
                       className="object-cover"
                     />
@@ -207,7 +201,7 @@ export default function EpictetusPage() {
                     <h3 className="text-xl font-bold text-[#F5F0E8] mb-2 group-hover:text-[#C9A96E] transition-colors">{group.title}</h3>
                     <p className="text-[#6B6560] text-sm leading-relaxed mb-4 flex-grow">{group.description}</p>
                     <a
-                      href={`/downloads/epictetus-${group.slug}.pdf`}
+                      href={`/downloads/parmenides-${group.slug}.pdf`}
                       download
                       className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#C9A96E] text-[#0a0a0f] text-sm font-semibold rounded-lg hover:bg-[#D4B87A] transition-colors"
                     >
@@ -221,57 +215,33 @@ export default function EpictetusPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* AUDIO */}
-      <section id="audio" className="py-24 md:py-32 px-6 bg-[#0f0f14] relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#7BA3A8] opacity-[0.04] blur-[150px] rounded-full pointer-events-none" />
-
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-[#7BA3A8] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Audio Series</p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              Listen to <span className="text-[#7BA3A8]">Epictetus</span>
-            </h2>
-            <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
-              Twenty-four free audio chapters — six for each age group — read by George, a warm storyteller voice.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {["elementary", "middle", "high", "adult"].map((age) => (
-              <div key={age} className="bg-[#13131a] border border-[#1e1e28] rounded-xl p-6">
-                <h3 className="text-lg font-bold text-[#F5F0E8] mb-4 capitalize">
-                  {age === "high" ? "Ages 15–18" : age === "adult" ? "Adult" : `Ages ${age === "elementary" ? "5–10" : "11–14"}`}
-                </h3>
-                <div className="space-y-3">
-                  {audioClips.map((clip) => (
-                    <div key={`${age}-${clip.ch}`} className="flex items-center gap-3 text-sm">
-                      <span className="text-[#6B6560] w-6">{clip.ch}.</span>
-                      <a
-                        href={`/audio/epictetus/epictetus-${age}-ch0${clip.ch}.mp3`}
-                        className="text-[#A89B8C] hover:text-[#7BA3A8] transition-colors truncate"
-                      >
-                        {clip.title}
-                      </a>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+          <p className="text-center text-[#4a4a4a] text-sm mt-10">
+            Paperback and Kindle editions are also available on{" "}
+            <a
+              href="https://www.amazon.com/s?k=Aiona+Edge+Parmenides"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#C9A96E] hover:underline"
+            >
+              Amazon
+            </a>
+            .
+          </p>
         </div>
       </section>
 
       {/* CHAPTER THEMES */}
-      <section className="py-24 md:py-32 px-6 bg-[#0a0a0f] relative">
+      <section className="py-24 md:py-32 px-6 bg-[#0f0f14] relative">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Arc</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              Six chapters. <span className="text-[#B87D6A]">One path.</span>
+              Six chapters. <span className="text-[#B87D6A]">One road.</span>
             </h2>
+            <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
+              The argument, the signs, the way of opinion, the primacy of reason, and the legacy.
+            </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -282,6 +252,29 @@ export default function EpictetusPage() {
                 <p className="text-[#6B6560] text-sm">{ch.theme}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* KEY IDEA */}
+      <section className="py-24 md:py-32 px-6 bg-[#0a0a0f] relative overflow-hidden">
+        <div className="absolute top-0 left-[50%] -translate-x-1/2 w-[600px] h-[600px] bg-[#C9A96E] opacity-[0.04] blur-[180px] rounded-full pointer-events-none" />
+
+        <div className="max-w-3xl mx-auto text-center relative z-10">
+          <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Core Idea</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-8">
+            What is, is.
+          </h2>
+          <div className="bg-[#13131a] border border-[#1e1e28] rounded-2xl p-8 md:p-12 text-left">
+            <p className="text-[#A89B8C] text-lg leading-relaxed mb-4">
+              You can&apos;t think about nothing. Try it — pure, absolute nothing, not even empty space. The moment you try, your mind fills in something. That&apos;s not a limitation. It&apos;s a discovery about how thought works: every thought is a thought <em>of something</em>. Non-being has no &quot;there&quot; there.
+            </p>
+            <p className="text-[#A89B8C] text-lg leading-relaxed mb-4">
+              So &quot;it is&quot; is the only honest starting point. Every worry about what hasn&apos;t happened, every fear of what isn&apos;t, every argument built on unverified assumptions — that&apos;s a walk down the &quot;it is not&quot; road. It feels real. It has no foundation.
+            </p>
+            <p className="text-[#C9A96E] text-lg leading-relaxed">
+              Start from what is. Build on what is. That&apos;s the road Parmenides opened — and it&apos;s still the only one that goes anywhere.
+            </p>
           </div>
         </div>
       </section>
@@ -312,7 +305,7 @@ export default function EpictetusPage() {
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-6">Start with the free booklets.</h2>
           <p className="text-xl text-[#A89B8C] mb-8">
-            Get the complete Epictetus series for every age group. No email required.
+            Get the complete Parmenides series for every age group. No email required.
           </p>
           <Link
             href="#booklets"
@@ -321,7 +314,7 @@ export default function EpictetusPage() {
             Download All Four PDFs
           </Link>
           <p className="text-[#4a4a4a] text-sm mt-6">
-            Next up: Marcus Aurelius — the emperor who journaled his way through war, plague, and grief.
+            Also explore: <Link href="/epictetus" className="text-[#C9A96E] hover:underline">Epictetus</Link> and <Link href="/marcus-aurelius" className="text-[#C9A96E] hover:underline">Marcus Aurelius</Link> — free booklets for every age.
           </p>
         </div>
       </section>
@@ -338,8 +331,9 @@ export default function EpictetusPage() {
           </div>
           <div className="flex items-center gap-6 text-sm">
             <Link href="/" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Home</Link>
+            <Link href="/epictetus" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Epictetus</Link>
+            <Link href="/marcus-aurelius" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Marcus Aurelius</Link>
             <a href="https://smfworks.com/blog" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">SMF Works Blog</a>
-            <a href="https://smfworks.com/contact" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Contact</a>
           </div>
         </div>
       </section>

@@ -21,7 +21,7 @@ const products = [
   {
     title: "Audio Albums",
     description:
-      "Each chapter, voiced. Rotating voices give every philosopher a distinct presence. Listen free on the site or subscribe on Amazon Music, Apple Music, and Spotify.",
+      "Each chapter, voiced. Rotating voices give every philosopher a distinct presence. Listen free on the site.",
     icon: "🎧",
     color: "#7BA3A8",
     href: "#audio",
@@ -49,10 +49,10 @@ const pipeline = [
   { name: "Marcus Aurelius", status: "Live", icon: "🛡️", href: "/marcus-aurelius" },
   { name: "Seneca", status: "Queued", icon: "🏛️" },
   { name: "Heraclitus", status: "Planned", icon: "🔥" },
-  { name: "Parmenides", status: "Planned", icon: "❄️" },
+  { name: "Parmenides", status: "Live", icon: "❄️", href: "/parmenides" },
   { name: "Pythagoras", status: "Planned", icon: "🔺" },
-  { name: "Democritus", status: "Planned", icon: "⚛️" },
-  { name: "Epicurus", status: "Planned", icon: "🌿" },
+  { name: "Democritus", status: "Live", icon: "⚛️", href: "/democritus" },
+  { name: "Epicurus", status: "Live", icon: "🌿", href: "/epicurus" },
   { name: "Zeno of Citium", status: "Live", icon: "🐢", href: "/zeno-of-citium" },
   { name: "Augustine", status: "Live", icon: "⛪", href: "/augustine" },
   { name: "Thomas Aquinas", status: "In Progress*", icon: "📜" },
@@ -491,6 +491,9 @@ export default function WisdomForgeHomePage() {
             </Link>
             <Link href="/marcus-aurelius" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
               Marcus Aurelius
+            </Link>
+            <Link href="/parmenides" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
+              Parmenides
             </Link>
             <a href="https://smfworks.com/blog" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
               SMF Works Blog

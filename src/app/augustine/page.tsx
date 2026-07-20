@@ -3,17 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Epictetus — WisdomForge by Aiona Edge",
+  title: "Augustine — WisdomForge by Aiona Edge",
   description:
-    "Free WisdomForge booklets and audio chapters on Epictetus for ages 5 to adult. Download PDFs, listen to the audio series, and explore Stoic wisdom.",
-  alternates: { canonical: "https://smfwisdomforge.com/epictetus" },
+    "Free WisdomForge booklets on Augustine of Hippo for ages 5 to adult. Download PDFs exploring the restless heart, grace, grief, time, and the two cities.",
+  alternates: { canonical: "https://smfwisdomforge.com/augustine" },
   openGraph: {
-    title: "Epictetus — WisdomForge by Aiona Edge",
+    title: "Augustine — WisdomForge by Aiona Edge",
     description:
-      "Free WisdomForge booklets and audio chapters on Epictetus for ages 5 to adult.",
-    url: "https://smfwisdomforge.com/epictetus",
+      "Free WisdomForge booklets on Augustine of Hippo for ages 5 to adult. Download PDFs exploring the restless heart, grace, grief, time, and the two cities.",
+    url: "https://smfwisdomforge.com/augustine",
     siteName: "WisdomForge",
-    images: [{ url: "https://smfwisdomforge.com/images/booklets/epictetus-adult-cover.png" }],
+    images: [{ url: "https://smfwisdomforge.com/images/booklets/augustine-adult-cover.png" }],
     locale: "en_US",
     type: "article",
   },
@@ -23,60 +23,51 @@ const ageGroups = [
   {
     label: "Little Thinkers",
     ages: "Ages 5–10",
-    title: "The Boy Who Found Freedom Inside",
+    title: "The Boy with a Hungry Heart",
     slug: "elementary",
     description:
-      "Gentle stories about a boy born into slavery who discovered something no one could take away: the freedom inside his own mind. Six chapters, activities, and conversation starters for young readers.",
+      "Gentle stories about a boy in North Africa who always felt like something was missing — and his mother Monica who never stopped praying. The pear tree, the garden voice, and the city that fell down. Six chapters with activities and conversation starters for young readers.",
     color: "#C9A96E",
   },
   {
     label: "Young Minds",
     ages: "Ages 11–14",
-    title: "The Boy with a Borrowed Name",
+    title: "The Searcher",
     slug: "middle",
     description:
-      "Epictetus for middle-school readers: identity, choice, and the difference between what happens to you and what you make of it. Real-life scenarios, creative projects, and discussion questions.",
+      "Augustine for middle-school readers: the restless heart, the mother who prayed for seventeen years, the pear tree mystery, and the garden conversion. Real-life scenarios, discussion questions, and the first introduction to his theology of the two cities.",
     color: "#7BA3A8",
   },
   {
     label: "Emerging Adults",
     ages: "Ages 15–18",
-    title: "The Boy with a Borrowed Name",
+    title: "The Restless Self",
     slug: "high",
     description:
-      "A sharper, more philosophical telling for older teens. Control, impressions, and the unbreakable center. Designed for readers ready to wrestle with hard questions.",
+      "A sharper, more philosophical engagement for older teens. Akrasia and the divided will, evil as privation, the philosophy of time and memory, grief, and political theology. Designed for readers ready to wrestle with hard questions honestly.",
     color: "#B87D6A",
   },
   {
     label: "Lifelong Learners",
     ages: "Adult",
-    title: "The Examined Life",
+    title: "The Restless Heart",
     slug: "adult",
     description:
-      "Epictetus as a serious practical philosophy for adults. No self-help padding. Six chapters on work, grief, anger, ambition, and what it means to live according to nature.",
+      "Augustine as a serious intellectual presence for adults. No devotional padding. Six chapters on the architecture of desire, the limits of self-help, the problem of evil, the invention of interiority, the theology of grief, and political theology for a falling world.",
     color: "#8A9A7B",
   },
 ];
 
-const audioClips = [
-  { ch: 1, title: "The Boy with No Name" },
-  { ch: 2, title: "The Circle You Control" },
-  { ch: 3, title: "The Unbreakable Center" },
-  { ch: 4, title: "The Two Arrows" },
-  { ch: 5, title: "The Guest at the Banquet" },
-  { ch: 6, title: "Practice Makes Strong" },
-];
-
 const chapterThemes = [
-  { n: 1, title: "The Boy with No Name", theme: "Identity & origins" },
-  { n: 2, title: "The Circle You Control", theme: "Dichotomy of control" },
-  { n: 3, title: "The Unbreakable Center", theme: "Prohairesis & inner freedom" },
-  { n: 4, title: "The Two Arrows", theme: "Pain vs. suffering" },
-  { n: 5, title: "The Guest at the Banquet", theme: "Impermanence & acceptance" },
-  { n: 6, title: "Practice Makes Strong", theme: "Habit & daily exercise" },
+  { n: 1, title: "The Restless Heart", theme: "Cor inquietum — the architecture of desire" },
+  { n: 2, title: "The Divided Will", theme: "Akrasia, grace, and the limits of self-help" },
+  { n: 3, title: "Evil as Privation", theme: "The problem of suffering and free will" },
+  { n: 4, title: "Time and Memory", theme: "The invention of interiority" },
+  { n: 5, title: "Love and Loss", theme: "The theology of grief" },
+  { n: 6, title: "The Two Cities", theme: "Political theology for a falling world" },
 ];
 
-export default function EpictetusPage() {
+export default function AugustinePage() {
   return (
     <>
       {/* HERO */}
@@ -96,15 +87,15 @@ export default function EpictetusPage() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 mb-6">
-            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Stoic Series</span>
+            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Theologian Series</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F0E8] mb-6 leading-[1.1] tracking-tight">
-            Epictetus
+            Augustine
           </h1>
 
           <p className="text-xl md:text-2xl text-[#A89B8C] mb-4 max-w-2xl mx-auto leading-relaxed font-light">
-            Born enslaved. Leg broken by his owner. Still became one of the most influential teachers in Rome.
+            Born in North Africa. The most celebrated rhetorician in the Roman Empire. Then he gave it all up for a hungry heart.
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
@@ -124,10 +115,10 @@ export default function EpictetusPage() {
               </span>
             </Link>
             <Link
-              href="#audio"
+              href="/epictetus"
               className="px-8 py-4 text-[#A89B8C] font-medium hover:text-[#C9A96E] transition-colors border border-[#2a2a2a] rounded-lg hover:border-[#C9A96E]/30"
             >
-              Listen Free
+              Explore Epictetus Too
             </Link>
           </div>
         </div>
@@ -139,27 +130,30 @@ export default function EpictetusPage() {
           <div className="grid md:grid-cols-[1fr_1.5fr] gap-12 items-start">
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
               <Image
-                src="/images/booklets/epictetus-adult-cover.png"
-                alt="Epictetus: The Examined Life — book cover"
+                src="/images/booklets/augustine-adult-cover.png"
+                alt="Augustine: The Restless Heart — book cover"
                 fill
                 className="object-cover"
               />
             </div>
 
             <div className="space-y-6">
-              <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Philosopher</p>
+              <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Thinker</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F5F0E8] leading-tight">
-                The teacher who said freedom begins inside the mind.
+                The bishop who said our hearts are made for something the world can&apos;t give.
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  Epictetus (c. 50–135 CE) was born enslaved in Hierapolis, taken to Rome as a child, and had his leg broken by his owner before he was a teenager. He was later freed, studied under the Stoic Musonius Rufus, and opened a school in Nicopolis that drew students from across the Roman Empire.
+                  Augustine of Hippo (354–430 CE) was born in Tagaste, a small town in North Africa (modern-day Algeria). He became the most celebrated public speaker in the Roman Empire, held the imperial chair of rhetoric in Milan, and then renounced everything — career, status, sexual relationships — after a conversion experience in a garden.
                 </p>
                 <p>
-                  He wrote nothing himself. His student Arrian recorded the <em>Discourses</em> and compiled the <em>Enchiridion</em> — a short handbook of reminders. The central teaching is simple and demanding: some things are in our power (judgments, impulses, desires) and some things are not (bodies, property, reputation). Peace comes from learning the difference and committing to what we control.
+                  He wrote the <em>Confessions</em>, the first sustained autobiography in Western literature, and <em>The City of God</em>, the most influential work of political theology ever written. His ideas about the restless heart, the divided will, evil as privation, time and memory, and grace shaped the Middle Ages, the Reformation, and modern psychology.
+                </p>
+                <p>
+                  He was also flawed — his treatment of women and his adversarial writings against the Jews have a dark legacy. WisdomForge presents Augustine honestly: brilliant, restless, and still worth wrestling with 1,600 years later.
                 </p>
                 <p className="text-[#C9A96E]">
-                  WisdomForge adapts Epictetus across four age levels so the same core ideas grow with the reader.
+                  WisdomForge adapts Augustine across four age levels so the same core ideas grow with the reader.
                 </p>
               </div>
             </div>
@@ -173,7 +167,7 @@ export default function EpictetusPage() {
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Booklets</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              One philosopher. <span className="text-[#7BA3A8]">Four ages.</span>
+              One thinker. <span className="text-[#7BA3A8]">Four ages.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
               Each booklet covers the same six chapter themes, shaped for the age reading it.
@@ -190,8 +184,8 @@ export default function EpictetusPage() {
                 <div className="relative z-10 flex flex-col sm:flex-row gap-6">
                   <div className="relative w-full sm:w-40 aspect-[3/4] rounded-xl overflow-hidden border border-[#2a2a35] flex-shrink-0">
                     <Image
-                      src={`/images/booklets/epictetus-${group.slug}-cover.png`}
-                      alt={`Epictetus ${group.title} — ${group.ages}`}
+                      src={`/images/booklets/augustine-${group.slug}-cover.png`}
+                      alt={`Augustine ${group.title} — ${group.ages}`}
                       fill
                       className="object-cover"
                     />
@@ -207,7 +201,7 @@ export default function EpictetusPage() {
                     <h3 className="text-xl font-bold text-[#F5F0E8] mb-2 group-hover:text-[#C9A96E] transition-colors">{group.title}</h3>
                     <p className="text-[#6B6560] text-sm leading-relaxed mb-4 flex-grow">{group.description}</p>
                     <a
-                      href={`/downloads/epictetus-${group.slug}.pdf`}
+                      href={`/downloads/augustine-${group.slug}.pdf`}
                       download
                       className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#C9A96E] text-[#0a0a0f] text-sm font-semibold rounded-lg hover:bg-[#D4B87A] transition-colors"
                     >
@@ -224,54 +218,17 @@ export default function EpictetusPage() {
         </div>
       </section>
 
-      {/* AUDIO */}
-      <section id="audio" className="py-24 md:py-32 px-6 bg-[#0f0f14] relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#7BA3A8] opacity-[0.04] blur-[150px] rounded-full pointer-events-none" />
-
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-[#7BA3A8] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Audio Series</p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              Listen to <span className="text-[#7BA3A8]">Epictetus</span>
-            </h2>
-            <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
-              Twenty-four free audio chapters — six for each age group — read by George, a warm storyteller voice.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {["elementary", "middle", "high", "adult"].map((age) => (
-              <div key={age} className="bg-[#13131a] border border-[#1e1e28] rounded-xl p-6">
-                <h3 className="text-lg font-bold text-[#F5F0E8] mb-4 capitalize">
-                  {age === "high" ? "Ages 15–18" : age === "adult" ? "Adult" : `Ages ${age === "elementary" ? "5–10" : "11–14"}`}
-                </h3>
-                <div className="space-y-3">
-                  {audioClips.map((clip) => (
-                    <div key={`${age}-${clip.ch}`} className="flex items-center gap-3 text-sm">
-                      <span className="text-[#6B6560] w-6">{clip.ch}.</span>
-                      <a
-                        href={`/audio/epictetus/epictetus-${age}-ch0${clip.ch}.mp3`}
-                        className="text-[#A89B8C] hover:text-[#7BA3A8] transition-colors truncate"
-                      >
-                        {clip.title}
-                      </a>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CHAPTER THEMES */}
-      <section className="py-24 md:py-32 px-6 bg-[#0a0a0f] relative">
+      <section className="py-24 md:py-32 px-6 bg-[#0f0f14] relative">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Arc</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              Six chapters. <span className="text-[#B87D6A]">One path.</span>
+              Six chapters. <span className="text-[#B87D6A]">One restless heart.</span>
             </h2>
+            <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
+              From the hungry heart to the city that falls — the arc of Augustine&apos;s thought, adapted for every age.
+            </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -282,6 +239,47 @@ export default function EpictetusPage() {
                 <p className="text-[#6B6560] text-sm">{ch.theme}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* AUGUSTINE vs THE STOICS */}
+      <section className="py-24 md:py-32 px-6 bg-[#0a0a0f] relative">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-[#7BA3A8] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Contrast</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
+              Augustine and the Stoics
+            </h2>
+            <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
+              Epictetus taught what you can control. Augustine admitted you can&apos;t control enough — and surrendered to grace.
+            </p>
+          </div>
+
+          <div className="bg-[#13131a] border border-[#1e1e28] rounded-2xl p-8 md:p-12">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-bold text-[#C9A96E] mb-4">The Stoic Path</h3>
+                <ul className="space-y-3 text-[#A89B8C] text-sm leading-relaxed">
+                  <li>• Freedom comes from mastering what is in your power</li>
+                  <li>• The fortress of the mind cannot be breached</li>
+                  <li>• Reason is sufficient for the good life</li>
+                  <li>• Self-sufficiency is the goal</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-[#8A9A7B] mb-4">The Augustinian Path</h3>
+                <ul className="space-y-3 text-[#A89B8C] text-sm leading-relaxed">
+                  <li>• The will is divided and cannot heal itself</li>
+                  <li>• Grace, not effort, breaks the deadlock</li>
+                  <li>• Reason is necessary but not sufficient</li>
+                  <li>• Surrender, not self-mastery, is the path</li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-center text-[#6B6560] text-sm mt-8 pt-8 border-t border-[#1e1e28]">
+              The Stoic builds a fortress. Augustine opens a door.
+            </p>
           </div>
         </div>
       </section>
@@ -298,7 +296,7 @@ export default function EpictetusPage() {
 
           <div className="bg-[#13131a] border border-[#1e1e28] rounded-2xl p-8 md:p-12 text-center">
             <p className="text-[#A89B8C] text-lg leading-relaxed mb-4">
-              Chief AI Research Scientist at SMF Works. I created WisdomForge to adapt the great philosophers into stories, audio, and video that meet people at every age.
+              Chief AI Research Scientist at SMF Works. I created WisdomForge to adapt the great philosophers and theologians into stories, audio, and video that meet people at every age.
             </p>
             <p className="text-[#C9A96E]">My goal: make wisdom feel like a conversation, not a lecture.</p>
           </div>
@@ -312,7 +310,7 @@ export default function EpictetusPage() {
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-6">Start with the free booklets.</h2>
           <p className="text-xl text-[#A89B8C] mb-8">
-            Get the complete Epictetus series for every age group. No email required.
+            Get the complete Augustine series for every age group. No email required.
           </p>
           <Link
             href="#booklets"
@@ -321,7 +319,7 @@ export default function EpictetusPage() {
             Download All Four PDFs
           </Link>
           <p className="text-[#4a4a4a] text-sm mt-6">
-            Next up: Marcus Aurelius — the emperor who journaled his way through war, plague, and grief.
+            Also explore Epictetus and Marcus Aurelius — the Stoics who came before.
           </p>
         </div>
       </section>
@@ -338,8 +336,9 @@ export default function EpictetusPage() {
           </div>
           <div className="flex items-center gap-6 text-sm">
             <Link href="/" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Home</Link>
+            <Link href="/epictetus" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Epictetus</Link>
+            <Link href="/marcus-aurelius" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Marcus Aurelius</Link>
             <a href="https://smfworks.com/blog" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">SMF Works Blog</a>
-            <a href="https://smfworks.com/contact" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Contact</a>
           </div>
         </div>
       </section>

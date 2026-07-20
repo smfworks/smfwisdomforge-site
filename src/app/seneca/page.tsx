@@ -22,25 +22,25 @@ export const metadata: Metadata = {
 const ageGroups = [
   {
     label: "Little Thinkers",
-    ages: "Ages 5–10",
+    ages: "Ages 5-10",
     title: "The Boy Who Could Not Breathe",
     slug: "elementary",
     description:
-      "Gentle stories about a boy born sickly who became the wisest teacher in Rome. Seneca for young readers — using your time well, calming anger, and being brave when things are hard. Six chapters with activities and conversation starters.",
+      "Gentle stories about a boy born sickly who became the wisest teacher in Rome. Seneca for young readers using your time well, calming anger, and being brave when things are hard. Six chapters with activities and conversation starters.",
     color: "#C9A96E",
   },
   {
     label: "Young Minds",
-    ages: "Ages 11–14",
+    ages: "Ages 11-14",
     title: "The Island Nobody Wanted",
     slug: "middle",
     description:
-      "Seneca for middle-school readers: resilience through exile, the waste of time, anger as a choice, and the hardest question — can you stay good when you are close to someone bad? Real-life scenarios, creative projects, and discussion questions.",
+      "Seneca for middle-school readers: resilience through exile, the waste of time, anger as a choice, and the hardest question: can you stay good when you are close to someone bad? Real-life scenarios, creative projects, and discussion questions.",
     color: "#7BA3A8",
   },
   {
     label: "Emerging Adults",
-    ages: "Ages 15–18",
+    ages: "Ages 15-18",
     title: "The Shortest Thing We Have",
     slug: "high",
     description:
@@ -53,18 +53,18 @@ const ageGroups = [
     title: "The Philosopher at the Center of Power",
     slug: "adult",
     description:
-      "Seneca as a serious practical philosophy for adults. No self-help padding. Six chapters on time, anger, wealth, the Seneca problem, and death — drawn from the Letters, De Ira, De Brevitate Vitae, and the life of a man who served a tyrant and wrote about virtue.",
+      "Seneca as a serious practical philosophy for adults. No self-help padding. Six chapters on time, anger, wealth, the Seneca problem, and death drawn from the Letters, De Ira, De Brevitate Vitae, and the life of a man who served a tyrant and wrote about virtue.",
     color: "#8A9A7B",
   },
 ];
 
 const chapterThemes = [
-  { n: 1, title: "The Boy Who Could Not Breathe", theme: "Origins, illness and finding philosophy" },
-  { n: 2, title: "The Island Nobody Wanted", theme: "Exile, resilience and inner freedom" },
-  { n: 3, title: "The Shortest Thing We Have", theme: "Time, mortality and the waste of life" },
-  { n: 4, title: "The Short Madness", theme: "Anger, delay and cognitive mastery" },
-  { n: 5, title: "The Teacher and the Tyrant", theme: "Power, wealth and the Seneca problem" },
-  { n: 6, title: "The Good Death", theme: "Mortality, courage and the final act" },
+  { n: 1, title: "The Boy Who Could Not Breathe", theme: "Origins, illness & finding philosophy" },
+  { n: 2, title: "The Island Nobody Wanted", theme: "Exile, resilience & inner freedom" },
+  { n: 3, title: "The Shortest Thing We Have", theme: "Time, mortality & the waste of life" },
+  { n: 4, title: "The Short Madness", theme: "Anger, delay & cognitive mastery" },
+  { n: 5, title: "The Teacher and the Tyrant", theme: "Power, wealth & the Seneca problem" },
+  { n: 6, title: "The Good Death", theme: "Mortality, courage & the final act" },
 ];
 
 export default function SenecaPage() {
@@ -117,7 +117,7 @@ export default function SenecaPage() {
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
               <Image
                 src="/images/booklets/seneca-adult-cover.png"
-                alt="Seneca: The Philosopher at the Center of Power — book cover"
+                alt="Seneca book cover"
                 fill
                 className="object-cover"
               />
@@ -132,10 +132,10 @@ export default function SenecaPage() {
                   Lucius Annaeus Seneca (c. 4 BCE – 65 CE) was born in Roman Spain, educated in Rome, exiled to Corsica for eight years on a fabricated charge, recalled to tutor the future emperor Nero, and became one of the wealthiest men in the empire. He was also a Stoic who wrote some of the most searching moral philosophy in Western history.
                 </p>
                 <p>
-                  His central obsession was time. In <em>De Brevitate Vitae</em> he argued that life is not short — we waste it. In <em>De Ira</em> he dissected anger as a &quot;short madness&quot; and prescribed delay as the greatest remedy, anticipating cognitive-behavioral therapy by nearly two millennia. In the <em>Letters to Lucilius</em> he wrote about friendship, grief, wealth, and death with a warmth that contradicts the caricature of Stoicism as cold detachment.
+                  His central obsession was time. In De Brevitate Vitae he argued that life is not short — we waste it. In De Ira he dissected anger as a short madness and prescribed delay as the greatest remedy, anticipating cognitive-behavioral therapy by nearly two millennia. In the Letters to Lucilius he wrote about friendship, grief, wealth, and death with a warmth that contradicts the caricature of Stoicism as cold detachment.
                 </p>
                 <p>
-                  The tension between his philosophy and his life — a preacher of simplicity who owned vast estates, a counselor of mercy who helped cover up a matricide — is what scholars call &quot;the Seneca problem.&quot; It is not a footnote. It is the central tension that makes his work endlessly readable and uncomfortable.
+                  The tension between his philosophy and his life is what scholars call the Seneca problem. It is not a footnote. It is the central tension that makes his work endlessly readable and uncomfortable.
                 </p>
                 <p className="text-[#C9A96E]">
                   WisdomForge adapts Seneca across four age levels so the same core ideas grow with the reader.
@@ -168,7 +168,7 @@ export default function SenecaPage() {
                   <div className="relative w-full sm:w-40 aspect-[3/4] rounded-xl overflow-hidden border border-[#2a2a35] flex-shrink-0">
                     <Image
                       src={`/images/booklets/seneca-${group.slug}-cover.png`}
-                      alt={`Seneca ${group.title} — ${group.ages}`}
+                      alt={`Seneca ${group.title}`}
                       fill
                       className="object-cover"
                     />
@@ -195,10 +195,22 @@ export default function SenecaPage() {
                     </a>
                   </div>
                 </div>
-
-
-
-
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-[#4a4a4a] text-sm mt-10">
+            Paperback and Kindle editions are also available on{" "}
+            <a
+              href="https://www.amazon.com/s?k=Aiona+Edge+Seneca"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#C9A96E] hover:underline"
+            >
+              Amazon
+            </a>
+            .
+          </p>
+        </div>
       </section>
 
       <section className="py-24 md:py-32 px-6 bg-[#0a0a0f] relative">
@@ -209,7 +221,7 @@ export default function SenecaPage() {
               Six chapters. <span className="text-[#B87D6A]">One path.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
-              From a sickly boy in Roman Spain to the philosopher who faced Nero&apos;s order with calm. The same six themes, adapted for every age.
+              From a sickly boy in Roman Spain to the philosopher who faced Nero with calm. The same six themes, adapted for every age.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -236,10 +248,10 @@ export default function SenecaPage() {
           <div className="bg-[#13131a] border border-[#1e1e28] rounded-2xl p-8 md:p-12">
             <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
               <p>
-                How could a man who preached simplicity own vast estates? How could the author of <em>De Clementia</em> — the duty of mercy — help cover up a matricide? How could the philosopher who wrote about the waste of time spend his days managing wealth and navigating court intrigue?
+                How could a man who preached simplicity own vast estates? How could the author of De Clementia help cover up a matricide? How could the philosopher who wrote about the waste of time spend his days managing wealth and navigating court intrigue?
               </p>
               <p>
-                Scholars call this &quot;the Seneca problem.&quot; It is not a puzzle to be solved. It is a mirror to be looked into. Everyone who holds ideals they partially fail lives in the Seneca problem — the executive who believes in balance and works eighty hours, the environmentalist who flies, the citizen who believes in justice and pays taxes to an unjust system.
+                Scholars call this the Seneca problem. It is not a puzzle to be solved. It is a mirror to be looked into. Everyone who holds ideals they partially fail lives in the Seneca problem.
               </p>
               <p className="text-[#C9A96E]">
                 Seneca&apos;s wealth is not an embarrassment. It is the testing ground that makes his philosophy real. Read him not to condemn but to confront yourself.

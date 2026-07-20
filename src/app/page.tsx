@@ -492,6 +492,9 @@ export default function WisdomForgeHomePage() {
             <Link href="/marcus-aurelius" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
               Marcus Aurelius
             </Link>
+            <Link href="/democritus" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
+              Democritus
+            </Link>
             <Link href="/parmenides" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
               Parmenides
             </Link>

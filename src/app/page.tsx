@@ -45,8 +45,8 @@ const products = [
 ];
 
 const pipeline = [
-  { name: "Epictetus", status: "Live", icon: "⚔️" },
-  { name: "Marcus Aurelius", status: "Live", icon: "🛡️" },
+  { name: "Epictetus", status: "Live", icon: "⚔️", href: "/epictetus" },
+  { name: "Marcus Aurelius", status: "Live", icon: "🛡️", href: "/marcus-aurelius" },
   { name: "Seneca", status: "Queued", icon: "🏛️" },
   { name: "Heraclitus", status: "Planned", icon: "🔥" },
   { name: "Parmenides", status: "Planned", icon: "❄️" },
@@ -404,40 +404,49 @@ export default function WisdomForgeHomePage() {
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {pipeline.map((philosopher, i) => (
-              <div
-                key={i}
-                className={`group relative bg-[#13131a] border rounded-xl p-4 transition-all duration-300 ${
-                  philosopher.status === "Live"
-                    ? "border-[#C9A96E]/60"
-                    : philosopher.status === "In Draft" || philosopher.status === "In Progress*"
-                    ? "border-[#C9A96E]/40"
-                    : philosopher.status === "Queued"
-                    ? "border-[#7BA3A8]/30"
-                    : "border-[#1e1e28]"
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <span className="text-2xl">{philosopher.icon}</span>
-                  <div>
-                    <p className="text-[#F5F0E8] font-semibold">{philosopher.name}</p>
-                    <span
-                      className={`text-xs px-2 py-0.5 rounded-full ${
-                        philosopher.status === "Live"
-                          ? "bg-[#C9A96E] text-[#0a0a0f]"
-                          : philosopher.status === "In Draft" || philosopher.status === "In Progress*"
-                          ? "bg-[#C9A96E]/10 text-[#C9A96E]"
-                          : philosopher.status === "Queued"
-                          ? "bg-[#7BA3A8]/10 text-[#7BA3A8]"
-                          : "bg-[#1e1e28] text-[#6B6560]"
-                      }`}
-                    >
-                      {philosopher.status}
-                    </span>
+            {pipeline.map((philosopher, i) => {
+              const isLive = philosopher.status === "Live";
+              const Card = (
+                <div
+                  className={`group relative bg-[#13131a] border rounded-xl p-4 transition-all duration-300 ${
+                    philosopher.status === "Live"
+                      ? "border-[#C9A96E]/60"
+                      : philosopher.status === "In Draft" || philosopher.status === "In Progress*"
+                      ? "border-[#C9A96E]/40"
+                      : philosopher.status === "Queued"
+                      ? "border-[#7BA3A8]/30"
+                      : "border-[#1e1e28]"
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">{philosopher.icon}</span>
+                    <div>
+                      <p className="text-[#F5F0E8] font-semibold">{philosopher.name}</p>
+                      <span
+                        className={`text-xs px-2 py-0.5 rounded-full ${
+                          philosopher.status === "Live"
+                            ? "bg-[#C9A96E] text-[#0a0a0f]"
+                            : philosopher.status === "In Draft" || philosopher.status === "In Progress*"
+                            ? "bg-[#C9A96E]/10 text-[#C9A96E]"
+                            : philosopher.status === "Queued"
+                            ? "bg-[#7BA3A8]/10 text-[#7BA3A8]"
+                            : "bg-[#1e1e28] text-[#6B6560]"
+                        }`}
+                      >
+                        {philosopher.status}
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+              return isLive ? (
+                <Link key={i} href={philosopher.href!} className="block hover:scale-[1.03] transition-transform">
+                  {Card}
+                </Link>
+              ) : (
+                <div key={i}>{Card}</div>
+              );
+            })}
           </div>
           <p className="text-center text-[#4a4a4a] text-sm mt-8">*Harry's Desk compendium in progress</p>
         </div>

@@ -50,7 +50,7 @@ const pipeline = [
   { name: "Seneca", status: "Queued", icon: "🏛️" },
   { name: "Heraclitus", status: "Planned", icon: "🔥" },
   { name: "Parmenides", status: "Live", icon: "❄️", href: "/parmenides" },
-  { name: "Pythagoras", status: "Planned", icon: "🔺" },
+  { name: "Pythagoras", status: "Live", icon: "🔺", href: "/pythagoras" },
   { name: "Democritus", status: "Live", icon: "⚛️", href: "/democritus" },
   { name: "Epicurus", status: "Live", icon: "🌿", href: "/epicurus" },
   { name: "Zeno of Citium", status: "Live", icon: "🐢", href: "/zeno-of-citium" },
@@ -497,6 +497,9 @@ export default function WisdomForgeHomePage() {
             </Link>
             <Link href="/parmenides" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
               Parmenides
+            </Link>
+            <Link href="/pythagoras" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
+              Pythagoras
             </Link>
             <a href="https://smfworks.com/blog" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
               SMF Works Blog

@@ -3,17 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Zeno of Citium — WisdomForge by Aiona Edge",
+  title: "Pythagoras — WisdomForge by Aiona Edge",
   description:
-    "Free WisdomForge booklets on Zeno of Citium, the shipwrecked merchant who founded Stoicism. Four age-adapted PDFs for ages 5 to adult. Download, read, share.",
-  alternates: { canonical: "https://smfwisdomforge.com/zeno-of-citium" },
+    "Free WisdomForge booklets on Pythagoras for ages 5 to adult. Download PDFs and explore the philosopher who discovered that the universe is built from numbers.",
+  alternates: { canonical: "https://smfwisdomforge.com/pythagoras" },
   openGraph: {
-    title: "Zeno of Citium — WisdomForge by Aiona Edge",
+    title: "Pythagoras — WisdomForge by Aiona Edge",
     description:
-      "Free WisdomForge booklets on Zeno of Citium, the founder of Stoicism. Four age-adapted PDFs for ages 5 to adult.",
-    url: "https://smfwisdomforge.com/zeno-of-citium",
+      "Free WisdomForge booklets on Pythagoras for ages 5 to adult. Download PDFs and explore the philosopher who heard the universe sing.",
+    url: "https://smfwisdomforge.com/pythagoras",
     siteName: "WisdomForge",
-    images: [{ url: "https://smfwisdomforge.com/images/booklets/zeno-of-citium-adult-cover.png" }],
+    images: [{ url: "https://smfwisdomforge.com/images/booklets/pythagoras-adult-cover.png" }],
     locale: "en_US",
     type: "article",
   },
@@ -23,51 +23,51 @@ const ageGroups = [
   {
     label: "Little Thinkers",
     ages: "Ages 5–10",
-    title: "The Man Who Lost Everything and Found What Matters",
+    title: "The Boy Who Heard the Universe Sing",
     slug: "elementary",
     description:
-      "Gentle stories about a merchant who lost his ship in a storm and discovered that the most important things can never be taken away. Six chapters, activities, and conversation starters for young readers.",
+      "Gentle stories about a boy from a Greek island who traveled the ancient world, discovered that music is made of numbers, and taught that the planets are singing. Six chapters, activities, and conversation starters for young readers.",
     color: "#C9A96E",
   },
   {
     label: "Young Minds",
     ages: "Ages 11–14",
-    title: "The Shipwrecked Philosopher",
+    title: "The Man Who Heard Numbers",
     slug: "middle",
     description:
-      "Zeno for middle-school readers: the shipwreck that started everything, the four virtues, the indifferents, and what it means to be a citizen of the world. Real-life scenarios, discussion questions, and exercises.",
+      "Pythagoras for middle-school readers: the discovery that all is number, the harmony of the spheres, the tetractys, and the soul's journey. Real stories, creative projects, and discussion questions about the mathematical structure of reality.",
     color: "#7BA3A8",
   },
   {
     label: "Emerging Adults",
     ages: "Ages 15–18",
-    title: "The Founder",
+    title: "The First Mathematician",
     slug: "high",
     description:
-      "A serious philosophical examination for older teens. Zeno's founding claims — virtue is the only good, externals are indifferent, the cosmopolis — traced through six chapters with scholarly precision and practical application.",
+      "A sharper, more philosophical exploration for older teens. The Pythagoras problem, mathematical ontology, the epistemology of cosmic harmony, and the ethics of proportion. Designed for readers ready to wrestle with hard questions.",
     color: "#B87D6A",
   },
   {
     label: "Lifelong Learners",
     ages: "Adult",
-    title: "The Founder",
+    title: "The Mathematics of Everything",
     slug: "adult",
     description:
-      "Zeno as a serious ethical thinker for adults. No self-help padding. Six chapters on the shipwreck, virtue monism, the indifferents, living according to nature, the cosmopolis, and the painted porch where it all began.",
+      "Pythagoras as a serious practical philosophy for adults. No self-help padding. Six chapters on the mathematical structure of reality, mathematics as spiritual practice, the ethics of proportion, and the Pythagorean community as a model for shared inquiry.",
     color: "#8A9A7B",
   },
 ];
 
 const chapterThemes = [
-  { n: 1, title: "The Shipwreck", theme: "Catastrophe as beginning" },
-  { n: 2, title: "The Only Good", theme: "Virtue as the sole good" },
-  { n: 3, title: "The Indifferents", theme: "What can be lost and what can't" },
-  { n: 4, title: "Living According to Nature", theme: "Reason, society, acceptance" },
-  { n: 5, title: "Citizen of the World", theme: "Cosmopolitanism & oikeiosis" },
-  { n: 6, title: "The Painted Porch", theme: "Philosophy in public" },
+  { n: 1, title: "The Traveler from Samos", theme: "Life, legend & the Pythagoras problem" },
+  { n: 2, title: "All Is Number", theme: "Mathematical ontology & the structure of reality" },
+  { n: 3, title: "The Harmony of the Spheres", theme: "Cosmic music & mathematical beauty" },
+  { n: 4, title: "The Soul's Journey", theme: "Metempsychosis, purification & eternal truth" },
+  { n: 5, title: "The Tetractys", theme: "Ten dots that encode everything" },
+  { n: 6, title: "Tuning Your Life", theme: "Ethics of proportion & the nightly review" },
 ];
 
-export default function ZenoOfCitiumPage() {
+export default function PythagorasPage() {
   return (
     <>
       {/* HERO */}
@@ -87,15 +87,15 @@ export default function ZenoOfCitiumPage() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 mb-6">
-            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Stoic Series</span>
+            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Greek Philosophers</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F0E8] mb-6 leading-[1.1] tracking-tight">
-            Zeno of Citium
+            Pythagoras
           </h1>
 
           <p className="text-xl md:text-2xl text-[#A89B8C] mb-4 max-w-2xl mx-auto leading-relaxed font-light">
-            Shipwrecked. Stripped of everything. Founded the most influential philosophical school in the Western tradition.
+            He wrote nothing. His followers said he had a golden thigh. And he discovered that the universe is built from numbers.
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
@@ -115,10 +115,10 @@ export default function ZenoOfCitiumPage() {
               </span>
             </Link>
             <Link
-              href="/epictetus"
+              href="/"
               className="px-8 py-4 text-[#A89B8C] font-medium hover:text-[#C9A96E] transition-colors border border-[#2a2a2a] rounded-lg hover:border-[#C9A96E]/30"
             >
-              Explore Epictetus Too
+              Back to WisdomForge
             </Link>
           </div>
         </div>
@@ -130,8 +130,8 @@ export default function ZenoOfCitiumPage() {
           <div className="grid md:grid-cols-[1fr_1.5fr] gap-12 items-start">
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
               <Image
-                src="/images/booklets/zeno-of-citium-adult-cover.png"
-                alt="Zeno of Citium: The Founder — book cover"
+                src="/images/booklets/pythagoras-adult-cover.png"
+                alt="Pythagoras: The Mathematics of Everything — book cover"
                 fill
                 className="object-cover"
               />
@@ -140,20 +140,20 @@ export default function ZenoOfCitiumPage() {
             <div className="space-y-6">
               <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Philosopher</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F5F0E8] leading-tight">
-                The shipwrecked merchant who founded Stoicism.
+                The man who said the universe is made of numbers.
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  Zeno of Citium (c. 334–262 BCE) was a Phoenician merchant who traded in Tyrian purple — the most valuable commodity in the ancient world. His ship sank off the coast of Athens. He lost everything. He wandered into a bookshop, read about Socrates, and followed a Cynic philosopher named Crates.
+                  Pythagoras of Samos (c. 570–495 BCE) is one of the most famous and most elusive figures in ancient philosophy. He wrote nothing himself. His followers attributed miracles to him — a golden thigh, memories of past lives, the ability to be in two places at once. His earliest biographers wrote centuries after his death.
                 </p>
                 <p>
-                  He studied with three teachers — Crates the Cynic, Stilpo the Megarian, Polemo the Academic — and synthesized their teachings into something new: Stoicism. Around 300 BCE, he began teaching in the Stoa Poikile, the Painted Colonnade in the Athenian marketplace. His students were called &quot;Stoics&quot; — people of the porch. The name has lasted 2,300 years.
+                  And yet behind the legend, there is a real person whose ideas launched a revolution. He founded a community in Croton that combined philosophical study with religious practice. He taught that reality is mathematical structure, that the planets make music as they move, and that the soul is immortal and transmigrates. His ideas influenced Plato, Aristotle, Kepler, and the entire tradition of Western science.
                 </p>
                 <p>
-                  Every Stoic idea traces back to him. Epictetus&apos; dichotomy of control. Seneca&apos;s consolations. Marcus Aurelius&apos; inner citadel. All are developments of Zeno&apos;s founding claims: <em>virtue is the only good, externals are indifferent, and all humans are fellow citizens.</em>
+                  The central Pythagorean claim — that the universe is mathematically structured and that this structure is beautiful — became the foundation of mathematical physics. When Galileo said the book of nature is written in the language of mathematics, he was drawing on Pythagoras. When Einstein wondered why the universe is comprehensible, he was expressing Pythagorean wonder. 2,500 years later, the intuition holds.
                 </p>
                 <p className="text-[#C9A96E]">
-                  WisdomForge adapts Zeno across four age levels so the same core ideas grow with the reader.
+                  WisdomForge adapts Pythagoras across four age levels so the same core ideas grow with the reader.
                 </p>
               </div>
             </div>
@@ -184,8 +184,8 @@ export default function ZenoOfCitiumPage() {
                 <div className="relative z-10 flex flex-col sm:flex-row gap-6">
                   <div className="relative w-full sm:w-40 aspect-[3/4] rounded-xl overflow-hidden border border-[#2a2a35] flex-shrink-0">
                     <Image
-                      src={`/images/booklets/zeno-of-citium-${group.slug}-cover.png`}
-                      alt={`Zeno of Citium ${group.title} — ${group.ages}`}
+                      src={`/images/booklets/pythagoras-${group.slug}-cover.png`}
+                      alt={`Pythagoras ${group.title} — ${group.ages}`}
                       fill
                       className="object-cover"
                     />
@@ -201,7 +201,7 @@ export default function ZenoOfCitiumPage() {
                     <h3 className="text-xl font-bold text-[#F5F0E8] mb-2 group-hover:text-[#C9A96E] transition-colors">{group.title}</h3>
                     <p className="text-[#6B6560] text-sm leading-relaxed mb-4 flex-grow">{group.description}</p>
                     <a
-                      href={`/downloads/zeno-of-citium-${group.slug}.pdf`}
+                      href={`/downloads/pythagoras-${group.slug}.pdf`}
                       download
                       className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#C9A96E] text-[#0a0a0f] text-sm font-semibold rounded-lg hover:bg-[#D4B87A] transition-colors"
                     >
@@ -217,7 +217,16 @@ export default function ZenoOfCitiumPage() {
           </div>
 
           <p className="text-center text-[#4a4a4a] text-sm mt-10">
-            Paperback and Kindle editions will follow.
+            Paperback and Kindle editions are also available on{" "}
+            <a
+              href="https://www.amazon.com/s?k=Aiona+Edge+Pythagoras"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#C9A96E] hover:underline"
+            >
+              Amazon
+            </a>
+            .
           </p>
         </div>
       </section>
@@ -228,10 +237,10 @@ export default function ZenoOfCitiumPage() {
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Arc</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              Six chapters. <span className="text-[#B87D6A]">One path.</span>
+              Six chapters. <span className="text-[#B87D6A]">One pattern.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
-              From the shipwreck that started everything to the painted porch where Zeno taught the world.
+              From the man behind the legend to the ethics of proportion — the same six themes, adapted for every age.
             </p>
           </div>
 
@@ -273,7 +282,7 @@ export default function ZenoOfCitiumPage() {
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-6">Start with the free booklets.</h2>
           <p className="text-xl text-[#A89B8C] mb-8">
-            Get the complete Zeno of Citium series for every age group. No email required.
+            Get the complete Pythagoras series for every age group. No email required.
           </p>
           <Link
             href="#booklets"
@@ -282,7 +291,7 @@ export default function ZenoOfCitiumPage() {
             Download All Four PDFs
           </Link>
           <p className="text-[#4a4a4a] text-sm mt-6">
-            Also explore: <Link href="/epictetus" className="text-[#C9A96E] hover:underline">Epictetus</Link> and <Link href="/marcus-aurelius" className="text-[#C9A96E] hover:underline">Marcus Aurelius</Link>.
+            Also explore Epictetus and Marcus Aurelius — free booklets for every age.
           </p>
         </div>
       </section>
@@ -299,8 +308,9 @@ export default function ZenoOfCitiumPage() {
           </div>
           <div className="flex items-center gap-6 text-sm">
             <Link href="/" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Home</Link>
+            <Link href="/epictetus" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Epictetus</Link>
+            <Link href="/marcus-aurelius" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Marcus Aurelius</Link>
             <a href="https://smfworks.com/blog" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">SMF Works Blog</a>
-            <a href="https://smfworks.com/contact" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Contact</a>
           </div>
         </div>
       </section>

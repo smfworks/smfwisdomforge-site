@@ -198,18 +198,6 @@ export default function SenecaPage() {
               </div>
             ))}
           </div>
-          <p className="text-center text-[#4a4a4a] text-sm mt-10">
-            Paperback and Kindle editions are also available on{" "}
-            <a
-              href="https://www.amazon.com/s?k=Aiona+Edge+Seneca"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#C9A96E] hover:underline"
-            >
-              Amazon
-            </a>
-            .
-          </p>
         </div>
       </section>
 

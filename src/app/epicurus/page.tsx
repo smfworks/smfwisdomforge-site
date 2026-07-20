@@ -212,10 +212,6 @@ export default function EpicurusPage() {
               </div>
             ))}
           </div>
-
-          <p className="text-center text-[#4a4a4a] text-sm mt-10">
-            Paperback and Kindle editions will follow.
-          </p>
         </div>
       </section>
 

@@ -153,7 +153,7 @@ export default function MarcusAureliusPage() {
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  Marcus Aurelius (121–180 CE) was the last of the "Five Good Emperors" of Rome. He ruled for nearly two decades while wars raged on the frontiers, plague swept the empire, and his own family suffered loss after loss.
+                  Marcus Aurelius (121–180 CE) was the last of the &ldquo;Five Good Emperors&rdquo; of Rome. He ruled for nearly two decades while wars raged on the frontiers, plague swept the empire, and his own family suffered loss after loss.
                 </p>
                 <p>
                   He wrote no books for publication. The <em>Meditations</em> is a private notebook — notes to himself about how to stay steady, fair, and human under impossible pressure. It survives because someone copied it. The most intimate philosophy in history was never meant to be read.

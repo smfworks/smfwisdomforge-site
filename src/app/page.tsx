@@ -204,7 +204,7 @@ export default function WisdomForgeHomePage() {
                   But children ask the deepest questions. Teenagers wrestle with the hardest problems. Adults crave meaning they were never taught to find.
                 </p>
                 <p className="text-[#C9A96E]">
-                  WisdomForge meets you where you are — with stories, voices, and formats that fit your life, not someone else's syllabus.
+                  WisdomForge meets you where you are — with stories, voices, and formats that fit your life, not someone else&apos;s syllabus.
                 </p>
               </div>
             </div>
@@ -269,12 +269,12 @@ export default function WisdomForgeHomePage() {
 
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Who It's For</p>
+            <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Who It&apos;s For</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
               One philosopher. <span className="text-[#B87D6A]">Four entry points.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
-              The same wisdom, shaped for the age that's reading it.
+              The same wisdom, shaped for the age that&apos;s reading it.
             </p>
           </div>
 
@@ -396,7 +396,7 @@ export default function WisdomForgeHomePage() {
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Library</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              Who's <span className="text-[#8A9A7B]">coming.</span>
+              Who&apos;s <span className="text-[#8A9A7B]">coming.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
               Fifteen philosophers and great documents. Four formats each. One story at a time.
@@ -448,7 +448,7 @@ export default function WisdomForgeHomePage() {
               );
             })}
           </div>
-          <p className="text-center text-[#4a4a4a] text-sm mt-8">*Harry's Desk compendium in progress</p>
+          <p className="text-center text-[#4a4a4a] text-sm mt-8">*Harry&apos;s Desk compendium in progress</p>
         </div>
       </section>
 

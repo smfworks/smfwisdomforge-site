@@ -239,10 +239,10 @@ export default function WisdomForgeHomePage() {
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Product Line</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              Four ways to <span className="text-[#7BA3A8]">encounter wisdom.</span>
+              Connecting to <span className="text-[#7BA3A8]">Wisdom.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
-              Read it. Hear it. Watch it. Do it. The same philosopher, shaped for how you live.
+              Read it. Question it. Discuss it. Do it. The same classics and philosophers, shaped for how you live.
             </p>
           </div>
 

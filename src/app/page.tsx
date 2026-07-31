@@ -61,34 +61,158 @@ const ageGroups = [
   },
 ];
 
-const featuredBooklets = [
+const stoicFigures = [
   {
-    slug: "elementary",
-    title: "The Boy Who Found Freedom Inside",
-    ages: "Ages 5–10",
-    description:
-      "A gentle, story-driven introduction to Epictetus. Six chapters about identity, control, inner freedom, pain, impermanence, and daily practice.",
+    name: "Epictetus",
+    slug: "epictetus",
+    accent: "#C9A96E",
+    blurb: "The former slave who taught that freedom lives in what we choose.",
+    pageHref: "/epictetus",
+    pageCta: "See the full Epictetus page with audio",
+    booklets: [
+      {
+        slug: "elementary",
+        title: "The Boy Who Found Freedom Inside",
+        ages: "Ages 5–10",
+        description:
+          "A gentle, story-driven introduction to Epictetus. Six chapters about identity, control, inner freedom, pain, impermanence, and daily practice.",
+      },
+      {
+        slug: "middle",
+        title: "The Boy with a Borrowed Name",
+        ages: "Ages 11–14",
+        description:
+          "Epictetus for young minds: real-life scenarios, creative projects, and discussion questions about what we can and cannot control.",
+      },
+      {
+        slug: "high",
+        title: "The Boy with a Borrowed Name",
+        ages: "Ages 15–18",
+        description:
+          "A sharper philosophical telling for older teens. Control, impressions, prohairesis, and the unbreakable center.",
+      },
+      {
+        slug: "adult",
+        title: "The Examined Life",
+        ages: "Adult",
+        description:
+          "Epictetus as a serious practical philosophy for adults. No self-help padding. Work, grief, anger, ambition, and what it means to live well.",
+      },
+    ],
   },
   {
-    slug: "middle",
-    title: "The Boy with a Borrowed Name",
-    ages: "Ages 11–14",
-    description:
-      "Epictetus for young minds: real-life scenarios, creative projects, and discussion questions about what we can and cannot control.",
+    name: "Marcus Aurelius",
+    slug: "marcus-aurelius",
+    accent: "#7BA3A8",
+    blurb: "The emperor who journaled through war, plague, and duty.",
+    pageHref: "/marcus-aurelius",
+    pageCta: "See the full Marcus Aurelius page with audio",
+    booklets: [
+      {
+        slug: "elementary",
+        title: "The Emperor Who Whispered to Himself",
+        ages: "Ages 5–10",
+        description:
+          "Gentle stories about a Roman emperor who kept a secret notebook. Six chapters on duty, kindness, worry, and the little voice inside that helps us choose well.",
+      },
+      {
+        slug: "middle",
+        title: "The Notebook in the Tent",
+        ages: "Ages 11–14",
+        description:
+          "Marcus for middle-school readers: leadership, pressure, anger, and the private writing that kept him steady when the world was falling apart.",
+      },
+      {
+        slug: "high",
+        title: "The Emperor's Private Philosophy",
+        ages: "Ages 15–18",
+        description:
+          "A sharper telling for older teens. Mortality, duty, self-discipline, and what it means to rule yourself before you try to rule anything else.",
+      },
+      {
+        slug: "adult",
+        title: "Meditations for Mortals",
+        ages: "Adult",
+        description:
+          "Marcus Aurelius as a serious practical philosophy for adults. Six chapters on impermanence, resilience, work, grief, and the daily work of being human.",
+      },
+    ],
   },
   {
-    slug: "high",
-    title: "The Boy with a Borrowed Name",
-    ages: "Ages 15–18",
-    description:
-      "A sharper philosophical telling for older teens. Control, impressions, prohairesis, and the unbreakable center.",
+    name: "Seneca",
+    slug: "seneca",
+    accent: "#B87D6A",
+    blurb: "The statesman who wrote about time, anger, wealth, and death.",
+    pageHref: "/seneca",
+    pageCta: "See the full Seneca page",
+    booklets: [
+      {
+        slug: "elementary",
+        title: "The Boy Who Could Not Breathe",
+        ages: "Ages 5–10",
+        description:
+          "Gentle stories about a boy born sickly who became the wisest teacher in Rome. Time, anger, and courage when things are hard.",
+      },
+      {
+        slug: "middle",
+        title: "The Island Nobody Wanted",
+        ages: "Ages 11–14",
+        description:
+          "Seneca for middle-school readers: exile, wasted time, anger as a choice, and staying good under pressure.",
+      },
+      {
+        slug: "high",
+        title: "The Shortest Thing We Have",
+        ages: "Ages 15–18",
+        description:
+          "A sharper Seneca for older teens. Mortality, anger as cognitive error, wealth and power, and facing death with courage.",
+      },
+      {
+        slug: "adult",
+        title: "The Philosopher at the Center of Power",
+        ages: "Adult",
+        description:
+          "Seneca as serious practical philosophy for adults. Time, anger, wealth, the Seneca problem, and death—without self-help padding.",
+      },
+    ],
   },
   {
-    slug: "adult",
-    title: "The Examined Life",
-    ages: "Adult",
-    description:
-      "Epictetus as a serious practical philosophy for adults. No self-help padding. Work, grief, anger, ambition, and what it means to live well.",
+    name: "Zeno of Citium",
+    slug: "zeno-of-citium",
+    accent: "#8A9A7B",
+    blurb: "The founder — the shipwrecked merchant who started the Stoic school.",
+    pageHref: "/zeno-of-citium",
+    pageCta: "See the full Zeno page",
+    booklets: [
+      {
+        slug: "elementary",
+        title: "The Man Who Lost Everything and Found What Matters",
+        ages: "Ages 5–10",
+        description:
+          "Gentle stories about a merchant who lost his ship in a storm and discovered that the most important things can never be taken away.",
+      },
+      {
+        slug: "middle",
+        title: "The Shipwrecked Philosopher",
+        ages: "Ages 11–14",
+        description:
+          "Zeno for middle-school readers: the shipwreck that started everything, the four virtues, the indifferents, and being a citizen of the world.",
+      },
+      {
+        slug: "high",
+        title: "The Founder",
+        ages: "Ages 15–18",
+        description:
+          "A serious examination for older teens. Virtue as the only good, externals as indifferent, and the cosmopolis — with practical application.",
+      },
+      {
+        slug: "adult",
+        title: "The Founder",
+        ages: "Adult",
+        description:
+          "Zeno as a serious ethical thinker for adults. Virtue monism, the indifferents, living according to nature, and the painted porch where it began.",
+      },
+    ],
   },
 ];
 
@@ -269,67 +393,86 @@ export default function WisdomForgeHomePage() {
         </div>
       </section>
 
-      {/* FEATURED BOOKLETS */}
+      {/* FEATURED BOOKLETS — THE STOICS */}
       <section id="booklets" className="py-24 md:py-32 px-6 bg-[#0a0a0f] relative">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Now Available</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              Epictetus — <span className="text-[#7BA3A8]">free booklets.</span>
+              The Stoics — <span className="text-[#7BA3A8]">free booklets.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
-              The first philosopher in the WisdomForge library. Download all four PDFs now.
+              Epictetus, Marcus Aurelius, Seneca, and Zeno of Citium. Four age bands each. Download any PDF now — no email required.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {featuredBooklets.map((booklet, i) => (
-              <div
-                key={i}
-                className="group relative bg-[#13131a] border border-[#1e1e28] rounded-2xl p-6 hover:border-[#C9A96E]/30 transition-all duration-300 overflow-hidden"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-[#C9A96E]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-                <div className="relative z-10 flex flex-col sm:flex-row gap-6">
-                  <div className="relative w-full sm:w-40 aspect-[3/4] rounded-xl overflow-hidden border border-[#2a2a35] flex-shrink-0">
-                    <Image
-                      src={`/images/booklets/epictetus-${booklet.slug}-cover.png`}
-                      alt={`Epictetus ${booklet.title} — ${booklet.ages}`}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="flex-1 flex flex-col">
-                    <p className="text-sm text-[#6B6560] mb-1">{booklet.ages}</p>
-                    <h3 className="text-xl font-bold text-[#F5F0E8] mb-2 group-hover:text-[#C9A96E] transition-colors">
-                      {booklet.title}
-                    </h3>
-                    <p className="text-[#6B6560] text-sm leading-relaxed mb-4 flex-grow">{booklet.description}</p>
-                    <a
-                      href={`/downloads/epictetus-${booklet.slug}.pdf`}
-                      download
-                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#C9A96E] text-[#0a0a0f] text-sm font-semibold rounded-lg hover:bg-[#D4B87A] transition-colors mt-auto w-fit"
+          <div className="space-y-20">
+            {stoicFigures.map((figure) => (
+              <div key={figure.slug} id={figure.slug}>
+                <div className="mb-8 text-center md:text-left">
+                  <p
+                    className="text-sm font-semibold uppercase tracking-[0.2em] mb-2"
+                    style={{ color: figure.accent }}
+                  >
+                    Stoic
+                  </p>
+                  <h3 className="text-2xl md:text-3xl font-bold text-[#F5F0E8] mb-2">{figure.name}</h3>
+                  <p className="text-[#6B6560] text-base max-w-2xl">{figure.blurb}</p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  {figure.booklets.map((booklet) => (
+                    <div
+                      key={`${figure.slug}-${booklet.slug}`}
+                      className="group relative bg-[#13131a] border border-[#1e1e28] rounded-2xl p-6 hover:border-[#C9A96E]/30 transition-all duration-300 overflow-hidden"
                     >
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 3H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                      Download PDF
-                    </a>
-                  </div>
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#C9A96E]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                      <div className="relative z-10 flex flex-col sm:flex-row gap-6">
+                        <div className="relative w-full sm:w-40 aspect-[3/4] rounded-xl overflow-hidden border border-[#2a2a35] flex-shrink-0">
+                          <Image
+                            src={`/images/booklets/${figure.slug}-${booklet.slug}-cover.png`}
+                            alt={`${figure.name} ${booklet.title} — ${booklet.ages}`}
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
+                        <div className="flex-1 flex flex-col">
+                          <p className="text-sm text-[#6B6560] mb-1">{booklet.ages}</p>
+                          <h4 className="text-xl font-bold text-[#F5F0E8] mb-2 group-hover:text-[#C9A96E] transition-colors">
+                            {booklet.title}
+                          </h4>
+                          <p className="text-[#6B6560] text-sm leading-relaxed mb-4 flex-grow">{booklet.description}</p>
+                          <a
+                            href={`/downloads/${figure.slug}-${booklet.slug}.pdf`}
+                            download
+                            className="inline-flex items-center gap-2 px-5 py-2.5 text-[#0a0a0f] text-sm font-semibold rounded-lg transition-colors mt-auto w-fit hover:opacity-90"
+                            style={{ backgroundColor: figure.accent }}
+                          >
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 3H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            Download PDF
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="text-center mt-8">
+                  <Link
+                    href={figure.pageHref}
+                    className="inline-flex items-center gap-2 px-6 py-3 font-semibold border rounded-lg transition-colors hover:bg-white/5"
+                    style={{ color: figure.accent, borderColor: `${figure.accent}4D` }}
+                  >
+                    {figure.pageCta}
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link
-              href="/epictetus"
-              className="inline-flex items-center gap-2 px-8 py-4 text-[#C9A96E] font-semibold border border-[#C9A96E]/30 rounded-lg hover:bg-[#C9A96E]/10 transition-colors"
-            >
-              See the full Epictetus page with audio
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
           </div>
         </div>
       </section>

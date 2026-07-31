@@ -38,3 +38,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Full-length audiobooks exceed GitHub 100MB; chapter mp3s ship instead
+public/audio/**/*-audiobook.mp3
+public/audio/**/*-full.mp3

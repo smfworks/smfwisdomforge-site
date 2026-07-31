@@ -13,7 +13,7 @@ const products = [
   {
     title: "Wisdom Booklets",
     description:
-      "One philosopher, one story at a time. Chapters, tales, and reflection questions crafted for four age groups. The first philosopher, Epictetus, is free.",
+      "One philosopher, one story at a time. Chapters, tales, and reflection questions crafted for four age groups. The Stoics are free; other figures are $2.99 when gold.",
     icon: "📖",
     color: "#C9A96E",
     href: "#booklets",
@@ -45,15 +45,15 @@ const products = [
 ];
 
 const pipeline = [
-  { name: "Epictetus", status: "Live", icon: "⚔️", href: "/epictetus" },
-  { name: "Marcus Aurelius", status: "Live", icon: "🛡️", href: "/marcus-aurelius" },
-  { name: "Seneca", status: "Queued", icon: "🏛️" },
+  { name: "Epictetus", status: "Live · Free", icon: "⚔️", href: "/epictetus" },
+  { name: "Marcus Aurelius", status: "Live · Free", icon: "🛡️", href: "/marcus-aurelius" },
+  { name: "Seneca", status: "Live · Free", icon: "🏛️", href: "/seneca" },
   { name: "Heraclitus", status: "Planned", icon: "🔥" },
   { name: "Parmenides", status: "Live", icon: "❄️", href: "/parmenides" },
   { name: "Pythagoras", status: "Live", icon: "🔺", href: "/pythagoras" },
   { name: "Democritus", status: "Live", icon: "⚛️", href: "/democritus" },
   { name: "Epicurus", status: "Live", icon: "🌿", href: "/epicurus" },
-  { name: "Zeno of Citium", status: "Live", icon: "🐢", href: "/zeno-of-citium" },
+  { name: "Zeno of Citium", status: "Live · Free", icon: "⚓", href: "/zeno-of-citium" },
   { name: "Augustine", status: "Live", icon: "⛪", href: "/augustine" },
   { name: "Thomas Aquinas", status: "In Progress*", icon: "📜" },
   { name: "Julian of Norwich", status: "Planned", icon: "🕊️" },
@@ -461,16 +461,36 @@ export default function WisdomForgeHomePage() {
             Start with the free booklets.
           </h2>
           <p className="text-xl text-[#A89B8C] mb-8">
-            Get the complete Epictetus series for every age group. No email required.
+            Free sample: the Stoics — Epictetus, Marcus Aurelius, Seneca, and Zeno. Four age bands each. No email required.
           </p>
-          <Link
-            href="/epictetus"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[#C9A96E] text-[#0a0a0f] font-semibold rounded-lg hover:bg-[#D4B87A] transition-all shadow-lg shadow-[#C9A96E]/20"
-          >
-            Download All Four PDFs
-          </Link>
+          <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4">
+            <Link
+              href="/epictetus"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#C9A96E] text-[#0a0a0f] font-semibold rounded-lg hover:bg-[#D4B87A] transition-all shadow-lg shadow-[#C9A96E]/20"
+            >
+              Epictetus — Free
+            </Link>
+            <Link
+              href="/marcus-aurelius"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#7BA3A8] text-[#0a0a0f] font-semibold rounded-lg hover:bg-[#8AB3B8] transition-all shadow-lg shadow-[#7BA3A8]/20"
+            >
+              Marcus — Free
+            </Link>
+            <Link
+              href="/seneca"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#B87D6A] text-[#0a0a0f] font-semibold rounded-lg hover:bg-[#C48D7A] transition-all shadow-lg shadow-[#B87D6A]/20"
+            >
+              Seneca — Free
+            </Link>
+            <Link
+              href="/zeno-of-citium"
+              className="inline-flex items-center gap-2 px-8 py-4 border border-[#C9A96E]/40 text-[#C9A96E] font-semibold rounded-lg hover:bg-[#C9A96E]/10 transition-all"
+            >
+              Zeno — Free
+            </Link>
+          </div>
           <p className="text-[#4a4a4a] text-sm mt-6">
-            Next up: Marcus Aurelius — the emperor who journaled his way through war, plague, and grief.
+            All other figures: $2.99 each once they meet the Epictetus/Marcus quality bar. Nothing thinner ships.
           </p>
         </div>
       </section>
@@ -491,6 +511,12 @@ export default function WisdomForgeHomePage() {
             </Link>
             <Link href="/marcus-aurelius" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
               Marcus Aurelius
+            </Link>
+            <Link href="/seneca" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
+              Seneca
+            </Link>
+            <Link href="/zeno-of-citium" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
+              Zeno
             </Link>
             <Link href="/democritus" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
               Democritus

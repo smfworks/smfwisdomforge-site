@@ -5,12 +5,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Marcus Aurelius — WisdomForge by Aiona Edge",
   description:
-    "WisdomForge booklets, audiobooks, and video on Marcus Aurelius for ages 5 to adult. The emperor who journaled through war, plague, and grief.",
+    "Free WisdomForge booklets and audio on Marcus Aurelius for ages 5 to adult. The emperor who journaled through war, plague, and grief.",
   alternates: { canonical: "https://smfwisdomforge.com/marcus-aurelius" },
   openGraph: {
     title: "Marcus Aurelius — WisdomForge by Aiona Edge",
     description:
-      "WisdomForge booklets, audiobooks, and video on Marcus Aurelius for ages 5 to adult.",
+      "Free WisdomForge booklets and audio on Marcus Aurelius for ages 5 to adult.",
     url: "https://smfwisdomforge.com/marcus-aurelius",
     siteName: "WisdomForge",
     images: [{ url: "https://smfwisdomforge.com/images/booklets/marcus-aurelius-adult-cover.png" }],
@@ -59,22 +59,22 @@ const ageGroups = [
 ];
 
 const chapterThemes = [
-  { n: 1, title: "The Emperor's Secret", theme: "Private reflection & journaling" },
-  { n: 2, title: "The World Keeps Moving", theme: "Impermanence & change" },
-  { n: 3, title: "The Morning Greeting", theme: "Difficult people & patience" },
-  { n: 4, title: "The Shortness of Life", theme: "Mortality & urgency" },
-  { n: 5, title: "The Inner Citadel", theme: "Self-discipline & inner fortress" },
-  { n: 6, title: "The Work of the Day", theme: "Duty & daily practice" },
+  { n: 1, title: "The Philosopher on the Throne", theme: "Formation before crisis" },
+  { n: 2, title: "The Inviolate Center", theme: "Inner citadel & judgment" },
+  { n: 3, title: "The Three Disciplines", theme: "Assent, desire, action" },
+  { n: 4, title: "The Cosmopolitan Imperative", theme: "Duty to the whole" },
+  { n: 5, title: "The Campfire Meditations", theme: "Practice under pressure" },
+  { n: 6, title: "The Daily Rehearsal", theme: "Morning & evening work" },
 ];
 
-const youtubeEmbedUrl = "YOUTUBE_EMBED_URL_PLACEHOLDER";
-const audiobookLinks = {
-  elementary: "ELEVENLABS_ELEMENTARY_URL_PLACEHOLDER",
-  middle: "ELEVENLABS_MIDDLE_URL_PLACEHOLDER",
-  high: "ELEVENLABS_HIGH_URL_PLACEHOLDER",
-  adult: "ELEVENLABS_ADULT_URL_PLACEHOLDER",
-};
-const bookletPurchaseUrl = "BOOKLET_PURCHASE_URL_PLACEHOLDER";
+const audioClips = [
+  { ch: 1, title: "The Philosopher on the Throne" },
+  { ch: 2, title: "The Inviolate Center" },
+  { ch: 3, title: "The Three Disciplines" },
+  { ch: 4, title: "The Cosmopolitan Imperative" },
+  { ch: 5, title: "The Campfire Meditations" },
+  { ch: 6, title: "The Daily Rehearsal" },
+];
 
 export default function MarcusAureliusPage() {
   return (
@@ -108,7 +108,7 @@ export default function MarcusAureliusPage() {
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
-            Booklets, audiobooks, and video for every age. Read. Listen. Watch. Keep.
+            Free booklets and audio for every age — same open door as Epictetus. Read. Listen. Keep.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -124,10 +124,10 @@ export default function MarcusAureliusPage() {
               </span>
             </Link>
             <Link
-              href="#video"
+              href="#audio"
               className="px-8 py-4 text-[#A89B8C] font-medium hover:text-[#7BA3A8] transition-colors border border-[#2a2a2a] rounded-lg hover:border-[#7BA3A8]/30"
             >
-              Watch the Video
+              Listen to the Chapters
             </Link>
           </div>
         </div>
@@ -167,40 +167,6 @@ export default function MarcusAureliusPage() {
         </div>
       </section>
 
-      {/* VIDEO */}
-      <section id="video" className="py-24 md:py-32 px-6 bg-[#0a0a0f] relative">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-[#7BA3A8] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Video Explorer</p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              Watch <span className="text-[#7BA3A8]">Marcus Aurelius</span>
-            </h2>
-            <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
-              A short video introduction to Marcus Aurelius, his world, and why his private notes still matter.
-            </p>
-          </div>
-
-          <div className="relative aspect-video rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
-            {youtubeEmbedUrl.startsWith("http") ? (
-              <iframe
-                src={youtubeEmbedUrl}
-                title="Marcus Aurelius — WisdomForge Video Explorer"
-                className="absolute inset-0 w-full h-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            ) : (
-              <div className="absolute inset-0 flex items-center justify-center text-center p-8">
-                <div>
-                  <p className="text-[#6B6560] text-lg mb-2">Video coming soon</p>
-                  <p className="text-[#4a4a4a] text-sm">Check back after launch day for the YouTube embed.</p>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
-
       {/* BOOKLETS */}
       <section id="booklets" className="py-24 md:py-32 px-6 bg-[#0f0f14] relative">
         <div className="max-w-6xl mx-auto">
@@ -210,7 +176,7 @@ export default function MarcusAureliusPage() {
               One emperor. <span className="text-[#C9A96E]">Four ages.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
-              Each booklet covers the same six chapter themes, shaped for the age reading it.
+              Four free booklets. One for every age. Download, read, share, and keep — same gift as Epictetus.
             </p>
           </div>
 
@@ -240,23 +206,16 @@ export default function MarcusAureliusPage() {
                     <p className="text-sm text-[#6B6560] mb-1">{group.ages}</p>
                     <h3 className="text-xl font-bold text-[#F5F0E8] mb-2 group-hover:text-[#7BA3A8] transition-colors">{group.title}</h3>
                     <p className="text-[#6B6560] text-sm leading-relaxed mb-4 flex-grow">{group.description}</p>
-                    {bookletPurchaseUrl.startsWith("http") ? (
-                      <a
-                        href={bookletPurchaseUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#7BA3A8] text-[#0a0a0f] text-sm font-semibold rounded-lg hover:bg-[#8AB3B8] transition-colors mt-auto w-fit"
-                      >
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                        </svg>
-                        Purchase Booklet
-                      </a>
-                    ) : (
-                      <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#1e1e28] text-[#6B6560] text-sm font-semibold rounded-lg mt-auto w-fit cursor-not-allowed">
-                        Purchase link coming soon
-                      </span>
-                    )}
+                    <a
+                      href={`/downloads/marcus-aurelius-${group.slug}.pdf`}
+                      download
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#7BA3A8] text-[#0a0a0f] text-sm font-semibold rounded-lg hover:bg-[#8AB3B8] transition-colors mt-auto w-fit"
+                    >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                      Download PDF — Free
+                    </a>
                   </div>
                 </div>
               </div>
@@ -265,50 +224,42 @@ export default function MarcusAureliusPage() {
         </div>
       </section>
 
-      {/* AUDIOBOOKS */}
+      {/* AUDIO */}
       <section id="audio" className="py-24 md:py-32 px-6 bg-[#0a0a0f] relative overflow-hidden">
         <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#7BA3A8] opacity-[0.04] blur-[150px] rounded-full pointer-events-none" />
 
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-[#7BA3A8] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Audiobooks</p>
+            <p className="text-[#7BA3A8] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Audio Series</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
               Listen to <span className="text-[#7BA3A8]">Marcus Aurelius</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
-              Full audiobooks for every age group, narrated by Aiona Edge. Available through ElevenLabs.
+              Twenty-four free audio chapters — six for each age group.
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {ageGroups.map((group, i) => {
-              const link = audiobookLinks[group.slug as keyof typeof audiobookLinks];
-              return (
-                <div key={i} className="bg-[#13131a] border border-[#1e1e28] rounded-xl p-6 flex flex-col">
-                  <h3 className="text-lg font-bold text-[#F5F0E8] mb-2">{group.title}</h3>
-                  <p className="text-sm text-[#6B6560] mb-4">{group.ages}</p>
-                  <p className="text-[#6B6560] text-sm leading-relaxed mb-6 flex-grow">{group.description}</p>
-                  {link.startsWith("http") ? (
-                    <a
-                      href={link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#7BA3A8] text-[#0a0a0f] text-sm font-semibold rounded-lg hover:bg-[#8AB3B8] transition-colors w-full justify-center"
-                    >
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                      Listen on ElevenLabs
-                    </a>
-                  ) : (
-                    <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#1e1e28] text-[#6B6560] text-sm font-semibold rounded-lg w-full justify-center cursor-not-allowed">
-                      Audiobook link coming soon
-                    </span>
-                  )}
+            {["elementary", "middle", "high", "adult"].map((age) => (
+              <div key={age} className="bg-[#13131a] border border-[#1e1e28] rounded-xl p-6">
+                <h3 className="text-lg font-bold text-[#F5F0E8] mb-4 capitalize">
+                  {age === "high" ? "Ages 15–18" : age === "adult" ? "Adult" : `Ages ${age === "elementary" ? "5–10" : "11–14"}`}
+                </h3>
+                <div className="space-y-3">
+                  {audioClips.map((clip) => (
+                    <div key={`${age}-${clip.ch}`} className="flex items-center gap-3 text-sm">
+                      <span className="text-[#6B6560] w-6">{clip.ch}.</span>
+                      <a
+                        href={`/audio/marcus-aurelius/marcus-aurelius-${age}-ch0${clip.ch}.mp3`}
+                        className="text-[#A89B8C] hover:text-[#7BA3A8] transition-colors truncate"
+                      >
+                        {clip.title}
+                      </a>
+                    </div>
+                  ))}
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -361,7 +312,7 @@ export default function MarcusAureliusPage() {
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-6">Start with Marcus Aurelius.</h2>
           <p className="text-xl text-[#A89B8C] mb-8">
-            Booklets, audiobooks, and video — one emperor, one story at a time.
+            Four free age-band booklets and full audio. Start with Marcus — or visit Epictetus next door.
           </p>
           <Link
             href="#booklets"
@@ -370,7 +321,7 @@ export default function MarcusAureliusPage() {
             Explore the Booklets
           </Link>
           <p className="text-[#4a4a4a] text-sm mt-6">
-            Prefer to start free? Visit the <Link href="/epictetus" className="text-[#7BA3A8] hover:underline">Epictetus page</Link>.
+            Also free: the <Link href="/epictetus" className="text-[#7BA3A8] hover:underline">Epictetus</Link> gateway series.
           </p>
         </div>
       </section>

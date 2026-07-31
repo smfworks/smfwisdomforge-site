@@ -16,31 +16,6 @@ const products = [
       "One philosopher, one story at a time. Chapters, tales, and reflection questions crafted for four age groups. The Stoics are free; other figures are $2.99 when gold.",
     icon: "📖",
     color: "#C9A96E",
-    href: "#booklets",
-  },
-  {
-    title: "Audio Albums",
-    description:
-      "Each chapter, voiced. Rotating voices give every philosopher a distinct presence. Listen free on the site.",
-    icon: "🎧",
-    color: "#7BA3A8",
-    href: "#audio",
-  },
-  {
-    title: "Video Explorers",
-    description:
-      "NotebookLM-generated videos that bring each chapter to life. Free on YouTube — shareable, watchable, memorable.",
-    icon: "🎬",
-    color: "#B87D6A",
-    href: "#",
-  },
-  {
-    title: "Free Printables",
-    description:
-      "Activities, worksheets, and reflection prompts. Download, print, and continue the conversation off-screen.",
-    icon: "✏️",
-    color: "#8A9A7B",
-    href: "#",
   },
 ];
 
@@ -233,7 +208,7 @@ export default function WisdomForgeHomePage() {
         </div>
       </section>
 
-      {/* 4 PRODUCTS */}
+      {/* PRODUCT LINE */}
       <section id="products" className="py-24 md:py-32 px-6 bg-[#0a0a0f] relative">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -246,18 +221,16 @@ export default function WisdomForgeHomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="max-w-xl mx-auto">
             {products.map((product, i) => (
-              <Link
+              <div
                 key={i}
-                href={product.href}
-                className="group relative bg-[#13131a] border border-[#1e1e28] rounded-xl p-8 hover:border-[#C9A96E]/30 transition-all duration-300 block"
+                className="relative bg-[#13131a] border border-[#1e1e28] rounded-xl p-8"
               >
                 <div className="text-4xl mb-4">{product.icon}</div>
-                <h3 className="text-xl font-bold text-[#F5F0E8] mb-3 group-hover:text-[#C9A96E] transition-colors">{product.title}</h3>
+                <h3 className="text-xl font-bold text-[#F5F0E8] mb-3">{product.title}</h3>
                 <p className="text-[#6B6560] leading-relaxed">{product.description}</p>
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#C9A96E]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-              </Link>
+              </div>
             ))}
           </div>
         </div>

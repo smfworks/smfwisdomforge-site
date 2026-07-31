@@ -23,13 +23,13 @@ const pipeline = [
   { name: "Epictetus", status: "Live · Free", icon: "⚔️", href: "/epictetus" },
   { name: "Marcus Aurelius", status: "Live · Free", icon: "🛡️", href: "/marcus-aurelius" },
   { name: "Seneca", status: "Live · Free", icon: "🏛️", href: "/seneca" },
-  { name: "Heraclitus", status: "Planned", icon: "🔥" },
-  { name: "Parmenides", status: "Live", icon: "❄️", href: "/parmenides" },
-  { name: "Pythagoras", status: "Live", icon: "🔺", href: "/pythagoras" },
-  { name: "Democritus", status: "Live", icon: "⚛️", href: "/democritus" },
-  { name: "Epicurus", status: "Live", icon: "🌿", href: "/epicurus" },
   { name: "Zeno of Citium", status: "Live · Free", icon: "⚓", href: "/zeno-of-citium" },
-  { name: "Augustine", status: "Live", icon: "⛪", href: "/augustine" },
+  { name: "Heraclitus", status: "Planned", icon: "🔥" },
+  { name: "Parmenides", status: "Queued", icon: "❄️" },
+  { name: "Pythagoras", status: "Queued", icon: "🔺" },
+  { name: "Democritus", status: "Queued", icon: "⚛️" },
+  { name: "Epicurus", status: "Queued", icon: "🌿" },
+  { name: "Augustine", status: "Queued", icon: "⛪" },
   { name: "Thomas Aquinas", status: "In Progress*", icon: "📜" },
   { name: "Julian of Norwich", status: "Planned", icon: "🕊️" },
   { name: "Galileo", status: "Planned", icon: "🔭" },
@@ -521,11 +521,12 @@ export default function WisdomForgeHomePage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {pipeline.map((philosopher, i) => {
-              const isLive = philosopher.status === "Live";
+              const isLinked = Boolean(philosopher.href);
+              const isLiveFree = philosopher.status === "Live · Free";
               const Card = (
                 <div
                   className={`group relative bg-[#13131a] border rounded-xl p-4 transition-all duration-300 ${
-                    philosopher.status === "Live"
+                    isLiveFree
                       ? "border-[#C9A96E]/60"
                       : philosopher.status === "In Draft" || philosopher.status === "In Progress*"
                       ? "border-[#C9A96E]/40"
@@ -540,7 +541,7 @@ export default function WisdomForgeHomePage() {
                       <p className="text-[#F5F0E8] font-semibold">{philosopher.name}</p>
                       <span
                         className={`text-xs px-2 py-0.5 rounded-full ${
-                          philosopher.status === "Live"
+                          isLiveFree
                             ? "bg-[#C9A96E] text-[#0a0a0f]"
                             : philosopher.status === "In Draft" || philosopher.status === "In Progress*"
                             ? "bg-[#C9A96E]/10 text-[#C9A96E]"
@@ -555,7 +556,7 @@ export default function WisdomForgeHomePage() {
                   </div>
                 </div>
               );
-              return isLive ? (
+              return isLinked ? (
                 <Link key={i} href={philosopher.href!} className="block hover:scale-[1.03] transition-transform">
                   {Card}
                 </Link>
@@ -564,7 +565,9 @@ export default function WisdomForgeHomePage() {
               );
             })}
           </div>
-          <p className="text-center text-[#4a4a4a] text-sm mt-8">*Harry&apos;s Desk compendium in progress</p>
+          <p className="text-center text-[#4a4a4a] text-sm mt-8">
+            *Harry&apos;s Desk compendium in progress. Only Stoics are linked until figures meet the Epictetus standard.
+          </p>
         </div>
       </section>
 

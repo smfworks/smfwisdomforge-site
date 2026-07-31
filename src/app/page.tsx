@@ -198,7 +198,7 @@ export default function WisdomForgeHomePage() {
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  Philosophy is treated like a graduate subject. Dense texts. Imposing names. The assumption that you need a degree to think clearly.
+                  Philosophy and the classics is treated like a graduate subject. Dense texts. Imposing names. The assumption that you need a degree to think clearly.
                 </p>
                 <p>
                   But children ask the deepest questions. Teenagers wrestle with the hardest problems. Adults crave meaning they were never taught to find.

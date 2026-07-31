@@ -381,8 +381,10 @@ export default function WisdomForgeHomePage() {
                 key={i}
                 className="group relative bg-[#13131a] border border-[#1e1e28] rounded-xl p-6 hover:border-[#C9A96E]/30 transition-all duration-300 text-center"
               >
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#C9A96E]/10 border-2 border-[#C9A96E]/20 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-[#C9A96E]">{group.ages}</span>
+                <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-[#C9A96E]/10 border-2 border-[#C9A96E]/20 flex items-center justify-center px-2">
+                  <span className="text-lg sm:text-xl font-bold text-[#C9A96E] tabular-nums tracking-tight whitespace-nowrap leading-none">
+                    {group.ages}
+                  </span>
                 </div>
                 <h3 className="text-xl font-bold text-[#F5F0E8] mb-1">{group.label}</h3>
                 <p className="text-sm text-[#6B6560] mb-3">Ages {group.ages}</p>

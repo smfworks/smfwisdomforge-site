@@ -162,7 +162,7 @@ export default function WisdomForgeHomePage() {
               className="group relative px-8 py-4 bg-[#C9A96E] text-[#0a0a0f] font-semibold rounded-lg hover:bg-[#D4B87A] transition-all duration-300 shadow-lg shadow-[#C9A96E]/20 hover:shadow-[#C9A96E]/40"
             >
               <span className="flex items-center gap-2">
-                Start with Epictetus — Free
+                Start with the Stoics
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -172,7 +172,7 @@ export default function WisdomForgeHomePage() {
               href="#about"
               className="px-8 py-4 text-[#A89B8C] font-medium hover:text-[#C9A96E] transition-colors border border-[#2a2a2a] rounded-lg hover:border-[#C9A96E]/30"
             >
-              Meet the Creator
+              About WisdomForge
             </Link>
           </div>
 

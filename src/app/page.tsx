@@ -68,7 +68,7 @@ const stoicFigures = [
     accent: "#C9A96E",
     blurb: "The former slave who taught that freedom lives in what we choose.",
     pageHref: "/epictetus",
-    pageCta: "See the full Epictetus page with audio",
+    pageCta: "See the full Epictetus page",
     booklets: [
       {
         slug: "elementary",
@@ -106,7 +106,7 @@ const stoicFigures = [
     accent: "#7BA3A8",
     blurb: "The emperor who journaled through war, plague, and duty.",
     pageHref: "/marcus-aurelius",
-    pageCta: "See the full Marcus Aurelius page with audio",
+    pageCta: "See the full Marcus Aurelius page",
     booklets: [
       {
         slug: "elementary",

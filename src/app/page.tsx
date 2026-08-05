@@ -24,16 +24,25 @@ const pipeline = [
   { name: "Marcus Aurelius", status: "Live · Free", icon: "🛡️", href: "/marcus-aurelius" },
   { name: "Seneca", status: "Live · Free", icon: "🏛️", href: "/seneca" },
   { name: "Zeno of Citium", status: "Live · Free", icon: "⚓", href: "/zeno-of-citium" },
-  { name: "Heraclitus", status: "Planned", icon: "🔥" },
-  { name: "Parmenides", status: "Queued", icon: "❄️" },
-  { name: "Pythagoras", status: "Queued", icon: "🔺" },
-  { name: "Democritus", status: "Queued", icon: "⚛️" },
-  { name: "Epicurus", status: "Queued", icon: "🌿" },
-  { name: "Augustine", status: "Queued", icon: "⛪" },
+  { name: "Heraclitus", status: "Live · Free", icon: "🔥", href: "/heraclitus" },
+  { name: "Parmenides", status: "Live · Free", icon: "❄️", href: "/parmenides" },
+  { name: "Pythagoras", status: "Live · Free", icon: "🔺", href: "/pythagoras" },
+  { name: "Democritus", status: "Live · Free", icon: "⚛️", href: "/democritus" },
+  { name: "Epicurus", status: "Live · Free", icon: "🌿", href: "/epicurus" },
+  { name: "Socrates", status: "Live · Free", icon: "🧘", href: "/socrates" },
+  { name: "Plato", status: "Live · Free", icon: "📖", href: "/plato" },
+  { name: "Aristotle", status: "Live · Free", icon: "⚖️", href: "/aristotle" },
+  { name: "Augustine", status: "Live · Free", icon: "⛪", href: "/augustine" },
+  { name: "Julian of Norwich", status: "Live · Free", icon: "🕊️", href: "/julian-norwich" },
+  { name: "Irenaeus of Lyons", status: "Live · Free", icon: "✝️", href: "/irenaeus" },
+  { name: "John Chrysostom", status: "Live · Free", icon: "💬", href: "/chrysostom" },
+  { name: "Jerome", status: "Live · Free", icon: "📜", href: "/jerome" },
+  { name: "Gregory the Great", status: "Live · Free", icon: "👑", href: "/gregory-great" },
+  { name: "Ambrose of Milan", status: "In Progress*", icon: "🏛️" },
+  { name: "Athanasius", status: "In Progress*", icon: "⚓" },
+  { name: "Basil the Great", status: "In Progress*", icon: "🌿" },
+  { name: "Gregory of Nazianzus", status: "In Progress*", icon: "📝" },
   { name: "Thomas Aquinas", status: "In Progress*", icon: "📜" },
-  { name: "Julian of Norwich", status: "Planned", icon: "🕊️" },
-  { name: "Galileo", status: "Planned", icon: "🔭" },
-  { name: "Newton", status: "Planned", icon: "🍎" },
   { name: "The Constitution", status: "Planned", icon: "📜" },
   { name: "The Declaration", status: "Planned", icon: "✒️" },
 ];
@@ -514,10 +523,10 @@ export default function WisdomForgeHomePage() {
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Library</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              Who&apos;s <span className="text-[#8A9A7B]">coming.</span>
+              Classical <span className="text-[#8A9A7B]">Learning.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
-              Fifteen philosophers and great documents. Four formats each. One story at a time.
+              Classical learning in easy to consume bite sized lessons.
             </p>
           </div>
 
@@ -567,9 +576,6 @@ export default function WisdomForgeHomePage() {
               );
             })}
           </div>
-          <p className="text-center text-[#4a4a4a] text-sm mt-8">
-            *Harry&apos;s Desk compendium in progress. Only Stoics are linked until figures meet the Epictetus standard.
-          </p>
         </div>
       </section>
 

@@ -42,7 +42,7 @@ const pipeline = [
   { name: "Athanasius", status: "In Progress*", icon: "⚓" },
   { name: "Basil the Great", status: "In Progress*", icon: "🌿" },
   { name: "Gregory of Nazianzus", status: "In Progress*", icon: "📝" },
-  { name: "Thomas Aquinas", status: "In Progress*", icon: "📜" },
+  { name: "Thomas Aquinas", status: "Live · Free", icon: "📜", href: "/thomas-aquinas" },
   { name: "The Constitution", status: "Planned", icon: "📜" },
   { name: "The Declaration", status: "Planned", icon: "✒️" },
 ];

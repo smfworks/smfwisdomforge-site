@@ -13,7 +13,7 @@ const products = [
   {
     title: "Wisdom Booklets",
     description:
-      "One philosopher, one story at a time. Chapters, tales, and reflection questions crafted for four age groups. The Stoics are free; other figures are $2.99 when gold.",
+      "One philosopher, one story at a time. Chapters, tales, and reflection questions crafted for four age groups. All booklets are free.",
     icon: "📖",
     color: "#C9A96E",
   },
@@ -611,7 +611,7 @@ export default function WisdomForgeHomePage() {
             </Link>
           </div>
           <p className="text-[#4a4a4a] text-sm mt-6">
-            All other figures: $2.99 each once they meet the Epictetus/Marcus quality bar. Nothing thinner ships.
+            All booklets are free. Nothing thinner than the Epictetus/Marcus quality bar ships.
           </p>
         </div>
       </section>

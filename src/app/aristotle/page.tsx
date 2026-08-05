@@ -5,12 +5,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Aristotle — WisdomForge by Aiona Edge",
   description:
-    "Free WisdomForge booklets on Aristotle, the First Teacher, for ages 5 to adult. Download PDFs and explore the good life, the doctrine of the mean, friendship, and the four causes.",
+    "Free WisdomForge booklets on Aristotle, tutor of Alexander the Great, for ages 5 to adult. Download PDFs and explore the good life, the doctrine of the mean, friendship, contemplation, the four causes, and the unmoved mover.",
   alternates: { canonical: "https://smfwisdomforge.com/aristotle" },
   openGraph: {
     title: "Aristotle — WisdomForge by Aiona Edge",
     description:
-      "Free WisdomForge booklets on Aristotle, the First Teacher, for ages 5 to adult.",
+      "Free WisdomForge booklets on Aristotle, tutor of Alexander the Great, for ages 5 to adult.",
     url: "https://smfwisdomforge.com/aristotle",
     siteName: "WisdomForge",
     images: [{ url: "https://smfwisdomforge.com/images/booklets/aristotle-adult-cover.png" }],
@@ -23,48 +23,48 @@ const ageGroups = [
   {
     label: "Little Thinkers",
     ages: "Ages 5–10",
-    title: "The Laughing Philosopher",
+    title: "The Boy Who Loved to Sort Everything",
     slug: "elementary",
     description:
-      "Gentle stories about a boy from a town of fools who discovered that everything is made of tiny invisible blocks called atoms, and that the secret to happiness is wanting less. Six chapters, activities, and conversation starters for young readers.",
+      "Gentle stories about a curious thinker who organized the whole natural world — plants, animals, stars, and people — and discovered that happiness comes from good habits, good friends, and finding the middle between too much and too little. Six chapters, activities, and conversation starters.",
     color: "#C9A96E",
   },
   {
     label: "Young Minds",
     ages: "Ages 11–14",
-    title: "The Laughing Philosopher",
+    title: "The Boy Who Loved to Sort Everything",
     slug: "middle",
     description:
-      "Aristotle for middle-school readers: atomic theory, perception, determinism, and the economics of contentment. Real-life scenarios, creative projects, and discussion questions about the philosopher who laughed at human folly.",
+      "Aristotle for middle-school readers: the good life, the golden mean, the ladder of friendship, contemplation, the four causes, and the unmoved mover. Real-life scenarios, creative projects, and discussion questions about the philosopher who mapped reality itself.",
     color: "#7BA3A8",
   },
   {
     label: "Emerging Adults",
     ages: "Ages 15–18",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "Virtue, Happiness, and the Architecture of Reality",
     slug: "high",
     description:
-      "A rigorous philosophical treatment for older teens. Atomism, secondary qualities, the free will problem, euthymia, and the economics of desire. Designed for readers ready to wrestle with hard questions about reality and meaning.",
+      "A rigorous philosophical treatment for older teens. Eudaimonia as the human telos, the doctrine of the mean, the three kinds of friendship, contemplation as the highest activity of reason, the four causes as explanatory framework, and the unmoved mover as first cause. Designed for readers ready to wrestle with the most systematic mind of antiquity.",
     color: "#B87D6A",
   },
   {
     label: "Lifelong Learners",
     ages: "Adult",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "Virtue, Happiness, and the Architecture of Reality",
     slug: "adult",
     description:
-      "Aristotle as a serious philosopher of perspective, materialism, and cheerfulness. Six chapters on atomism, perception, determinism, euthymia, and contentment. Scholarly precision with practical application. No self-help padding.",
+      "Aristotle as a serious philosopher of ethics, biology, logic, and metaphysics. Six chapters on the good life, the doctrine of the mean, the ladder of friendship, contemplation, the four causes, and the unmoved mover. Scholarly precision with practical application. No self-help padding.",
     color: "#8A9A7B",
   },
 ];
 
 const chapterThemes = [
-  { n: 1, title: "The Laughing Philosopher", theme: "Identity, origin, and perspective" },
-  { n: 2, title: "Atoms and Void", theme: "The structure of reality" },
-  { n: 3, title: "The World You Co-Create", theme: "Perception and secondary qualities" },
-  { n: 4, title: "The Determined Cosmos", theme: "Necessity and free will" },
-  { n: 5, title: "Euthymia — The Cheerful Soul", theme: "The highest good" },
-  { n: 6, title: "Contentment Over Ambition", theme: "The economics of desire" },
+  { n: 1, title: "The Good Life", theme: "Eudaimonia and the human function" },
+  { n: 2, title: "The Doctrine of the Mean", theme: "Virtue as the balance between extremes" },
+  { n: 3, title: "The Ladder of Friendship", theme: "Three kinds of friendship and the best life" },
+  { n: 4, title: "Contemplation as Highest Happiness", theme: "The life of reason as the divine life" },
+  { n: 5, title: "The Four Causes", theme: "Material, formal, efficient, and final explanation" },
+  { n: 6, title: "The Unmoved Mover", theme: "The first cause of all motion and being" },
 ];
 
 export default function AristotlePage() {
@@ -87,7 +87,7 @@ export default function AristotlePage() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 mb-6">
-            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Presocratic Series</span>
+            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Philosopher Series</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F0E8] mb-6 leading-[1.1] tracking-tight">
@@ -95,7 +95,7 @@ export default function AristotlePage() {
           </h1>
 
           <p className="text-xl md:text-2xl text-[#A89B8C] mb-4 max-w-2xl mx-auto leading-relaxed font-light">
-            From a town of fools came the First Teacher. He figured out atoms 2,400 years before anyone could prove it.
+            He mapped every branch of human knowledge, tutored a conqueror, and taught that happiness is a habit of virtue practiced for a lifetime — with contemplation as the highest activity of the soul.
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
@@ -125,7 +125,7 @@ export default function AristotlePage() {
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
               <Image
                 src="/images/booklets/aristotle-adult-cover.png"
-                alt="Aristotle: Atoms, Void, and the Laughing Soul — book cover"
+                alt="Aristotle: Virtue, Happiness, and the Architecture of Reality — book cover"
                 fill
                 className="object-cover"
               />
@@ -134,14 +134,14 @@ export default function AristotlePage() {
             <div className="space-y-6">
               <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Philosopher</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F5F0E8] leading-tight">
-                The philosopher who saw atoms and void, and laughed.
+                The philosopher who gave every branch of knowledge its first foundation.
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  Aristotle of Abdera (c. 460–370 BCE) was born in a city famous for foolishness, spent his entire inheritance on travel and learning, and became one of the most prolific and wide-ranging philosophers of the ancient world. He wrote over 70 works on physics, ethics, mathematics, music, and agriculture. Plato reportedly wanted his books burned.
+                  Aristotle of Stagira (384–322 BCE) entered Plato&apos;s Academy at seventeen and studied there for twenty years, earning the nickname &quot;the Reader.&quot; After Plato&apos;s death he tutored the young Alexander of Macedon and later returned to Athens to found his own school, the Lyceum, where he conducted research across logic, physics, biology, ethics, politics, rhetoric, and poetics. His surviving works — including the <em>Nicomachean Ethics</em>, <em>Politics</em>, <em>Metaphysics</em>, and <em>Physics</em> — are lecture notes rather than polished publications, dense but systematic.
                 </p>
                 <p>
-                  He was called &quot;the First Teacher&quot; because he found human folly amusing rather than distressing. While Heraclitus wept at human stupidity, Aristotle laughed. His central teachings: everything is made of atoms moving through void, everything happens by necessity, and the highest good is <em>euthymia</em> — a calm, cheerful contentment found not by getting more but by wanting less.
+                  His central teachings: every thing has a <em>telos</em> — an end or purpose — and the human good (<em>eudaimonia</em>) is rational activity in accordance with virtue; virtue is the mean between extremes, cultivated through habit; friendship comes in three kinds — of utility, of pleasure, and of virtue — with the last as the foundation of the best life; contemplation (<em>theoria</em>) is the highest happiness because it is the activity of reason at its purest. His four causes (material, formal, efficient, final) provide the explanatory framework for all change, and the unmoved mover is the first cause of all cosmic motion — eternal, immaterial, pure actuality. Aristotle founded formal logic, empirical biology, and the study of ethics as a discipline.
                 </p>
                 <p className="text-[#C9A96E]">
                   WisdomForge adapts Aristotle across four age levels so the same core ideas grow with the reader.
@@ -272,7 +272,7 @@ export default function AristotlePage() {
       <section className="py-12 px-6 bg-[#0a0a0f] border-t border-[#1e1e28]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <span className="text-2xl">⚛️</span>
+            <span className="text-2xl">📚</span>
             <div>
               <span className="text-[#F5F0E8] font-bold">WisdomForge</span>
               <span className="text-[#6B6560] text-sm ml-2">by Aiona Edge & The SMF Works Project</span>

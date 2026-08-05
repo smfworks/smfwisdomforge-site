@@ -5,12 +5,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Thomas Aquinas — WisdomForge by Aiona Edge",
   description:
-    "Free WisdomForge booklets on Thomas Aquinas, the Angelic Doctor, for ages 5 to adult. Download PDFs and explore the five ways, natural law, faith and reason, and the virtues.",
+    "Free WisdomForge booklets on Thomas Aquinas, Dominican friar and theologian, for ages 5 to adult. Download PDFs and explore the five ways, act and potency, essence and existence, natural law, faith and reason, and the virtues.",
   alternates: { canonical: "https://smfwisdomforge.com/thomas-aquinas" },
   openGraph: {
     title: "Thomas Aquinas — WisdomForge by Aiona Edge",
     description:
-      "Free WisdomForge booklets on Thomas Aquinas, the Angelic Doctor, for ages 5 to adult.",
+      "Free WisdomForge booklets on Thomas Aquinas, Dominican friar and theologian, for ages 5 to adult.",
     url: "https://smfwisdomforge.com/thomas-aquinas",
     siteName: "WisdomForge",
     images: [{ url: "https://smfwisdomforge.com/images/booklets/thomas-aquinas-adult-cover.png" }],
@@ -23,48 +23,48 @@ const ageGroups = [
   {
     label: "Little Thinkers",
     ages: "Ages 5–10",
-    title: "The Laughing Philosopher",
+    title: "The Quiet Friar Who Asked Big Questions",
     slug: "elementary",
     description:
-      "Gentle stories about a boy from a town of fools who discovered that everything is made of tiny invisible blocks called atoms, and that the secret to happiness is wanting less. Six chapters, activities, and conversation starters for young readers.",
+      "Gentle stories about a quiet, large monk nicknamed the Dumb Ox, who thought so deeply about God and the world that his teacher said one day the whole world would hear his lowing. Six chapters, activities, and conversation starters about asking, thinking, and finding truth.",
     color: "#C9A96E",
   },
   {
     label: "Young Minds",
     ages: "Ages 11–14",
-    title: "The Laughing Philosopher",
+    title: "The Quiet Friar Who Asked Big Questions",
     slug: "middle",
     description:
-      "Thomas Aquinas for middle-school readers: atomic theory, perception, determinism, and the economics of contentment. Real-life scenarios, creative projects, and discussion questions about the philosopher who laughed at human folly.",
+      "Thomas Aquinas for middle-school readers: the five ways to God, act and potency, the virtues, natural law, faith and reason, and the Summa. Real-life scenarios, creative projects, and discussion questions about a friar who showed that faith and reason are friends, not enemies.",
     color: "#7BA3A8",
   },
   {
     label: "Emerging Adults",
     ages: "Ages 15–18",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "The Summa, the Five Ways, and the Harmony of Faith and Reason",
     slug: "high",
     description:
-      "A rigorous philosophical treatment for older teens. Atomism, secondary qualities, the free will problem, euthymia, and the economics of desire. Designed for readers ready to wrestle with hard questions about reality and meaning.",
+      "A rigorous philosophical-theological treatment for older teens. The five ways as proofs of God&apos;s existence, act and potency as the metaphysics of change, essence and existence as the structure of being, natural law as the rational foundation of morality, faith and reason as complementary orders of truth, and the theological and cardinal virtues as the structure of the moral life. Designed for readers ready to wrestle with the greatest synthesis of faith and reason in the Western tradition.",
     color: "#B87D6A",
   },
   {
     label: "Lifelong Learners",
     ages: "Adult",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "The Summa, the Five Ways, and the Harmony of Faith and Reason",
     slug: "adult",
     description:
-      "Thomas Aquinas as a serious philosopher of perspective, materialism, and cheerfulness. Six chapters on atomism, perception, determinism, euthymia, and contentment. Scholarly precision with practical application. No self-help padding.",
+      "Thomas Aquinas as a serious philosopher and theologian of being, knowledge, and virtue. Six chapters on the five ways, act and potency, essence and existence, natural law, faith and reason, and the virtues. Scholarly precision with practical application. No self-help padding.",
     color: "#8A9A7B",
   },
 ];
 
 const chapterThemes = [
-  { n: 1, title: "The Laughing Philosopher", theme: "Identity, origin, and perspective" },
-  { n: 2, title: "Atoms and Void", theme: "The structure of reality" },
-  { n: 3, title: "The World You Co-Create", theme: "Perception and secondary qualities" },
-  { n: 4, title: "The Determined Cosmos", theme: "Necessity and free will" },
-  { n: 5, title: "Euthymia — The Cheerful Soul", theme: "The highest good" },
-  { n: 6, title: "Contentment Over Ambition", theme: "The economics of desire" },
+  { n: 1, title: "The Five Ways", theme: "Five demonstrations of God&apos;s existence from the world" },
+  { n: 2, title: "Act and Potency", theme: "The metaphysics of change and the real distinction" },
+  { n: 3, title: "Essence and Existence", theme: "Being as the composition of what and that" },
+  { n: 4, title: "Natural Law", theme: "The rational moral order written into human nature" },
+  { n: 5, title: "Faith and Reason", theme: "The harmony of revelation and natural knowledge" },
+  { n: 6, title: "The Virtues", theme: "The theological and cardinal virtues as the structure of the good life" },
 ];
 
 export default function ThomasAquinasPage() {
@@ -87,7 +87,7 @@ export default function ThomasAquinasPage() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 mb-6">
-            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Presocratic Series</span>
+            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Theologian Series</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F0E8] mb-6 leading-[1.1] tracking-tight">
@@ -95,7 +95,7 @@ export default function ThomasAquinasPage() {
           </h1>
 
           <p className="text-xl md:text-2xl text-[#A89B8C] mb-4 max-w-2xl mx-auto leading-relaxed font-light">
-            From a town of fools came the Angelic Doctor. He figured out atoms 2,400 years before anyone could prove it.
+            The Dumb Ox who proved God&apos;s existence five ways, mapped the structure of being, and showed that faith and reason are not enemies but two wings of the same mind.
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
@@ -125,23 +125,23 @@ export default function ThomasAquinasPage() {
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
               <Image
                 src="/images/booklets/thomas-aquinas-adult-cover.png"
-                alt="Thomas Aquinas: Atoms, Void, and the Laughing Soul — book cover"
+                alt="Thomas Aquinas: The Summa, the Five Ways, and the Harmony of Faith and Reason — book cover"
                 fill
                 className="object-cover"
               />
             </div>
 
             <div className="space-y-6">
-              <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Philosopher</p>
+              <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Theologian</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F5F0E8] leading-tight">
-                The philosopher who saw atoms and void, and laughed.
+                The friar who made Aristotle a Christian and reason a servant of faith.
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  Thomas Aquinas of Abdera (c. 460–370 BCE) was born in a city famous for foolishness, spent his entire inheritance on travel and learning, and became one of the most prolific and wide-ranging philosophers of the ancient world. He wrote over 70 works on physics, ethics, mathematics, music, and agriculture. Plato reportedly wanted his books burned.
+                  Thomas Aquinas (1225–1274 CE) was born in the castle of Roccasecca, near Naples, into a noble family that hoped he would become a Benedictine abbot. Instead he joined the new Dominican order of mendicant friars, to his family&apos;s dismay — they reportedly imprisoned him for two years to change his mind. He studied under Albert the Great at Paris and Cologne, where his large frame and silent disposition earned the nickname &quot;the Dumb Ox,&quot; until Albert said, &quot;We call him a dumb ox, but one day his lowing will be heard throughout the world.&quot; He taught at the universities of Paris and Italy and wrote the <em>Summa Theologica</em> and <em>Summa Contra Gentiles</em> — until, in late 1273, he experienced a vision after Mass and wrote nothing more, calling all he had done &quot;like straw.&quot;
                 </p>
                 <p>
-                  He was called &quot;the Angelic Doctor&quot; because he found human folly amusing rather than distressing. While Heraclitus wept at human stupidity, Thomas Aquinas laughed. His central teachings: everything is made of atoms moving through void, everything happens by necessity, and the highest good is <em>euthymia</em> — a calm, cheerful contentment found not by getting more but by wanting less.
+                  His central teachings: the five ways (<em>quinque viae</em>) are five demonstrations of God&apos;s existence, each beginning from an observable feature of the world — motion, efficient causality, contingency, gradation, and design — and concluding to a first cause; the real distinction of act and potency explains all change — everything that changes is in act what it becomes and in potency what it is not yet; essence (what a thing is) and existence (that it is) are really distinct in creatures but identical in God; natural law is the rational creature&apos;s participation in the eternal law, knowable by reason; grace does not destroy nature but perfects it, so faith and reason are two orders of truth that cannot contradict; and the virtues — theological (faith, hope, love) and cardinal (prudence, justice, fortitude, temperance) — are the stable dispositions that constitute the good life. Aquinas&apos;s synthesis of Christian theology with Aristotelian philosophy is the most influential intellectual achievement of the Middle Ages.
                 </p>
                 <p className="text-[#C9A96E]">
                   WisdomForge adapts Thomas Aquinas across four age levels so the same core ideas grow with the reader.
@@ -158,7 +158,7 @@ export default function ThomasAquinasPage() {
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Booklets</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              One philosopher. <span className="text-[#7BA3A8]">Four ages.</span>
+              One theologian. <span className="text-[#7BA3A8]">Four ages.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
               Each booklet covers the same six chapter themes, shaped for the age reading it.
@@ -272,7 +272,7 @@ export default function ThomasAquinasPage() {
       <section className="py-12 px-6 bg-[#0a0a0f] border-t border-[#1e1e28]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <span className="text-2xl">⚛️</span>
+            <span className="text-2xl">✝️</span>
             <div>
               <span className="text-[#F5F0E8] font-bold">WisdomForge</span>
               <span className="text-[#6B6560] text-sm ml-2">by Aiona Edge & The SMF Works Project</span>

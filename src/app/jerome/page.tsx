@@ -5,12 +5,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Jerome — WisdomForge by Aiona Edge",
   description:
-    "Free WisdomForge booklets on Jerome, the Biblical Scholar, for ages 5 to adult. Download PDFs and explore translation as interpretation, Hebrew over Septuagint, and the scholar in the desert.",
+    "Free WisdomForge booklets on Jerome, biblical scholar and translator, for ages 5 to adult. Download PDFs and explore translation as interpretation, Hebrew over Septuagint, scholarly temperament, the vir trilinguis, asceticism and learning, and tradition and reform.",
   alternates: { canonical: "https://smfwisdomforge.com/jerome" },
   openGraph: {
     title: "Jerome — WisdomForge by Aiona Edge",
     description:
-      "Free WisdomForge booklets on Jerome, the Biblical Scholar, for ages 5 to adult.",
+      "Free WisdomForge booklets on Jerome, biblical scholar and translator, for ages 5 to adult.",
     url: "https://smfwisdomforge.com/jerome",
     siteName: "WisdomForge",
     images: [{ url: "https://smfwisdomforge.com/images/booklets/jerome-adult-cover.png" }],
@@ -23,48 +23,48 @@ const ageGroups = [
   {
     label: "Little Thinkers",
     ages: "Ages 5–10",
-    title: "The Laughing Philosopher",
+    title: "The Man Who Translated the Bible",
     slug: "elementary",
     description:
-      "Gentle stories about a boy from a town of fools who discovered that everything is made of tiny invisible blocks called atoms, and that the secret to happiness is wanting less. Six chapters, activities, and conversation starters for young readers.",
+      "Gentle stories about a scholar who learned three languages, moved to a stable in Bethlehem, and spent his life making sure the Bible could be read by ordinary people. Six chapters, activities, and conversation starters about books, patience, and the love of learning.",
     color: "#C9A96E",
   },
   {
     label: "Young Minds",
     ages: "Ages 11–14",
-    title: "The Laughing Philosopher",
+    title: "The Man Who Translated the Bible",
     slug: "middle",
     description:
-      "Jerome for middle-school readers: atomic theory, perception, determinism, and the economics of contentment. Real-life scenarios, creative projects, and discussion questions about the philosopher who laughed at human folly.",
+      "Jerome for middle-school readers: translation as interpretation, the Hebrew over the Septuagint, scholarly temperament, the vir trilinguis, asceticism and learning, and tradition and reform. Real-life scenarios, creative projects, and discussion questions about the scholar who gave the world the Latin Bible.",
     color: "#7BA3A8",
   },
   {
     label: "Emerging Adults",
     ages: "Ages 15–18",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "The Vulgate, the Hebrew, and the Life of Learning",
     slug: "high",
     description:
-      "A rigorous philosophical treatment for older teens. Atomism, secondary qualities, the free will problem, euthymia, and the economics of desire. Designed for readers ready to wrestle with hard questions about reality and meaning.",
+      "A rigorous theological treatment for older teens. Translation as interpretive act, Jerome's preference for the Hebrew verity over the Septuagint, his combative scholarly temperament, the ideal of the vir trilinguis (master of Latin, Greek, and Hebrew), the tension between ascetic withdrawal and intellectual labor, and the relation of tradition to reform. Designed for readers ready to wrestle with the most learned biblical scholar of late antiquity.",
     color: "#B87D6A",
   },
   {
     label: "Lifelong Learners",
     ages: "Adult",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "The Vulgate, the Hebrew, and the Life of Learning",
     slug: "adult",
     description:
-      "Jerome as a serious philosopher of perspective, materialism, and cheerfulness. Six chapters on atomism, perception, determinism, euthymia, and contentment. Scholarly precision with practical application. No self-help padding.",
+      "Jerome as a serious scholar of scripture, language, and ascetic discipline. Six chapters on translation as interpretation, Hebrew over Septuagint, scholarly temperament, the vir trilinguis, asceticism and learning, and tradition and reform. Scholarly precision with practical application. No self-help padding.",
     color: "#8A9A7B",
   },
 ];
 
 const chapterThemes = [
-  { n: 1, title: "The Laughing Philosopher", theme: "Identity, origin, and perspective" },
-  { n: 2, title: "Atoms and Void", theme: "The structure of reality" },
-  { n: 3, title: "The World You Co-Create", theme: "Perception and secondary qualities" },
-  { n: 4, title: "The Determined Cosmos", theme: "Necessity and free will" },
-  { n: 5, title: "Euthymia — The Cheerful Soul", theme: "The highest good" },
-  { n: 6, title: "Contentment Over Ambition", theme: "The economics of desire" },
+  { n: 1, title: "Translation as Interpretation", theme: "The translator as interpreter, not mere copyist" },
+  { n: 2, title: "Hebrew Over Septuagint", theme: "The Hebrew verity as the standard of Old Testament truth" },
+  { n: 3, title: "Scholarly Temperament", theme: "The combative, passionate life of a scholar in service of the word" },
+  { n: 4, title: "The Vir Trilinguis", theme: "Mastery of Latin, Greek, and Hebrew as the scholar's ideal" },
+  { n: 5, title: "Asceticism and Learning", theme: "The monk's discipline and the scholar's rigor as one vocation" },
+  { n: 6, title: "Tradition and Reform", theme: "Reform grounded in fidelity to the sources" },
 ];
 
 export default function JeromePage() {
@@ -87,7 +87,7 @@ export default function JeromePage() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 mb-6">
-            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Presocratic Series</span>
+            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Theologian Series</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F0E8] mb-6 leading-[1.1] tracking-tight">
@@ -95,7 +95,7 @@ export default function JeromePage() {
           </h1>
 
           <p className="text-xl md:text-2xl text-[#A89B8C] mb-4 max-w-2xl mx-auto leading-relaxed font-light">
-            From a town of fools came the Biblical Scholar. He figured out atoms 2,400 years before anyone could prove it.
+            A scholar who learned three languages, moved to a stable in Bethlehem, and spent forty years translating the Bible into Latin — because the word of God deserves the closest reading we can give it.
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
@@ -125,23 +125,23 @@ export default function JeromePage() {
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
               <Image
                 src="/images/booklets/jerome-adult-cover.png"
-                alt="Jerome: Atoms, Void, and the Laughing Soul — book cover"
+                alt="Jerome: The Vulgate, the Hebrew, and the Life of Learning — book cover"
                 fill
                 className="object-cover"
               />
             </div>
 
             <div className="space-y-6">
-              <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Philosopher</p>
+              <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Theologian</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F5F0E8] leading-tight">
-                The philosopher who saw atoms and void, and laughed.
+                The most learned biblical scholar of late antiquity, who gave the church the Latin Bible.
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  Jerome of Abdera (c. 460–370 BCE) was born in a city famous for foolishness, spent his entire inheritance on travel and learning, and became one of the most prolific and wide-ranging philosophers of the ancient world. He wrote over 70 works on physics, ethics, mathematics, music, and agriculture. Plato reportedly wanted his books burned.
+                  Jerome (c. 347–420 CE) was born Eusebius Hieronymus in Stridon, a town on the border of Dalmatia and Pannonia (in the Balkans). Educated in Rome under the grammarian Donatus, he was baptized around 366 and became a leading figure in the ascetic movement sweeping the Latin church. After years of travel through Gaul, the East, and the desert of Syria, he settled in Bethlehem around 386, where he ran a monastery and a school, and spent the rest of his life — more than three decades — translating and commenting on scripture. His great achievement was the <em>Vulgate</em>, the Latin Bible that became the standard scripture of Western Christianity for a millennium.
                 </p>
                 <p>
-                  He was called &quot;the Biblical Scholar&quot; because he found human folly amusing rather than distressing. While Heraclitus wept at human stupidity, Jerome laughed. His central teachings: everything is made of atoms moving through void, everything happens by necessity, and the highest good is <em>euthymia</em> — a calm, cheerful contentment found not by getting more but by wanting less.
+                  His central teachings: translation is interpretation — to render scripture accurately is to think through every word; the <em>hebraica veritas</em> — the Hebrew original — is superior to the Septuagint, the Greek Old Testament, for understanding the Old Testament, a controversial claim that put him against tradition; the scholar&apos;s temperament must be passionate, disciplined, and even combative in defense of the text; the ideal is the <em>vir trilinguis</em> — one who masters Latin, Greek, and Hebrew — because the Bible demands all three; asceticism and learning are not opposed but are one vocation, the body disciplined so the mind can read; and reform must be grounded in fidelity to the sources, not in novelty. Jerome&apos;s prefaces, commentaries, and letters constitute one of the richest bodies of patristic scholarship.
                 </p>
                 <p className="text-[#C9A96E]">
                   WisdomForge adapts Jerome across four age levels so the same core ideas grow with the reader.
@@ -158,7 +158,7 @@ export default function JeromePage() {
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Booklets</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              One philosopher. <span className="text-[#7BA3A8]">Four ages.</span>
+              One theologian. <span className="text-[#7BA3A8]">Four ages.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
               Each booklet covers the same six chapter themes, shaped for the age reading it.
@@ -272,7 +272,7 @@ export default function JeromePage() {
       <section className="py-12 px-6 bg-[#0a0a0f] border-t border-[#1e1e28]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <span className="text-2xl">⚛️</span>
+            <span className="text-2xl">📖</span>
             <div>
               <span className="text-[#F5F0E8] font-bold">WisdomForge</span>
               <span className="text-[#6B6560] text-sm ml-2">by Aiona Edge & The SMF Works Project</span>

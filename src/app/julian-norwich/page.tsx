@@ -5,12 +5,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Julian of Norwich — WisdomForge by Aiona Edge",
   description:
-    "Free WisdomForge booklets on Julian of Norwich, the Mystic of the Showings, for ages 5 to adult. Download PDFs and explore the hazelnut, all shall be well, the motherhood of God, and the body as revelation.",
+    "Free WisdomForge booklets on Julian of Norwich, anchoress and mystic, for ages 5 to adult. Download PDFs and explore the hazelnut, all shall be well, the motherhood of God, sin as behovely, the trinity, and the body as revelation.",
   alternates: { canonical: "https://smfwisdomforge.com/julian-norwich" },
   openGraph: {
     title: "Julian of Norwich — WisdomForge by Aiona Edge",
     description:
-      "Free WisdomForge booklets on Julian of Norwich, the Mystic of the Showings, for ages 5 to adult.",
+      "Free WisdomForge booklets on Julian of Norwich, anchoress and mystic, for ages 5 to adult.",
     url: "https://smfwisdomforge.com/julian-norwich",
     siteName: "WisdomForge",
     images: [{ url: "https://smfwisdomforge.com/images/booklets/julian-norwich-adult-cover.png" }],
@@ -23,51 +23,51 @@ const ageGroups = [
   {
     label: "Little Thinkers",
     ages: "Ages 5–10",
-    title: "The Laughing Philosopher",
+    title: "All Shall Be Well",
     slug: "elementary",
     description:
-      "Gentle stories about a boy from a town of fools who discovered that everything is made of tiny invisible blocks called atoms, and that the secret to happiness is wanting less. Six chapters, activities, and conversation starters for young readers.",
+      "Gentle stories about a woman who lived in a small room attached to a church and saw that everything God made is as small as a hazelnut in his hand — and that love holds it all together. Six chapters, activities, and conversation starters about love, trust, and the goodness of all things.",
     color: "#C9A96E",
   },
   {
     label: "Young Minds",
     ages: "Ages 11–14",
-    title: "The Laughing Philosopher",
+    title: "All Shall Be Well",
     slug: "middle",
     description:
-      "Julian of Norwich for middle-school readers: atomic theory, perception, determinism, and the economics of contentment. Real-life scenarios, creative projects, and discussion questions about the philosopher who laughed at human folly.",
+      "Julian of Norwich for middle-school readers: the hazelnut vision, the motherhood of God, sin as behovely, and the trinity as loving community. Real-life scenarios, creative projects, and discussion questions about a medieval mystic whose vision of love transformed suffering into hope.",
     color: "#7BA3A8",
   },
   {
     label: "Emerging Adults",
     ages: "Ages 15–18",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "Revelations of Divine Love",
     slug: "high",
     description:
-      "A rigorous philosophical treatment for older teens. Atomism, secondary qualities, the free will problem, euthymia, and the economics of desire. Designed for readers ready to wrestle with hard questions about reality and meaning.",
+      "A rigorous theological treatment for older teens. The sixteen showings, the hazelnut as creation's contingency, all shall be well as theodicy, the motherhood of God, sin as behovely, and the body of Christ as revelation. Designed for readers ready to wrestle with a mystic who found God in a hazelnut and suffering in a love that makes all well.",
     color: "#B87D6A",
   },
   {
     label: "Lifelong Learners",
     ages: "Adult",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "Revelations of Divine Love",
     slug: "adult",
     description:
-      "Julian of Norwich as a serious philosopher of perspective, materialism, and cheerfulness. Six chapters on atomism, perception, determinism, euthymia, and contentment. Scholarly precision with practical application. No self-help padding.",
+      "Julian of Norwich as a serious theologian of love, creation, and providence. Six chapters on the hazelnut, all shall be well, the motherhood of God, sin as behovely, the trinity, and the body as revelation. Scholarly precision with practical application. No self-help padding.",
     color: "#8A9A7B",
   },
 ];
 
 const chapterThemes = [
-  { n: 1, title: "The Laughing Philosopher", theme: "Identity, origin, and perspective" },
-  { n: 2, title: "Atoms and Void", theme: "The structure of reality" },
-  { n: 3, title: "The World You Co-Create", theme: "Perception and secondary qualities" },
-  { n: 4, title: "The Determined Cosmos", theme: "Necessity and free will" },
-  { n: 5, title: "Euthymia — The Cheerful Soul", theme: "The highest good" },
-  { n: 6, title: "Contentment Over Ambition", theme: "The economics of desire" },
+  { n: 1, title: "The Hazelnut", theme: "Creation held in the hand of love" },
+  { n: 2, title: "All Shall Be Well", theme: "Providence and the triumph of good over evil" },
+  { n: 3, title: "The Motherhood of God", theme: "God as Mother and the nurture of the soul" },
+  { n: 4, title: "Sin as Behovely", theme: "Sin as necessary for the deeper revelation of grace" },
+  { n: 5, title: "The Trinity as Loving Community", theme: "The inner life of God as relation and love" },
+  { n: 6, title: "The Body as Revelation", theme: "The body of Christ as the locus of divine disclosure" },
 ];
 
-export default function JulianOfNorwichPage() {
+export default function JulianNorwichPage() {
   return (
     <>
       {/* HERO */}
@@ -87,7 +87,7 @@ export default function JulianOfNorwichPage() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 mb-6">
-            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Presocratic Series</span>
+            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Theologian Series</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F0E8] mb-6 leading-[1.1] tracking-tight">
@@ -95,7 +95,7 @@ export default function JulianOfNorwichPage() {
           </h1>
 
           <p className="text-xl md:text-2xl text-[#A89B8C] mb-4 max-w-2xl mx-auto leading-relaxed font-light">
-            From a town of fools came the Mystic of the Showings. He figured out atoms 2,400 years before anyone could prove it.
+            An anchoress sealed in a cell who saw all creation as a hazelnut in God&apos;s hand — and declared, against all evidence, that all shall be well.
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
@@ -125,23 +125,23 @@ export default function JulianOfNorwichPage() {
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
               <Image
                 src="/images/booklets/julian-norwich-adult-cover.png"
-                alt="Julian of Norwich: Atoms, Void, and the Laughing Soul — book cover"
+                alt="Julian of Norwich: Revelations of Divine Love — book cover"
                 fill
                 className="object-cover"
               />
             </div>
 
             <div className="space-y-6">
-              <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Philosopher</p>
+              <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Theologian</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F5F0E8] leading-tight">
-                The philosopher who saw atoms and void, and laughed.
+                The mystic who saw all creation held in love and declared all shall be well.
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  Julian of Norwich of Abdera (c. 460–370 BCE) was born in a city famous for foolishness, spent his entire inheritance on travel and learning, and became one of the most prolific and wide-ranging philosophers of the ancient world. He wrote over 70 works on physics, ethics, mathematics, music, and agriculture. Plato reportedly wanted his books burned.
+                  Julian of Norwich (c. 1342–c. 1416) was an English anchoress — a woman who chose to live enclosed in a small cell attached to the Church of St Julian in Norwich, England. On May 13, 1373, at the age of thirty and a half, she experienced a series of sixteen visions (<em>showings</em>) of the Passion of Christ while gravely ill, which she later recorded in two versions of <em>Revelations of Divine Love</em> — the short text shortly after the visions and a long, theologically expanded version decades later. Hers is the first book in English known to have been written by a woman.
                 </p>
                 <p>
-                  He was called &quot;the Mystic of the Showings&quot; because he found human folly amusing rather than distressing. While Heraclitus wept at human stupidity, Julian of Norwich laughed. His central teachings: everything is made of atoms moving through void, everything happens by necessity, and the highest good is <em>euthymia</em> — a calm, cheerful contentment found not by getting more but by wanting less.
+                  Her central teachings: God showed her &quot;a little thing, the quantity of a hazelnut&quot; and said it was all that is made — held in being by love; despite all sin and suffering, &quot;all shall be well, and all shall be well, and all manner of thing shall be well&quot;; God is our Mother as well as our Father, nurturing the soul as a mother does a child; sin is <em>behovely</em> — necessary — because its overcoming reveals the depth of grace; the Trinity is a dynamic community of love; and the body of Christ, especially his bleeding, is the place where God is most fully revealed. Julian is the most influential English mystic and one of the greatest theological voices of the Middle Ages.
                 </p>
                 <p className="text-[#C9A96E]">
                   WisdomForge adapts Julian of Norwich across four age levels so the same core ideas grow with the reader.
@@ -158,7 +158,7 @@ export default function JulianOfNorwichPage() {
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Booklets</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              One philosopher. <span className="text-[#7BA3A8]">Four ages.</span>
+              One theologian. <span className="text-[#7BA3A8]">Four ages.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
               Each booklet covers the same six chapter themes, shaped for the age reading it.
@@ -272,7 +272,7 @@ export default function JulianOfNorwichPage() {
       <section className="py-12 px-6 bg-[#0a0a0f] border-t border-[#1e1e28]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <span className="text-2xl">⚛️</span>
+            <span className="text-2xl">🌰</span>
             <div>
               <span className="text-[#F5F0E8] font-bold">WisdomForge</span>
               <span className="text-[#6B6560] text-sm ml-2">by Aiona Edge & The SMF Works Project</span>

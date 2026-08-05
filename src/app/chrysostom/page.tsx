@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "John Chrysostom — WisdomForge by Aiona Edge",
   description:
-    "Free WisdomForge booklets on John Chrysostom, the Golden Mouth, for ages 5 to adult. Download PDFs and explore charity as justice, prophetic speech, repentance, and the poor at the center.",
+    "Free WisdomForge booklets on John Chrysostom, the Golden Mouth, for ages 5 to adult. Download PDFs and explore the poor at the center, priesthood and prophetic speech, repentance and mercy, wealth and virginity, scripture and the church, and suffering and providence.",
   alternates: { canonical: "https://smfwisdomforge.com/chrysostom" },
   openGraph: {
     title: "John Chrysostom — WisdomForge by Aiona Edge",
@@ -23,51 +23,51 @@ const ageGroups = [
   {
     label: "Little Thinkers",
     ages: "Ages 5–10",
-    title: "The Laughing Philosopher",
+    title: "The Golden Mouth",
     slug: "elementary",
     description:
-      "Gentle stories about a boy from a town of fools who discovered that everything is made of tiny invisible blocks called atoms, and that the secret to happiness is wanting less. Six chapters, activities, and conversation starters for young readers.",
+      "Gentle stories about a preacher whose words were so beautiful they called him the Golden Mouth, and who told kings and crowds alike that the poor are at the center of God&apos;s love. Six chapters, activities, and conversation starters about kindness, courage, and speaking truth.",
     color: "#C9A96E",
   },
   {
     label: "Young Minds",
     ages: "Ages 11–14",
-    title: "The Laughing Philosopher",
+    title: "The Golden Mouth",
     slug: "middle",
     description:
-      "John Chrysostom for middle-school readers: atomic theory, perception, determinism, and the economics of contentment. Real-life scenarios, creative projects, and discussion questions about the philosopher who laughed at human folly.",
+      "John Chrysostom for middle-school readers: the poor at the center, prophetic speech, repentance and mercy, wealth and simplicity, scripture and the church, and suffering and providence. Real-life scenarios, creative projects, and discussion questions about a preacher who would not be silenced.",
     color: "#7BA3A8",
   },
   {
     label: "Emerging Adults",
     ages: "Ages 15–18",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "The Golden Mouth and the Prophetic Pulpit",
     slug: "high",
     description:
-      "A rigorous philosophical treatment for older teens. Atomism, secondary qualities, the free will problem, euthymia, and the economics of desire. Designed for readers ready to wrestle with hard questions about reality and meaning.",
+      "A rigorous theological treatment for older teens. Chrysostom&apos;s theology of the poor, the priesthood as prophetic office, repentance as a way of life, his critique of wealth and defense of virginity and marriage, scripture as the lifeblood of the church, and suffering as the pedagogy of providence. Designed for readers ready to wrestle with a preacher who died in exile for telling the truth to power.",
     color: "#B87D6A",
   },
   {
     label: "Lifelong Learners",
     ages: "Adult",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "The Golden Mouth and the Prophetic Pulpit",
     slug: "adult",
     description:
-      "John Chrysostom as a serious philosopher of perspective, materialism, and cheerfulness. Six chapters on atomism, perception, determinism, euthymia, and contentment. Scholarly precision with practical application. No self-help padding.",
+      "Chrysostom as a serious theologian of poverty, preaching, and pastoral care. Six chapters on the poor at the center, priesthood and prophetic speech, repentance and mercy, wealth and virginity and marriage, scripture and the church, and suffering and providence. Scholarly precision with practical application. No self-help padding.",
     color: "#8A9A7B",
   },
 ];
 
 const chapterThemes = [
-  { n: 1, title: "The Laughing Philosopher", theme: "Identity, origin, and perspective" },
-  { n: 2, title: "Atoms and Void", theme: "The structure of reality" },
-  { n: 3, title: "The World You Co-Create", theme: "Perception and secondary qualities" },
-  { n: 4, title: "The Determined Cosmos", theme: "Necessity and free will" },
-  { n: 5, title: "Euthymia — The Cheerful Soul", theme: "The highest good" },
-  { n: 6, title: "Contentment Over Ambition", theme: "The economics of desire" },
+  { n: 1, title: "The Poor at the Center", theme: "The poor as the sacrament of Christ&apos;s presence" },
+  { n: 2, title: "The Priesthood and Prophetic Speech", theme: "The preacher as prophet and conscience of society" },
+  { n: 3, title: "Repentance and the Mercy of God", theme: "Conversion as lifelong turning and divine mercy" },
+  { n: 4, title: "Wealth, Virginity, and Marriage", theme: "Economic ethics, celibacy, and the sanctity of marriage" },
+  { n: 5, title: "Scripture and the Life of the Church", theme: "The Bible as the nourishment and rule of the community" },
+  { n: 6, title: "Suffering, Divine Providence, and Endurance", theme: "Suffering as pedagogy under the governance of God" },
 ];
 
-export default function JohnChrysostomPage() {
+export default function ChrysostomPage() {
   return (
     <>
       {/* HERO */}
@@ -87,7 +87,7 @@ export default function JohnChrysostomPage() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 mb-6">
-            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Presocratic Series</span>
+            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Theologian Series</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F0E8] mb-6 leading-[1.1] tracking-tight">
@@ -95,7 +95,7 @@ export default function JohnChrysostomPage() {
           </h1>
 
           <p className="text-xl md:text-2xl text-[#A89B8C] mb-4 max-w-2xl mx-auto leading-relaxed font-light">
-            From a town of fools came the Golden Mouth. He figured out atoms 2,400 years before anyone could prove it.
+            The Golden Mouth — a preacher so eloquent that he changed a city, so fearless that he told an empress to repent, and so committed to the poor that he died in exile for it.
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
@@ -125,26 +125,26 @@ export default function JohnChrysostomPage() {
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
               <Image
                 src="/images/booklets/chrysostom-adult-cover.png"
-                alt="John Chrysostom: Atoms, Void, and the Laughing Soul — book cover"
+                alt="John Chrysostom: The Golden Mouth and the Prophetic Pulpit — book cover"
                 fill
                 className="object-cover"
               />
             </div>
 
             <div className="space-y-6">
-              <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Philosopher</p>
+              <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Theologian</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F5F0E8] leading-tight">
-                The philosopher who saw atoms and void, and laughed.
+                The preacher who put the poor at the center and paid for it with his life.
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  John Chrysostom of Abdera (c. 460–370 BCE) was born in a city famous for foolishness, spent his entire inheritance on travel and learning, and became one of the most prolific and wide-ranging philosophers of the ancient world. He wrote over 70 works on physics, ethics, mathematics, music, and agriculture. Plato reportedly wanted his books burned.
+                  John Chrysostom (c. 347–407 CE) was born in Antioch and educated in rhetoric under the pagan philosopher Libanius. Baptized around 368, he lived as an ascetic in the Syrian mountains for several years before returning to Antioch, where he was ordained a deacon in 381 and a priest in 386. His preaching in Antioch was so powerful that he was given the nickname <em>Chrysostom</em> — &quot;Golden Mouth.&quot; In 397 he was forcibly consecrated Archbishop of Constantinople, the capital of the Eastern Roman Empire. He used the pulpit to denounce luxury, corruption, and the neglect of the poor — and his enemies were powerful.
                 </p>
                 <p>
-                  He was called &quot;the Golden Mouth&quot; because he found human folly amusing rather than distressing. While Heraclitus wept at human stupidity, John Chrysostom laughed. His central teachings: everything is made of atoms moving through void, everything happens by necessity, and the highest good is <em>euthymia</em> — a calm, cheerful contentment found not by getting more but by wanting less.
+                  His central teachings: the poor are at the center of the gospel — to ignore them is to reject Christ; the priesthood is a prophetic office, and the preacher must speak truth to power regardless of consequence; repentance is not a single act but a way of life, grounded in the inexhaustible mercy of God; wealth is for sharing, virginity is a higher calling but marriage is holy, and all three demand ascetic discipline; scripture is the lifeblood of the church — Chrysostom preached through entire books verse by verse — and the community&apos;s health is measured by its engagement with the word; and suffering is the pedagogy of divine providence, training the soul in endurance. Exiled twice by the Empress Eudoxia for his sermons, he died marching across the Anatolian mountains in 407 CE. His last words were &quot;Glory to God for all things.&quot;
                 </p>
                 <p className="text-[#C9A96E]">
-                  WisdomForge adapts John Chrysostom across four age levels so the same core ideas grow with the reader.
+                  WisdomForge adapts Chrysostom across four age levels so the same core ideas grow with the reader.
                 </p>
               </div>
             </div>
@@ -158,7 +158,7 @@ export default function JohnChrysostomPage() {
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Booklets</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              One philosopher. <span className="text-[#7BA3A8]">Four ages.</span>
+              One theologian. <span className="text-[#7BA3A8]">Four ages.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
               Each booklet covers the same six chapter themes, shaped for the age reading it.
@@ -176,7 +176,7 @@ export default function JohnChrysostomPage() {
                   <div className="relative w-full sm:w-40 aspect-[3/4] rounded-xl overflow-hidden border border-[#2a2a35] flex-shrink-0">
                     <Image
                       src={`/images/booklets/chrysostom-${group.slug}-cover.png`}
-                      alt={`John Chrysostom ${group.title} — ${group.ages}`}
+                      alt={`Chrysostom ${group.title} — ${group.ages}`}
                       fill
                       className="object-cover"
                     />
@@ -257,7 +257,7 @@ export default function JohnChrysostomPage() {
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-6">Start with the free booklets.</h2>
           <p className="text-xl text-[#A89B8C] mb-8">
-            Get the complete John Chrysostom series for every age group. No email required.
+            Get the complete Chrysostom series for every age group. No email required.
           </p>
           <Link
             href="#booklets"
@@ -272,7 +272,7 @@ export default function JohnChrysostomPage() {
       <section className="py-12 px-6 bg-[#0a0a0f] border-t border-[#1e1e28]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <span className="text-2xl">⚛️</span>
+            <span className="text-2xl">🗣️</span>
             <div>
               <span className="text-[#F5F0E8] font-bold">WisdomForge</span>
               <span className="text-[#6B6560] text-sm ml-2">by Aiona Edge & The SMF Works Project</span>

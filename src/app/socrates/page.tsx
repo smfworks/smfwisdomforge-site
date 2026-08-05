@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Socrates — WisdomForge by Aiona Edge",
   description:
-    "Free WisdomForge booklets on Socrates, the Gadfly of Athens, for ages 5 to adult. Download PDFs and explore the examined life, the priority of the soul, and the courage of questioning.",
+    "Free WisdomForge booklets on Socrates, the Gadfly of Athens, for ages 5 to adult. Download PDFs and explore the examined life, the oracle at Delphi, the priority of the soul, and the philosopher who chose death over silence.",
   alternates: { canonical: "https://smfwisdomforge.com/socrates" },
   openGraph: {
     title: "Socrates — WisdomForge by Aiona Edge",
@@ -23,48 +23,48 @@ const ageGroups = [
   {
     label: "Little Thinkers",
     ages: "Ages 5–10",
-    title: "The Laughing Philosopher",
+    title: "The Man Who Asked Too Many Questions",
     slug: "elementary",
     description:
-      "Gentle stories about a boy from a town of fools who discovered that everything is made of tiny invisible blocks called atoms, and that the secret to happiness is wanting less. Six chapters, activities, and conversation starters for young readers.",
+      "Gentle stories about a wise man who wandered the markets of Athens asking questions until people realized they did not really know what they thought they knew. Six chapters, activities, and conversation starters about curiosity, honesty, and caring for your soul.",
     color: "#C9A96E",
   },
   {
     label: "Young Minds",
     ages: "Ages 11–14",
-    title: "The Laughing Philosopher",
+    title: "The Man Who Asked Too Many Questions",
     slug: "middle",
     description:
-      "Socrates for middle-school readers: atomic theory, perception, determinism, and the economics of contentment. Real-life scenarios, creative projects, and discussion questions about the philosopher who laughed at human folly.",
+      "Socrates for middle-school readers: the Socratic method, the oracle at Delphi, the priority of the soul over the body, and the trial that ended a life. Real-life scenarios, creative projects, and discussion questions about the philosopher who would not stop asking why.",
     color: "#7BA3A8",
   },
   {
     label: "Emerging Adults",
     ages: "Ages 15–18",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "The Examined Life and the Limits of Reason",
     slug: "high",
     description:
-      "A rigorous philosophical treatment for older teens. Atomism, secondary qualities, the free will problem, euthymia, and the economics of desire. Designed for readers ready to wrestle with hard questions about reality and meaning.",
+      "A rigorous philosophical treatment for older teens. The elenchus, the Delphic oracle, the soul as the seat of moral worth, the Crito argument for obedience to law, and Euthyphro's dilemma on piety. Designed for readers ready to wrestle with a philosopher who died for the right to question everything.",
     color: "#B87D6A",
   },
   {
     label: "Lifelong Learners",
     ages: "Adult",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "The Examined Life and the Limits of Reason",
     slug: "adult",
     description:
-      "Socrates as a serious philosopher of perspective, materialism, and cheerfulness. Six chapters on atomism, perception, determinism, euthymia, and contentment. Scholarly precision with practical application. No self-help padding.",
+      "Socrates as a serious philosopher of self-knowledge, moral inquiry, and civic duty. Six chapters on the oracle, the unexamined life, the soul, the laws, the final words, and Euthyphro's dilemma. Scholarly precision with practical application. No self-help padding.",
     color: "#8A9A7B",
   },
 ];
 
 const chapterThemes = [
-  { n: 1, title: "The Laughing Philosopher", theme: "Identity, origin, and perspective" },
-  { n: 2, title: "Atoms and Void", theme: "The structure of reality" },
-  { n: 3, title: "The World You Co-Create", theme: "Perception and secondary qualities" },
-  { n: 4, title: "The Determined Cosmos", theme: "Necessity and free will" },
-  { n: 5, title: "Euthymia — The Cheerful Soul", theme: "The highest good" },
-  { n: 6, title: "Contentment Over Ambition", theme: "The economics of desire" },
+  { n: 1, title: "The Oracle at Delphi", theme: "Wisdom as the knowledge of ignorance" },
+  { n: 2, title: "The Unexamined Life", theme: "The examined life as the only life worth living" },
+  { n: 3, title: "The Priority of the Soul", theme: "Virtue over wealth, body, and reputation" },
+  { n: 4, title: "Crito and the Laws", theme: "Obedience, justice, and the social contract" },
+  { n: 5, title: "Socrates&apos; Final Words", theme: "Death, debt, and the meaning of a life" },
+  { n: 6, title: "Euthyphro's Dilemma", theme: "Piety, definition, and the limits of divine command" },
 ];
 
 export default function SocratesPage() {
@@ -87,7 +87,7 @@ export default function SocratesPage() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 mb-6">
-            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Presocratic Series</span>
+            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Philosopher Series</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F0E8] mb-6 leading-[1.1] tracking-tight">
@@ -95,7 +95,7 @@ export default function SocratesPage() {
           </h1>
 
           <p className="text-xl md:text-2xl text-[#A89B8C] mb-4 max-w-2xl mx-auto leading-relaxed font-light">
-            From a town of fools came the Gadfly of Athens. He figured out atoms 2,400 years before anyone could prove it.
+            The Gadfly of Athens. He wrote nothing, asked everything, and chose the hemlock over silence — because the unexamined life is not worth living.
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
@@ -125,7 +125,7 @@ export default function SocratesPage() {
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
               <Image
                 src="/images/booklets/socrates-adult-cover.png"
-                alt="Socrates: Atoms, Void, and the Laughing Soul — book cover"
+                alt="Socrates: The Examined Life and the Limits of Reason — book cover"
                 fill
                 className="object-cover"
               />
@@ -134,14 +134,14 @@ export default function SocratesPage() {
             <div className="space-y-6">
               <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Philosopher</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F5F0E8] leading-tight">
-                The philosopher who saw atoms and void, and laughed.
+                The philosopher who wrote nothing and changed everything.
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  Socrates of Abdera (c. 460–370 BCE) was born in a city famous for foolishness, spent his entire inheritance on travel and learning, and became one of the most prolific and wide-ranging philosophers of the ancient world. He wrote over 70 works on physics, ethics, mathematics, music, and agriculture. Plato reportedly wanted his books burned.
+                  Socrates of Athens (c. 470–399 BCE) was a stonemason&apos;s son who never wrote a word yet became the founding figure of Western philosophy. He spent his days in the agora questioning anyone who claimed to know something, using the elenchus — a method of cross-examination that exposed contradictions in a person&apos;s beliefs — to reveal that genuine wisdom begins with admitting what you do not know. The Delphic oracle declared him the wisest of all men because he alone knew that he knew nothing.
                 </p>
                 <p>
-                  He was called &quot;the Gadfly of Athens&quot; because he found human folly amusing rather than distressing. While Heraclitus wept at human stupidity, Socrates laughed. His central teachings: everything is made of atoms moving through void, everything happens by necessity, and the highest good is <em>euthymia</em> — a calm, cheerful contentment found not by getting more but by wanting less.
+                  His central teachings: the unexamined life is not worth living, the soul (<em>psyche</em>) matters more than wealth or reputation, and virtue is knowledge — no one does wrong willingly. Tried in 399 BCE on charges of corrupting the youth and impiety, he refused to flee even when given the chance, arguing in the <em>Crito</em> that one must not wrong the state even when wronged by it. He died by drinking hemlock, leaving a final message about the debt of a life well-lived. Through Plato and Xenophon, his method and his martyrdom became the model of philosophy itself.
                 </p>
                 <p className="text-[#C9A96E]">
                   WisdomForge adapts Socrates across four age levels so the same core ideas grow with the reader.
@@ -272,7 +272,7 @@ export default function SocratesPage() {
       <section className="py-12 px-6 bg-[#0a0a0f] border-t border-[#1e1e28]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <span className="text-2xl">⚛️</span>
+            <span className="text-2xl">🦉</span>
             <div>
               <span className="text-[#F5F0E8] font-bold">WisdomForge</span>
               <span className="text-[#6B6560] text-sm ml-2">by Aiona Edge & The SMF Works Project</span>

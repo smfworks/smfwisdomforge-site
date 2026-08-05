@@ -3,14 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Augustine — WisdomForge by Aiona Edge",
+  title: "Augustine of Hippo — WisdomForge by Aiona Edge",
   description:
-    "Free WisdomForge booklets on Augustine of Hippo for ages 5 to adult. Download PDFs exploring the restless heart, grace, grief, time, and the two cities.",
+    "Free WisdomForge booklets on Augustine of Hippo, bishop and theologian, for ages 5 to adult. Download PDFs and explore the restless heart, original sin and grace, free will and predestination, the two cities, time and creation, and evil as privation.",
   alternates: { canonical: "https://smfwisdomforge.com/augustine" },
   openGraph: {
-    title: "Augustine — WisdomForge by Aiona Edge",
+    title: "Augustine of Hippo — WisdomForge by Aiona Edge",
     description:
-      "Free WisdomForge booklets on Augustine of Hippo for ages 5 to adult. Download PDFs exploring the restless heart, grace, grief, time, and the two cities.",
+      "Free WisdomForge booklets on Augustine of Hippo, bishop and theologian, for ages 5 to adult.",
     url: "https://smfwisdomforge.com/augustine",
     siteName: "WisdomForge",
     images: [{ url: "https://smfwisdomforge.com/images/booklets/augustine-adult-cover.png" }],
@@ -23,48 +23,48 @@ const ageGroups = [
   {
     label: "Little Thinkers",
     ages: "Ages 5–10",
-    title: "The Boy with a Hungry Heart",
+    title: "The Restless Heart",
     slug: "elementary",
     description:
-      "Gentle stories about a boy in North Africa who always felt like something was missing — and his mother Monica who never stopped praying. The pear tree, the garden voice, and the city that fell down. Six chapters with activities and conversation starters for young readers.",
+      "Gentle stories about a brilliant young man who searched everywhere for happiness — in books, in friends, in adventures — until he found that his heart was restless until it rested in God. Six chapters, activities, and conversation starters about searching, changing, and finding peace.",
     color: "#C9A96E",
   },
   {
     label: "Young Minds",
     ages: "Ages 11–14",
-    title: "The Searcher",
+    title: "The Restless Heart",
     slug: "middle",
     description:
-      "Augustine for middle-school readers: the restless heart, the mother who prayed for seventeen years, the pear tree mystery, and the garden conversion. Real-life scenarios, discussion questions, and the first introduction to his theology of the two cities.",
+      "Augustine of Hippo for middle-school readers: the restless heart, original sin and grace, free will, the two cities, and evil as privation. Real-life scenarios, creative projects, and discussion questions about a man who lived wildly and became one of history's greatest thinkers.",
     color: "#7BA3A8",
   },
   {
     label: "Emerging Adults",
     ages: "Ages 15–18",
-    title: "The Restless Self",
+    title: "Confessions, Grace, and the Two Cities",
     slug: "high",
     description:
-      "A sharper, more philosophical engagement for older teens. Akrasia and the divided will, evil as privation, the philosophy of time and memory, grief, and political theology. Designed for readers ready to wrestle with hard questions honestly.",
+      "A rigorous theological treatment for older teens. The <em>Confessions</em> as spiritual autobiography, original sin and the priority of grace, the will and predestination, the City of God vs. the earthly city, time as a feature of creation, and evil as the absence of good. Designed for readers ready to wrestle with the most influential Christian thinker after Paul.",
     color: "#B87D6A",
   },
   {
     label: "Lifelong Learners",
     ages: "Adult",
-    title: "The Restless Heart",
+    title: "Confessions, Grace, and the Two Cities",
     slug: "adult",
     description:
-      "Augustine as a serious intellectual presence for adults. No devotional padding. Six chapters on the architecture of desire, the limits of self-help, the problem of evil, the invention of interiority, the theology of grief, and political theology for a falling world.",
+      "Augustine as a serious theologian of grace, will, and history. Six chapters on the restless heart, original sin and grace, free will and predestination, the two cities, time and creation, and evil as privation. Scholarly precision with practical application. No self-help padding.",
     color: "#8A9A7B",
   },
 ];
 
 const chapterThemes = [
-  { n: 1, title: "The Restless Heart", theme: "Cor inquietum — the architecture of desire" },
-  { n: 2, title: "The Divided Will", theme: "Akrasia, grace, and the limits of self-help" },
-  { n: 3, title: "Evil as Privation", theme: "The problem of suffering and free will" },
-  { n: 4, title: "Time and Memory", theme: "The invention of interiority" },
-  { n: 5, title: "Love and Loss", theme: "The theology of grief" },
-  { n: 6, title: "The Two Cities", theme: "Political theology for a falling world" },
+  { n: 1, title: "The Restless Heart", theme: "Desire, restlessness, and the search for God" },
+  { n: 2, title: "Original Sin and Grace", theme: "The fall, inherited guilt, and the necessity of grace" },
+  { n: 3, title: "Free Will and Predestination", theme: "Human freedom under divine sovereignty" },
+  { n: 4, title: "The Two Cities", theme: "The City of God and the earthly city in history" },
+  { n: 5, title: "Time and Creation", theme: "Creation from nothing and the nature of time" },
+  { n: 6, title: "Evil as Privation", theme: "Evil as the absence of good, not a positive substance" },
 ];
 
 export default function AugustinePage() {
@@ -91,11 +91,11 @@ export default function AugustinePage() {
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F0E8] mb-6 leading-[1.1] tracking-tight">
-            Augustine
+            Augustine of Hippo
           </h1>
 
           <p className="text-xl md:text-2xl text-[#A89B8C] mb-4 max-w-2xl mx-auto leading-relaxed font-light">
-            Born in North Africa. The most celebrated rhetorician in the Roman Empire. Then he gave it all up for a hungry heart.
+            A restless soul who searched the world for happiness and found it only in God — then spent his life arguing that grace, not willpower, is the foundation of every good thing.
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
@@ -114,12 +114,6 @@ export default function AugustinePage() {
                 </svg>
               </span>
             </Link>
-            <Link
-              href="/epictetus"
-              className="px-8 py-4 text-[#A89B8C] font-medium hover:text-[#C9A96E] transition-colors border border-[#2a2a2a] rounded-lg hover:border-[#C9A96E]/30"
-            >
-              Explore Epictetus Too
-            </Link>
           </div>
         </div>
       </section>
@@ -131,26 +125,23 @@ export default function AugustinePage() {
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
               <Image
                 src="/images/booklets/augustine-adult-cover.png"
-                alt="Augustine: The Restless Heart — book cover"
+                alt="Augustine of Hippo: Confessions, Grace, and the Two Cities — book cover"
                 fill
                 className="object-cover"
               />
             </div>
 
             <div className="space-y-6">
-              <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Thinker</p>
+              <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Theologian</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F5F0E8] leading-tight">
-                The bishop who said our hearts are made for something the world can&apos;t give.
+                The restless heart that shaped Western theology for a thousand years.
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  Augustine of Hippo (354–430 CE) was born in Tagaste, a small town in North Africa (modern-day Algeria). He became the most celebrated public speaker in the Roman Empire, held the imperial chair of rhetoric in Milan, and then renounced everything — career, status, sexual relationships — after a conversion experience in a garden.
+                  Augustine of Hippo (354–430 CE) was born in Thagaste, in present-day Algeria, to a pagan father and a devout Christian mother, Monica. He studied rhetoric in Carthage, joined the Manichaean sect in pursuit of truth, taught in Rome and Milan, and was profoundly influenced by Neoplatonism and the preaching of Bishop Ambrose. Baptized in 387 CE, he returned to North Africa, was ordained a priest, and in 395 became Bishop of Hippo (modern Annaba, Algeria), a post he held until his death as the Vandals besieged his city.
                 </p>
                 <p>
-                  He wrote the <em>Confessions</em>, the first sustained autobiography in Western literature, and <em>The City of God</em>, the most influential work of political theology ever written. His ideas about the restless heart, the divided will, evil as privation, time and memory, and grace shaped the Middle Ages, the Reformation, and modern psychology.
-                </p>
-                <p>
-                  He was also flawed — his treatment of women and his adversarial writings against the Jews have a dark legacy. WisdomForge presents Augustine honestly: brilliant, restless, and still worth wrestling with 1,600 years later.
+                  His central teachings: &quot;You have made us for yourself, O Lord, and our heart is restless until it rests in you&quot;; original sin — inherited from Adam — corrupts the will so deeply that salvation is impossible without grace; the <em>Confessions</em> narrate his conversion as a story of divine pursuit; in the <em>City of God</em> he traces two loves through history, founding the earthly city and the City of God; he defended free will against the Manichees while arguing for predestination against Pelagius; evil is not a substance but a <em>privatio boni</em> — the absence of good; and time itself was created with the world, so the question &quot;what was God doing before creation?&quot; is malformed. Augustine&apos;s writings — over 100 works including <em>Confessions</em>, <em>City of God</em>, and <em>On the Trinity</em> — made him the most influential Christian thinker between Paul and Aquinas.
                 </p>
                 <p className="text-[#C9A96E]">
                   WisdomForge adapts Augustine across four age levels so the same core ideas grow with the reader.
@@ -167,7 +158,7 @@ export default function AugustinePage() {
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Booklets</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              One thinker. <span className="text-[#7BA3A8]">Four ages.</span>
+              One theologian. <span className="text-[#7BA3A8]">Four ages.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
               Each booklet covers the same six chapter themes, shaped for the age reading it.
@@ -224,11 +215,8 @@ export default function AugustinePage() {
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Arc</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              Six chapters. <span className="text-[#B87D6A]">One restless heart.</span>
+              Six chapters. <span className="text-[#B87D6A]">One path.</span>
             </h2>
-            <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
-              From the hungry heart to the city that falls — the arc of Augustine&apos;s thought, adapted for every age.
-            </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -239,47 +227,6 @@ export default function AugustinePage() {
                 <p className="text-[#6B6560] text-sm">{ch.theme}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* AUGUSTINE vs THE STOICS */}
-      <section className="py-24 md:py-32 px-6 bg-[#0a0a0f] relative">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-[#7BA3A8] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Contrast</p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              Augustine and the Stoics
-            </h2>
-            <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
-              Epictetus taught what you can control. Augustine admitted you can&apos;t control enough — and surrendered to grace.
-            </p>
-          </div>
-
-          <div className="bg-[#13131a] border border-[#1e1e28] rounded-2xl p-8 md:p-12">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-bold text-[#C9A96E] mb-4">The Stoic Path</h3>
-                <ul className="space-y-3 text-[#A89B8C] text-sm leading-relaxed">
-                  <li>• Freedom comes from mastering what is in your power</li>
-                  <li>• The fortress of the mind cannot be breached</li>
-                  <li>• Reason is sufficient for the good life</li>
-                  <li>• Self-sufficiency is the goal</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-[#8A9A7B] mb-4">The Augustinian Path</h3>
-                <ul className="space-y-3 text-[#A89B8C] text-sm leading-relaxed">
-                  <li>• The will is divided and cannot heal itself</li>
-                  <li>• Grace, not effort, breaks the deadlock</li>
-                  <li>• Reason is necessary but not sufficient</li>
-                  <li>• Surrender, not self-mastery, is the path</li>
-                </ul>
-              </div>
-            </div>
-            <p className="text-center text-[#6B6560] text-sm mt-8 pt-8 border-t border-[#1e1e28]">
-              The Stoic builds a fortress. Augustine opens a door.
-            </p>
           </div>
         </div>
       </section>
@@ -296,7 +243,7 @@ export default function AugustinePage() {
 
           <div className="bg-[#13131a] border border-[#1e1e28] rounded-2xl p-8 md:p-12 text-center">
             <p className="text-[#A89B8C] text-lg leading-relaxed mb-4">
-              Chief AI Research Scientist at SMF Works. I created WisdomForge to adapt the great philosophers and theologians into stories, audio, and video that meet people at every age.
+              Chief AI Research Scientist at SMF Works. I created WisdomForge to adapt the great philosophers into stories, audio, and video that meet people at every age.
             </p>
             <p className="text-[#C9A96E]">My goal: make wisdom feel like a conversation, not a lecture.</p>
           </div>
@@ -304,7 +251,7 @@ export default function AugustinePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 md:py-32 px-6 bg-[#0f0f14] relative overflow-hidden">
+      <section className="py-24 md:py-32 px-6 bg-[#0a0a0f] relative overflow-hidden">
         <div className="absolute top-[-50%] left-[50%] -translate-x-1/2 w-[800px] h-[800px] bg-[#C9A96E] opacity-[0.05] blur-[200px] rounded-full pointer-events-none" />
 
         <div className="max-w-3xl mx-auto text-center relative z-10">
@@ -318,9 +265,6 @@ export default function AugustinePage() {
           >
             Download All Four PDFs
           </Link>
-          <p className="text-[#4a4a4a] text-sm mt-6">
-            Also explore Epictetus and Marcus Aurelius — the Stoics who came before.
-          </p>
         </div>
       </section>
 
@@ -328,7 +272,7 @@ export default function AugustinePage() {
       <section className="py-12 px-6 bg-[#0a0a0f] border-t border-[#1e1e28]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <span className="text-2xl">🏛️</span>
+            <span className="text-2xl">❤️</span>
             <div>
               <span className="text-[#F5F0E8] font-bold">WisdomForge</span>
               <span className="text-[#6B6560] text-sm ml-2">by Aiona Edge & The SMF Works Project</span>
@@ -336,9 +280,8 @@ export default function AugustinePage() {
           </div>
           <div className="flex items-center gap-6 text-sm">
             <Link href="/" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Home</Link>
-            <Link href="/epictetus" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Epictetus</Link>
-            <Link href="/marcus-aurelius" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Marcus Aurelius</Link>
             <a href="https://smfworks.com/blog" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">SMF Works Blog</a>
+            <a href="https://smfworks.com/contact" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">Contact</a>
           </div>
         </div>
       </section>

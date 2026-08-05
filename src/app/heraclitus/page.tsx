@@ -5,12 +5,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Heraclitus — WisdomForge by Aiona Edge",
   description:
-    "Free WisdomForge booklets on Heraclitus, the Philosopher of Flux, for ages 5 to adult. Download PDFs and explore flux, the logos, the unity of opposites, and the ever-living fire.",
+    "Free WisdomForge booklets on Heraclitus, the Obscure, for ages 5 to adult. Download PDFs and explore the river, the logos, the unity of opposites, and fire as the arche of all things.",
   alternates: { canonical: "https://smfwisdomforge.com/heraclitus" },
   openGraph: {
     title: "Heraclitus — WisdomForge by Aiona Edge",
     description:
-      "Free WisdomForge booklets on Heraclitus, the Philosopher of Flux, for ages 5 to adult.",
+      "Free WisdomForge booklets on Heraclitus, the Obscure, for ages 5 to adult.",
     url: "https://smfwisdomforge.com/heraclitus",
     siteName: "WisdomForge",
     images: [{ url: "https://smfwisdomforge.com/images/booklets/heraclitus-adult-cover.png" }],
@@ -23,48 +23,48 @@ const ageGroups = [
   {
     label: "Little Thinkers",
     ages: "Ages 5–10",
-    title: "The Laughing Philosopher",
+    title: "The River That Never Stops",
     slug: "elementary",
     description:
-      "Gentle stories about a boy from a town of fools who discovered that everything is made of tiny invisible blocks called atoms, and that the secret to happiness is wanting less. Six chapters, activities, and conversation starters for young readers.",
+      "Gentle stories about a man who noticed you can never step in the same river twice, because the water is always moving. Six chapters, activities, and conversation starters about change, opposites, and the hidden pattern that holds the world together.",
     color: "#C9A96E",
   },
   {
     label: "Young Minds",
     ages: "Ages 11–14",
-    title: "The Laughing Philosopher",
+    title: "The River That Never Stops",
     slug: "middle",
     description:
-      "Heraclitus for middle-school readers: atomic theory, perception, determinism, and the economics of contentment. Real-life scenarios, creative projects, and discussion questions about the philosopher who laughed at human folly.",
+      "Heraclitus for middle-school readers: panta rhei, the logos, the unity of opposites, and fire as the arche. Real-life scenarios, creative projects, and discussion questions about a philosopher who believed everything flows and strife is the engine of the cosmos.",
     color: "#7BA3A8",
   },
   {
     label: "Emerging Adults",
     ages: "Ages 15–18",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "Flux, Logos, and the Living Fire",
     slug: "high",
     description:
-      "A rigorous philosophical treatment for older teens. Atomism, secondary qualities, the free will problem, euthymia, and the economics of desire. Designed for readers ready to wrestle with hard questions about reality and meaning.",
+      "A rigorous philosophical treatment for older teens. The doctrine of flux, the logos as cosmic reason, the coincidence of opposites, fire as metaphysical principle, and the ethics of living in accordance with the common. Designed for readers ready to wrestle with a thinker who wrote in deliberate riddles.",
     color: "#B87D6A",
   },
   {
     label: "Lifelong Learners",
     ages: "Adult",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "Flux, Logos, and the Living Fire",
     slug: "adult",
     description:
-      "Heraclitus as a serious philosopher of perspective, materialism, and cheerfulness. Six chapters on atomism, perception, determinism, euthymia, and contentment. Scholarly precision with practical application. No self-help padding.",
+      "Heraclitus as a serious philosopher of process, contradiction, and cosmic order. Six chapters on the river, the logos, the unity of opposites, fire as arche, the common versus the private, and strife as harmony. Scholarly precision with practical application. No self-help padding.",
     color: "#8A9A7B",
   },
 ];
 
 const chapterThemes = [
-  { n: 1, title: "The Laughing Philosopher", theme: "Identity, origin, and perspective" },
-  { n: 2, title: "Atoms and Void", theme: "The structure of reality" },
-  { n: 3, title: "The World You Co-Create", theme: "Perception and secondary qualities" },
-  { n: 4, title: "The Determined Cosmos", theme: "Necessity and free will" },
-  { n: 5, title: "Euthymia — The Cheerful Soul", theme: "The highest good" },
-  { n: 6, title: "Contentment Over Ambition", theme: "The economics of desire" },
+  { n: 1, title: "The River — Everything Flows", theme: "The doctrine of perpetual change" },
+  { n: 2, title: "The Logos — The Hidden Pattern", theme: "Cosmic reason beneath the flux" },
+  { n: 3, title: "The Unity of Opposites", theme: "Contradiction as the structure of reality" },
+  { n: 4, title: "Fire as Arche", theme: "The primal element and measure of all things" },
+  { n: 5, title: "The Common and the Private", theme: "Living by shared reason vs. private opinion" },
+  { n: 6, title: "Strife and Harmony", theme: "Conflict as the engine of the cosmos" },
 ];
 
 export default function HeraclitusPage() {
@@ -87,7 +87,7 @@ export default function HeraclitusPage() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 mb-6">
-            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Presocratic Series</span>
+            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Pre-Socratic Series</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F0E8] mb-6 leading-[1.1] tracking-tight">
@@ -95,7 +95,7 @@ export default function HeraclitusPage() {
           </h1>
 
           <p className="text-xl md:text-2xl text-[#A89B8C] mb-4 max-w-2xl mx-auto leading-relaxed font-light">
-            From a town of fools came the Philosopher of Flux. He figured out atoms 2,400 years before anyone could prove it.
+            The Obscure. He said you can never step in the same river twice — because everything flows, and conflict is the hidden harmony of the world.
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
@@ -125,7 +125,7 @@ export default function HeraclitusPage() {
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
               <Image
                 src="/images/booklets/heraclitus-adult-cover.png"
-                alt="Heraclitus: Atoms, Void, and the Laughing Soul — book cover"
+                alt="Heraclitus: Flux, Logos, and the Living Fire — book cover"
                 fill
                 className="object-cover"
               />
@@ -134,14 +134,14 @@ export default function HeraclitusPage() {
             <div className="space-y-6">
               <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Philosopher</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F5F0E8] leading-tight">
-                The philosopher who saw atoms and void, and laughed.
+                The philosopher who saw that everything flows and nothing stands still.
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  Heraclitus of Abdera (c. 460–370 BCE) was born in a city famous for foolishness, spent his entire inheritance on travel and learning, and became one of the most prolific and wide-ranging philosophers of the ancient world. He wrote over 70 works on physics, ethics, mathematics, music, and agriculture. Plato reportedly wanted his books burned.
+                  Heraclitus of Ephesus (c. 535–475 BCE) was a pre-Socratic philosopher of noble birth who deposited his single, notoriously cryptic work in the great Temple of Artemis. Known as &quot;the Obscure&quot; for his deliberate use of riddles and paradox, he wrote in fragments so dense that even antiquity found them difficult to parse. He was a misanthrope who criticized his fellow citizens and scorned conventional wisdom, insisting that most people sleepwalk through life while the logos — the rational structure of the cosmos — stands open to all.
                 </p>
                 <p>
-                  He was called &quot;the Philosopher of Flux&quot; because he found human folly amusing rather than distressing. While Heraclitus wept at human stupidity, Heraclitus laughed. His central teachings: everything is made of atoms moving through void, everything happens by necessity, and the highest good is <em>euthymia</em> — a calm, cheerful contentment found not by getting more but by wanting less.
+                  His central teachings: everything flows (<em>panta rhei</em>), no one steps in the same river twice, fire is the <em>arche</em> — the primal element from which all things emerge and return, opposites are unified in a deeper structure, and strife is the father of all. The logos is the common measure of the world, yet most people live as if they had a private understanding. Heraclitus demanded that we wake up and think in accordance with the shared reason that governs everything.
                 </p>
                 <p className="text-[#C9A96E]">
                   WisdomForge adapts Heraclitus across four age levels so the same core ideas grow with the reader.
@@ -272,7 +272,7 @@ export default function HeraclitusPage() {
       <section className="py-12 px-6 bg-[#0a0a0f] border-t border-[#1e1e28]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <span className="text-2xl">⚛️</span>
+            <span className="text-2xl">🔥</span>
             <div>
               <span className="text-[#F5F0E8] font-bold">WisdomForge</span>
               <span className="text-[#6B6560] text-sm ml-2">by Aiona Edge & The SMF Works Project</span>

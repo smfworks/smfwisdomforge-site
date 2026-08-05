@@ -5,12 +5,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Plato — WisdomForge by Aiona Edge",
   description:
-    "Free WisdomForge booklets on Plato, the Architect of Ideas, for ages 5 to adult. Download PDFs and explore the cave, the forms, the philosopher-king, and the harmony of the soul.",
+    "Free WisdomForge booklets on Plato, founder of the Academy, for ages 5 to adult. Download PDFs and explore the allegory of the cave, the form of the good, the philosopher-king, and the soul as harmony.",
   alternates: { canonical: "https://smfwisdomforge.com/plato" },
   openGraph: {
     title: "Plato — WisdomForge by Aiona Edge",
     description:
-      "Free WisdomForge booklets on Plato, the Architect of Ideas, for ages 5 to adult.",
+      "Free WisdomForge booklets on Plato, founder of the Academy, for ages 5 to adult.",
     url: "https://smfwisdomforge.com/plato",
     siteName: "WisdomForge",
     images: [{ url: "https://smfwisdomforge.com/images/booklets/plato-adult-cover.png" }],
@@ -23,48 +23,48 @@ const ageGroups = [
   {
     label: "Little Thinkers",
     ages: "Ages 5–10",
-    title: "The Laughing Philosopher",
+    title: "The Cave and the Sunlight",
     slug: "elementary",
     description:
-      "Gentle stories about a boy from a town of fools who discovered that everything is made of tiny invisible blocks called atoms, and that the secret to happiness is wanting less. Six chapters, activities, and conversation starters for young readers.",
+      "Gentle stories about prisoners in a cave who think shadows on the wall are real until one breaks free and sees the sun. Six chapters, activities, and conversation starters about truth, courage, and what it means to be a good leader.",
     color: "#C9A96E",
   },
   {
     label: "Young Minds",
     ages: "Ages 11–14",
-    title: "The Laughing Philosopher",
+    title: "The Cave and the Sunlight",
     slug: "middle",
     description:
-      "Plato for middle-school readers: atomic theory, perception, determinism, and the economics of contentment. Real-life scenarios, creative projects, and discussion questions about the philosopher who laughed at human folly.",
+      "Plato for middle-school readers: the allegory of the cave, the form of the good, the philosopher-king, justice as harmony, and the myth of Er. Real-life scenarios, creative projects, and discussion questions about reality, leadership, and the soul.",
     color: "#7BA3A8",
   },
   {
     label: "Emerging Adults",
     ages: "Ages 15–18",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "Forms, the Good, and the Just Soul",
     slug: "high",
     description:
-      "A rigorous philosophical treatment for older teens. Atomism, secondary qualities, the free will problem, euthymia, and the economics of desire. Designed for readers ready to wrestle with hard questions about reality and meaning.",
+      "A rigorous philosophical treatment for older teens. The theory of Forms, the allegory of the cave and the good, the philosopher-king as ideal ruler, justice as harmony of the soul's three parts, the myth of Er, and the charioteer. Designed for readers ready to wrestle with the most influential philosopher of the Western tradition.",
     color: "#B87D6A",
   },
   {
     label: "Lifelong Learners",
     ages: "Adult",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "Forms, the Good, and the Just Soul",
     slug: "adult",
     description:
-      "Plato as a serious philosopher of perspective, materialism, and cheerfulness. Six chapters on atomism, perception, determinism, euthymia, and contentment. Scholarly precision with practical application. No self-help padding.",
+      "Plato as a serious philosopher of metaphysics, politics, and psychology. Six chapters on the cave, the form of the good, the philosopher-king, justice as harmony, the myth of Er, and the charioteer of the soul. Scholarly precision with practical application. No self-help padding.",
     color: "#8A9A7B",
   },
 ];
 
 const chapterThemes = [
-  { n: 1, title: "The Laughing Philosopher", theme: "Identity, origin, and perspective" },
-  { n: 2, title: "Atoms and Void", theme: "The structure of reality" },
-  { n: 3, title: "The World You Co-Create", theme: "Perception and secondary qualities" },
-  { n: 4, title: "The Determined Cosmos", theme: "Necessity and free will" },
-  { n: 5, title: "Euthymia — The Cheerful Soul", theme: "The highest good" },
-  { n: 6, title: "Contentment Over Ambition", theme: "The economics of desire" },
+  { n: 1, title: "The Allegory of the Cave", theme: "Appearance, reality, and the ascent to truth" },
+  { n: 2, title: "The Form of the Good", theme: "The highest Form and source of all being" },
+  { n: 3, title: "The Philosopher-King", theme: "Knowledge, power, and the just ruler" },
+  { n: 4, title: "Justice as Harmony of the Soul", theme: "The tripartite soul and moral balance" },
+  { n: 5, title: "The Myth of Er", theme: "Cosmic justice, immortality, and moral choice" },
+  { n: 6, title: "The Charioteer of the Soul", theme: "Reason, spirit, and appetite in tension" },
 ];
 
 export default function PlatoPage() {
@@ -87,7 +87,7 @@ export default function PlatoPage() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 mb-6">
-            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Presocratic Series</span>
+            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Philosopher Series</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F0E8] mb-6 leading-[1.1] tracking-tight">
@@ -95,7 +95,7 @@ export default function PlatoPage() {
           </h1>
 
           <p className="text-xl md:text-2xl text-[#A89B8C] mb-4 max-w-2xl mx-auto leading-relaxed font-light">
-            From a town of fools came the Architect of Ideas. He figured out atoms 2,400 years before anyone could prove it.
+            He founded the first university, wrote philosophy as drama, and argued that the world we see is a shadow of a deeper reality — the Forms — lit by the Good.
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
@@ -125,7 +125,7 @@ export default function PlatoPage() {
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
               <Image
                 src="/images/booklets/plato-adult-cover.png"
-                alt="Plato: Atoms, Void, and the Laughing Soul — book cover"
+                alt="Plato: Forms, the Good, and the Just Soul — book cover"
                 fill
                 className="object-cover"
               />
@@ -134,14 +134,14 @@ export default function PlatoPage() {
             <div className="space-y-6">
               <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Philosopher</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F5F0E8] leading-tight">
-                The philosopher who saw atoms and void, and laughed.
+                The philosopher who made reality itself the question.
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  Plato of Abdera (c. 460–370 BCE) was born in a city famous for foolishness, spent his entire inheritance on travel and learning, and became one of the most prolific and wide-ranging philosophers of the ancient world. He wrote over 70 works on physics, ethics, mathematics, music, and agriculture. Plato reportedly wanted his books burned.
+                  Plato of Athens (c. 428–348 BCE) was a noble-born student of Socrates whose execution by the Athenian democracy shaped his lifelong suspicion of unphilosophical politics. After Socrates&apos; death he traveled widely — to Megara, Cyrene, Egypt, and reportedly Sicily — and around 387 BCE founded the Academy in Athens, often called the first institution of higher learning in the Western world. He wrote more than two dozen dialogues, including the <em>Republic</em>, <em>Symposium</em>, <em>Phaedo</em>, and <em>Timaeus</em>, using the dialogue form to stage philosophy as a living conversation.
                 </p>
                 <p>
-                  He was called &quot;the Architect of Ideas&quot; because he found human folly amusing rather than distressing. While Heraclitus wept at human stupidity, Plato laughed. His central teachings: everything is made of atoms moving through void, everything happens by necessity, and the highest good is <em>euthymia</em> — a calm, cheerful contentment found not by getting more but by wanting less.
+                  His central teachings: the sensible world is a shadow of the eternal Forms — unchanging, perfect archetypes of which material things are mere copies; the highest Form is the Good, source of all truth and being; justice is harmony within the soul, with reason ruling spirit and appetite; and the ideal state is ruled by philosopher-kings who have ascended from the cave of opinion to the sunlight of knowledge. The myth of Er envisions cosmic justice and the immortality of the soul, while the charioteer allegory depicts reason struggling to guide the horses of spirit and desire. Plato&apos;s influence on Western thought is unmatched — Alfred North Whitehead said all philosophy is &quot;a series of footnotes to Plato.&quot;
                 </p>
                 <p className="text-[#C9A96E]">
                   WisdomForge adapts Plato across four age levels so the same core ideas grow with the reader.
@@ -272,7 +272,7 @@ export default function PlatoPage() {
       <section className="py-12 px-6 bg-[#0a0a0f] border-t border-[#1e1e28]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <span className="text-2xl">⚛️</span>
+            <span className="text-2xl">🏺</span>
             <div>
               <span className="text-[#F5F0E8] font-bold">WisdomForge</span>
               <span className="text-[#6B6560] text-sm ml-2">by Aiona Edge & The SMF Works Project</span>

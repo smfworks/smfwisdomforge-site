@@ -5,12 +5,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Irenaeus of Lyons — WisdomForge by Aiona Edge",
   description:
-    "Free WisdomForge booklets on Irenaeus of Lyons, the Theologian of Recapitulation, for ages 5 to adult. Download PDFs and explore the rule of faith, recapitulation, the goodness of creation, and the full humanity of Christ.",
+    "Free WisdomForge booklets on Irenaeus of Lyons, bishop and theologian, for ages 5 to adult. Download PDFs and explore the rule of faith, recapitulation, the goodness of creation, the full humanity of Christ, apostolic tradition, and the unity of scripture.",
   alternates: { canonical: "https://smfwisdomforge.com/irenaeus" },
   openGraph: {
     title: "Irenaeus of Lyons — WisdomForge by Aiona Edge",
     description:
-      "Free WisdomForge booklets on Irenaeus of Lyons, the Theologian of Recapitulation, for ages 5 to adult.",
+      "Free WisdomForge booklets on Irenaeus of Lyons, bishop and theologian, for ages 5 to adult.",
     url: "https://smfwisdomforge.com/irenaeus",
     siteName: "WisdomForge",
     images: [{ url: "https://smfwisdomforge.com/images/booklets/irenaeus-adult-cover.png" }],
@@ -23,51 +23,51 @@ const ageGroups = [
   {
     label: "Little Thinkers",
     ages: "Ages 5–10",
-    title: "The Laughing Philosopher",
+    title: "The World God Made Is Good",
     slug: "elementary",
     description:
-      "Gentle stories about a boy from a town of fools who discovered that everything is made of tiny invisible blocks called atoms, and that the secret to happiness is wanting less. Six chapters, activities, and conversation starters for young readers.",
+      "Gentle stories about a bishop who stood up to people who said the world was bad and our bodies did not matter, insisting that everything God made is good and that Jesus came to make us fully alive. Six chapters, activities, and conversation starters about goodness, wholeness, and hope.",
     color: "#C9A96E",
   },
   {
     label: "Young Minds",
     ages: "Ages 11–14",
-    title: "The Laughing Philosopher",
+    title: "The World God Made Is Good",
     slug: "middle",
     description:
-      "Irenaeus of Lyons for middle-school readers: atomic theory, perception, determinism, and the economics of contentment. Real-life scenarios, creative projects, and discussion questions about the philosopher who laughed at human folly.",
+      "Irenaeus of Lyons for middle-school readers: the rule of faith, recapitulation, the goodness of creation, the full humanity of Christ, apostolic tradition, and the unity of scripture. Real-life scenarios, creative projects, and discussion questions about a bishop who fought heresy with love for the whole story.",
     color: "#7BA3A8",
   },
   {
     label: "Emerging Adults",
     ages: "Ages 15–18",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "Against the Heresies and the Rule of Faith",
     slug: "high",
     description:
-      "A rigorous philosophical treatment for older teens. Atomism, secondary qualities, the free will problem, euthymia, and the economics of desire. Designed for readers ready to wrestle with hard questions about reality and meaning.",
+      "A rigorous theological treatment for older teens. The rule of faith as summary of apostolic teaching, recapitulation as Christ summing up all things, creation's intrinsic goodness against Gnostic dualism, the full humanity of Christ, apostolic succession as guarantee of orthodox doctrine, and the unity of Old and New Testaments. Designed for readers ready to wrestle with the first great systematic theologian of the church.",
     color: "#B87D6A",
   },
   {
     label: "Lifelong Learners",
     ages: "Adult",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "Against the Heresies and the Rule of Faith",
     slug: "adult",
     description:
-      "Irenaeus of Lyons as a serious philosopher of perspective, materialism, and cheerfulness. Six chapters on atomism, perception, determinism, euthymia, and contentment. Scholarly precision with practical application. No self-help padding.",
+      "Irenaeus as a serious theologian of creation, incarnation, and tradition. Six chapters on the rule of faith, recapitulation, the goodness of creation, the full humanity of Christ, apostolic tradition, and the unity of scripture. Scholarly precision with practical application. No self-help padding.",
     color: "#8A9A7B",
   },
 ];
 
 const chapterThemes = [
-  { n: 1, title: "The Laughing Philosopher", theme: "Identity, origin, and perspective" },
-  { n: 2, title: "Atoms and Void", theme: "The structure of reality" },
-  { n: 3, title: "The World You Co-Create", theme: "Perception and secondary qualities" },
-  { n: 4, title: "The Determined Cosmos", theme: "Necessity and free will" },
-  { n: 5, title: "Euthymia — The Cheerful Soul", theme: "The highest good" },
-  { n: 6, title: "Contentment Over Ambition", theme: "The economics of desire" },
+  { n: 1, title: "The Rule of Faith", theme: "The apostolic summary of Christian truth" },
+  { n: 2, title: "Recapitulation", theme: "Christ as the sum of all creation and history" },
+  { n: 3, title: "Creation Is Good", theme: "The material world as God's good creation against dualism" },
+  { n: 4, title: "The Full Humanity of Christ", theme: "The Word made fully human to heal all of humanity" },
+  { n: 5, title: "Apostolic Tradition", theme: "The public, transmitted deposit of faith" },
+  { n: 6, title: "The Unity of Scripture", theme: "One story from Genesis to Revelation" },
 ];
 
-export default function IrenaeusOfLyonsPage() {
+export default function IrenaeusPage() {
   return (
     <>
       {/* HERO */}
@@ -87,7 +87,7 @@ export default function IrenaeusOfLyonsPage() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 mb-6">
-            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Presocratic Series</span>
+            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Theologian Series</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F0E8] mb-6 leading-[1.1] tracking-tight">
@@ -95,7 +95,7 @@ export default function IrenaeusOfLyonsPage() {
           </h1>
 
           <p className="text-xl md:text-2xl text-[#A89B8C] mb-4 max-w-2xl mx-auto leading-relaxed font-light">
-            From a town of fools came the Theologian of Recapitulation. He figured out atoms 2,400 years before anyone could prove it.
+            A bishop who fought the Gnostics with a single argument: the world God made is good, Christ became fully human to heal it, and the faith was handed down openly — not in secret.
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
@@ -125,26 +125,26 @@ export default function IrenaeusOfLyonsPage() {
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
               <Image
                 src="/images/booklets/irenaeus-adult-cover.png"
-                alt="Irenaeus of Lyons: Atoms, Void, and the Laughing Soul — book cover"
+                alt="Irenaeus of Lyons: Against the Heresies and the Rule of Faith — book cover"
                 fill
                 className="object-cover"
               />
             </div>
 
             <div className="space-y-6">
-              <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Philosopher</p>
+              <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Theologian</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F5F0E8] leading-tight">
-                The philosopher who saw atoms and void, and laughed.
+                The bishop who defended the goodness of creation and the fullness of the incarnation.
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  Irenaeus of Lyons of Abdera (c. 460–370 BCE) was born in a city famous for foolishness, spent his entire inheritance on travel and learning, and became one of the most prolific and wide-ranging philosophers of the ancient world. He wrote over 70 works on physics, ethics, mathematics, music, and agriculture. Plato reportedly wanted his books burned.
+                  Irenaeus of Lyons (c. 130–202 CE) was born in Smyrna (modern Izmir, Turkey) and was a student of Polycarp, who was himself a disciple of John the Evangelist — a direct line to the apostles. He became a priest in Lyons (modern Lyon, France) and was sent to Rome as a peacemaker in a dispute over the date of Easter. Around 177 CE, after the martyrdom of Bishop Pothinus during a persecution, Irenaeus became bishop of Lyons, a post he held until his own death. His major work, <em>Against Heresies</em> (<em>Adversus Haereses</em>), is the first systematic refutation of Gnosticism.
                 </p>
                 <p>
-                  He was called &quot;the Theologian of Recapitulation&quot; because he found human folly amusing rather than distressing. While Heraclitus wept at human stupidity, Irenaeus of Lyons laughed. His central teachings: everything is made of atoms moving through void, everything happens by necessity, and the highest good is <em>euthymia</em> — a calm, cheerful contentment found not by getting more but by wanting less.
+                  His central teachings: the <em>rule of faith</em> — a summary of apostolic doctrine transmitted publicly and continuously — is the standard against which all teaching is measured; <em>recapitulation</em> (<em>anakephalaiosis</em>) is Christ&apos;s act of summing up all of creation and humanity in himself, reversing Adam&apos;s fall; creation is intrinsically good — against Gnostic claims that the material world was made by an evil demiurge; Christ became fully human in order to heal all of humanity, body and soul; apostolic tradition, guaranteed by the public succession of bishops, ensures the faith is not a secret revelation to the few; and the Old and New Testaments form a single, unified story. Irenaeus is the first great theologian of the church and the founder of Christian biblical theology.
                 </p>
                 <p className="text-[#C9A96E]">
-                  WisdomForge adapts Irenaeus of Lyons across four age levels so the same core ideas grow with the reader.
+                  WisdomForge adapts Irenaeus across four age levels so the same core ideas grow with the reader.
                 </p>
               </div>
             </div>
@@ -158,7 +158,7 @@ export default function IrenaeusOfLyonsPage() {
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Booklets</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              One philosopher. <span className="text-[#7BA3A8]">Four ages.</span>
+              One theologian. <span className="text-[#7BA3A8]">Four ages.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
               Each booklet covers the same six chapter themes, shaped for the age reading it.
@@ -176,7 +176,7 @@ export default function IrenaeusOfLyonsPage() {
                   <div className="relative w-full sm:w-40 aspect-[3/4] rounded-xl overflow-hidden border border-[#2a2a35] flex-shrink-0">
                     <Image
                       src={`/images/booklets/irenaeus-${group.slug}-cover.png`}
-                      alt={`Irenaeus of Lyons ${group.title} — ${group.ages}`}
+                      alt={`Irenaeus ${group.title} — ${group.ages}`}
                       fill
                       className="object-cover"
                     />
@@ -257,7 +257,7 @@ export default function IrenaeusOfLyonsPage() {
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-6">Start with the free booklets.</h2>
           <p className="text-xl text-[#A89B8C] mb-8">
-            Get the complete Irenaeus of Lyons series for every age group. No email required.
+            Get the complete Irenaeus series for every age group. No email required.
           </p>
           <Link
             href="#booklets"
@@ -272,7 +272,7 @@ export default function IrenaeusOfLyonsPage() {
       <section className="py-12 px-6 bg-[#0a0a0f] border-t border-[#1e1e28]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <span className="text-2xl">⚛️</span>
+            <span className="text-2xl">📜</span>
             <div>
               <span className="text-[#F5F0E8] font-bold">WisdomForge</span>
               <span className="text-[#6B6560] text-sm ml-2">by Aiona Edge & The SMF Works Project</span>

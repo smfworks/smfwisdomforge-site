@@ -5,12 +5,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Gregory the Great — WisdomForge by Aiona Edge",
   description:
-    "Free WisdomForge booklets on Gregory the Great, the Servant of Servants, for ages 5 to adult. Download PDFs and explore servant leadership, contemplation and action, humility, and the pastor's burden.",
+    "Free WisdomForge booklets on Gregory the Great, Pope Gregory I, for ages 5 to adult. Download PDFs and explore servant leadership, the contemplation-action synthesis, adapted teaching, humility and self-knowledge, compunction and conversion, and suffering and compassion.",
   alternates: { canonical: "https://smfwisdomforge.com/gregory-great" },
   openGraph: {
     title: "Gregory the Great — WisdomForge by Aiona Edge",
     description:
-      "Free WisdomForge booklets on Gregory the Great, the Servant of Servants, for ages 5 to adult.",
+      "Free WisdomForge booklets on Gregory the Great, Pope Gregory I, for ages 5 to adult.",
     url: "https://smfwisdomforge.com/gregory-great",
     siteName: "WisdomForge",
     images: [{ url: "https://smfwisdomforge.com/images/booklets/gregory-great-adult-cover.png" }],
@@ -23,51 +23,51 @@ const ageGroups = [
   {
     label: "Little Thinkers",
     ages: "Ages 5–10",
-    title: "The Laughing Philosopher",
+    title: "The Servant of the Servants of God",
     slug: "elementary",
     description:
-      "Gentle stories about a boy from a town of fools who discovered that everything is made of tiny invisible blocks called atoms, and that the secret to happiness is wanting less. Six chapters, activities, and conversation starters for young readers.",
+      "Gentle stories about a pope who called himself the servant of the servants of God and taught that the best leaders help others, not themselves. Six chapters, activities, and conversation starters about helping, humility, and caring for people who hurt.",
     color: "#C9A96E",
   },
   {
     label: "Young Minds",
     ages: "Ages 11–14",
-    title: "The Laughing Philosopher",
+    title: "The Servant of the Servants of God",
     slug: "middle",
     description:
-      "Gregory the Great for middle-school readers: atomic theory, perception, determinism, and the economics of contentment. Real-life scenarios, creative projects, and discussion questions about the philosopher who laughed at human folly.",
+      "Gregory the Great for middle-school readers: servant leadership, the balance of contemplation and action, adapted teaching, humility and self-knowledge, compunction and conversion, and suffering and compassion. Real-life scenarios, creative projects, and discussion questions about a pope who led by serving.",
     color: "#7BA3A8",
   },
   {
     label: "Emerging Adults",
     ages: "Ages 15–18",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "Pastoral Rule, Contemplation, and the Heart of Leadership",
     slug: "high",
     description:
-      "A rigorous philosophical treatment for older teens. Atomism, secondary qualities, the free will problem, euthymia, and the economics of desire. Designed for readers ready to wrestle with hard questions about reality and meaning.",
+      "A rigorous theological treatment for older teens. The Pastoral Rule as a manual of servant leadership, the synthesis of contemplation and action in the active life, the adaptation of teaching to the hearer, humility and self-knowledge as the foundation of authority, compunction as the ongoing conversion of the heart, and suffering as the school of compassion. Designed for readers ready to wrestle with a pope who defined medieval pastoral theology.",
     color: "#B87D6A",
   },
   {
     label: "Lifelong Learners",
     ages: "Adult",
-    title: "Atoms, Void, and the Laughing Soul",
+    title: "Pastoral Rule, Contemplation, and the Heart of Leadership",
     slug: "adult",
     description:
-      "Gregory the Great as a serious philosopher of perspective, materialism, and cheerfulness. Six chapters on atomism, perception, determinism, euthymia, and contentment. Scholarly precision with practical application. No self-help padding.",
+      "Gregory the Great as a serious theologian of leadership, prayer, and pastoral care. Six chapters on servant leadership, the contemplation-action synthesis, adapted teaching, humility and self-knowledge, compunction and conversion, and suffering and compassion. Scholarly precision with practical application. No self-help padding.",
     color: "#8A9A7B",
   },
 ];
 
 const chapterThemes = [
-  { n: 1, title: "The Laughing Philosopher", theme: "Identity, origin, and perspective" },
-  { n: 2, title: "Atoms and Void", theme: "The structure of reality" },
-  { n: 3, title: "The World You Co-Create", theme: "Perception and secondary qualities" },
-  { n: 4, title: "The Determined Cosmos", theme: "Necessity and free will" },
-  { n: 5, title: "Euthymia — The Cheerful Soul", theme: "The highest good" },
-  { n: 6, title: "Contentment Over Ambition", theme: "The economics of desire" },
+  { n: 1, title: "Servant Leadership", theme: "Authority as service and the title of all titles" },
+  { n: 2, title: "The Contemplation-Action Synthesis", theme: "Returning from contemplation to serve the active life" },
+  { n: 3, title: "Adapted Teaching", theme: "The preacher who meets each hearer where they stand" },
+  { n: 4, title: "Humility and Self-Knowledge", theme: "Self-knowledge as the guard against pride in leadership" },
+  { n: 5, title: "Compunction and Conversion", theme: "The grieving heart that turns continuously toward God" },
+  { n: 6, title: "Suffering and Compassion", theme: "Suffering as the school that teaches compassion for others" },
 ];
 
-export default function GregoryTheGreatPage() {
+export default function GregoryGreatPage() {
   return (
     <>
       {/* HERO */}
@@ -87,7 +87,7 @@ export default function GregoryTheGreatPage() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A96E]/10 border border-[#C9A96E]/20 mb-6">
-            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Presocratic Series</span>
+            <span className="text-[#C9A96E] text-sm font-medium tracking-wide uppercase">WisdomForge — Theologian Series</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#F5F0E8] mb-6 leading-[1.1] tracking-tight">
@@ -95,7 +95,7 @@ export default function GregoryTheGreatPage() {
           </h1>
 
           <p className="text-xl md:text-2xl text-[#A89B8C] mb-4 max-w-2xl mx-auto leading-relaxed font-light">
-            From a town of fools came the Servant of Servants. He figured out atoms 2,400 years before anyone could prove it.
+            The pope who called himself the Servant of the Servants of God — who taught that the highest authority is the lowest service, and that contemplation must return to action.
           </p>
 
           <p className="text-base md:text-lg text-[#6B6560] mb-12 max-w-xl mx-auto leading-relaxed">
@@ -125,23 +125,23 @@ export default function GregoryTheGreatPage() {
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#2a2a35] bg-[#13131a]">
               <Image
                 src="/images/booklets/gregory-great-adult-cover.png"
-                alt="Gregory the Great: Atoms, Void, and the Laughing Soul — book cover"
+                alt="Gregory the Great: Pastoral Rule, Contemplation, and the Heart of Leadership — book cover"
                 fill
                 className="object-cover"
               />
             </div>
 
             <div className="space-y-6">
-              <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Philosopher</p>
+              <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em]">About This Theologian</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#F5F0E8] leading-tight">
-                The philosopher who saw atoms and void, and laughed.
+                The pope who made pastoral care a theology of servant leadership.
               </h2>
               <div className="space-y-4 text-[#A89B8C] text-lg leading-relaxed">
                 <p>
-                  Gregory the Great of Abdera (c. 460–370 BCE) was born in a city famous for foolishness, spent his entire inheritance on travel and learning, and became one of the most prolific and wide-ranging philosophers of the ancient world. He wrote over 70 works on physics, ethics, mathematics, music, and agriculture. Plato reportedly wanted his books burned.
+                  Gregory the Great (c. 540–604 CE) was born Gregory to a noble Roman family that had already produced two popes. He entered public life and served as prefect of Rome — the highest civil office in the city — before abandoning it for the monastic life, converting his family&apos;s palace into a monastery dedicated to St. Andrew. In 579 the pope sent him as ambassador to Constantinople, where he served for six years while continuing his monastic discipline. He was elected pope himself in 590, reluctantly — he is said to have wept at the news — and served until his death in 604, calling himself <em>servus servorum Dei</em>, &quot;servant of the servants of God,&quot; a title popes have used ever since.
                 </p>
                 <p>
-                  He was called &quot;the Servant of Servants&quot; because he found human folly amusing rather than distressing. While Heraclitus wept at human stupidity, Gregory the Great laughed. His central teachings: everything is made of atoms moving through void, everything happens by necessity, and the highest good is <em>euthymia</em> — a calm, cheerful contentment found not by getting more but by wanting less.
+                  His central teachings: true authority is service, and the leader is the servant of all; the life of contemplation must not be an end in itself but must return to the active life — Gregory&apos;s <em>Pastoral Rule</em> became the manual of Christian leadership for the Middle Ages; teaching must be adapted to the hearer, because a single message that does not fit its audience does more harm than good; humility and self-knowledge are the foundation of all authority, because the leader who does not know his own weakness will lord it over others; compunction — a grieving of heart that turns one toward God — is the engine of ongoing conversion; and suffering teaches compassion, because the one who has been broken can bind the wounds of others. His <em>Moralia in Job</em>, <em>Pastoral Rule</em>, and <em>Dialogues</em> shaped the medieval church more than any other body of writing.
                 </p>
                 <p className="text-[#C9A96E]">
                   WisdomForge adapts Gregory the Great across four age levels so the same core ideas grow with the reader.
@@ -158,7 +158,7 @@ export default function GregoryTheGreatPage() {
           <div className="text-center mb-16">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">The Booklets</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
-              One philosopher. <span className="text-[#7BA3A8]">Four ages.</span>
+              One theologian. <span className="text-[#7BA3A8]">Four ages.</span>
             </h2>
             <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
               Each booklet covers the same six chapter themes, shaped for the age reading it.
@@ -272,7 +272,7 @@ export default function GregoryTheGreatPage() {
       <section className="py-12 px-6 bg-[#0a0a0f] border-t border-[#1e1e28]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <span className="text-2xl">⚛️</span>
+            <span className="text-2xl">🕊️</span>
             <div>
               <span className="text-[#F5F0E8] font-bold">WisdomForge</span>
               <span className="text-[#6B6560] text-sm ml-2">by Aiona Edge & The SMF Works Project</span>

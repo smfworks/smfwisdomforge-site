@@ -579,49 +579,6 @@ export default function WisdomForgeHomePage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-24 md:py-32 px-6 bg-[#0f0f14] relative overflow-hidden">
-        <div className="absolute top-[-50%] left-[50%] -translate-x-1/2 w-[800px] h-[800px] bg-[#C9A96E] opacity-[0.05] blur-[200px] rounded-full pointer-events-none" />
-
-        <div className="max-w-3xl mx-auto text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-6">
-            Start with the free booklets.
-          </h2>
-          <p className="text-xl text-[#A89B8C] mb-8">
-            Free sample: the Stoics — Epictetus, Marcus Aurelius, Seneca, and Zeno. Four age bands each. No email required.
-          </p>
-          <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4">
-            <Link
-              href="/epictetus"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#C9A96E] text-[#0a0a0f] font-semibold rounded-lg hover:bg-[#D4B87A] transition-all shadow-lg shadow-[#C9A96E]/20"
-            >
-              Epictetus — Free
-            </Link>
-            <Link
-              href="/marcus-aurelius"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#7BA3A8] text-[#0a0a0f] font-semibold rounded-lg hover:bg-[#8AB3B8] transition-all shadow-lg shadow-[#7BA3A8]/20"
-            >
-              Marcus — Free
-            </Link>
-            <Link
-              href="/seneca"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#B87D6A] text-[#0a0a0f] font-semibold rounded-lg hover:bg-[#C48D7A] transition-all shadow-lg shadow-[#B87D6A]/20"
-            >
-              Seneca — Free
-            </Link>
-            <Link
-              href="/zeno-of-citium"
-              className="inline-flex items-center gap-2 px-8 py-4 border border-[#C9A96E]/40 text-[#C9A96E] font-semibold rounded-lg hover:bg-[#C9A96E]/10 transition-all"
-            >
-              Zeno — Free
-            </Link>
-          </div>
-          <p className="text-[#4a4a4a] text-sm mt-6">
-            All booklets are free. Nothing thinner than the Epictetus/Marcus quality bar ships.
-          </p>
-        </div>
-      </section>
-
       {/* FOOTER */}
       <section className="py-12 px-6 bg-[#0a0a0f] border-t border-[#1e1e28]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
@@ -633,27 +590,6 @@ export default function WisdomForgeHomePage() {
             </div>
           </div>
           <div className="flex items-center gap-6 text-sm">
-            <Link href="/epictetus" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
-              Epictetus
-            </Link>
-            <Link href="/marcus-aurelius" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
-              Marcus Aurelius
-            </Link>
-            <Link href="/seneca" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
-              Seneca
-            </Link>
-            <Link href="/zeno-of-citium" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
-              Zeno
-            </Link>
-            <Link href="/democritus" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
-              Democritus
-            </Link>
-            <Link href="/parmenides" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
-              Parmenides
-            </Link>
-            <Link href="/pythagoras" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
-              Pythagoras
-            </Link>
             <a href="https://smfworks.com/blog" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
               SMF Works Blog
             </a>

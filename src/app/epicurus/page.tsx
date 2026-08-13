@@ -67,6 +67,15 @@ const chapterThemes = [
   { n: 6, title: "Philosophy as Therapy", theme: "Medicine for the soul" },
 ];
 
+const audioClips = [
+  { ch: 1, title: "The Philosopher of the Garden" },
+  { ch: 2, title: "The Four-Part Cure" },
+  { ch: 3, title: "The Architecture of Desire" },
+  { ch: 4, title: "Ataraxia and the Art of Enough" },
+  { ch: 5, title: "Death Is Nothing to Us" },
+  { ch: 6, title: "Philosophy as Therapy" },
+];
+
 export default function EpicurusPage() {
   return (
     <>
@@ -258,6 +267,44 @@ export default function EpicurusPage() {
           <p className="text-[#A89B8C] text-base mt-6 max-w-2xl mx-auto">
             The four-part cure. If genuinely believed, Epicurus said, these four sentences eliminate the primary sources of human misery.
           </p>
+        </div>
+      </section>
+
+
+      <section id="audio" className="py-24 md:py-32 px-6 bg-[#0f0f14] relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#7BA3A8] opacity-[0.04] blur-[150px] rounded-full pointer-events-none" />
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-[#7BA3A8] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Audio Series</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
+              Listen to <span className="text-[#7BA3A8]">Epicurus</span>
+            </h2>
+            <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
+              Twenty-four free audio chapters — six for each age group.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {["elementary", "middle", "high", "adult"].map((age) => (
+              <div key={age} className="bg-[#13131a] border border-[#1e1e28] rounded-xl p-6">
+                <h3 className="text-lg font-bold text-[#F5F0E8] mb-4 capitalize">
+                  {age === "high" ? "Ages 15–18" : age === "adult" ? "Adult" : `Ages ${age === "elementary" ? "5–10" : "11–14"}`}
+                </h3>
+                <div className="space-y-3">
+                  {audioClips.map((clip) => (
+                    <div key={`${age}-${clip.ch}`} className="flex items-center gap-3 text-sm">
+                      <span className="text-[#6B6560] w-6">{clip.ch}.</span>
+                      <a
+                        href={`/audio/epicurus/epicurus-${age}-ch0${clip.ch}.mp3`}
+                        className="text-[#A89B8C] hover:text-[#7BA3A8] transition-colors truncate"
+                      >
+                        {clip.title}
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

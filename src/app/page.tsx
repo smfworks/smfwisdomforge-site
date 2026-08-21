@@ -38,7 +38,7 @@ const pipeline = [
   { name: "John Chrysostom", status: "Live · Free", icon: "💬", href: "/chrysostom" },
   { name: "Jerome", status: "Live · Free", icon: "📜", href: "/jerome" },
   { name: "Gregory the Great", status: "Live · Free", icon: "👑", href: "/gregory-great" },
-  { name: "Ambrose of Milan", status: "In Progress*", icon: "🏛️" },
+  { name: "Ambrose of Milan", status: "Live · Free", icon: "⛪", href: "/ambrose" },
   { name: "Athanasius", status: "In Progress*", icon: "⚓" },
   { name: "Basil the Great", status: "In Progress*", icon: "🌿" },
   { name: "Gregory of Nazianzus", status: "In Progress*", icon: "📝" },

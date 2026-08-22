@@ -401,6 +401,20 @@ export default function WisdomForgeHomePage() {
               </div>
             ))}
           </div>
+
+          <div className="mt-12 max-w-3xl mx-auto bg-[#13131a] border border-[#C9A96E]/25 rounded-xl p-6 md:p-8 text-center">
+            <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-3">
+              For families already using Hermes
+            </p>
+            <p className="text-[#A89B8C] leading-relaxed mb-5">
+              The booklets are the text. A separate child-facing Hermes profile
+              can be the guide — one band at a time, never a clone of an adult
+              agent.
+            </p>
+            <Link href="/hermes-kids" className="text-[#C9A96E] font-semibold hover:underline">
+              How the kids Hermes templates work
+            </Link>
+          </div>
         </div>
       </section>
 

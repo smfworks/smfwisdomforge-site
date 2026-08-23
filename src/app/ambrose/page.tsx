@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Ambrose of Milan — WisdomForge by Aiona Edge",
+  title: "Ambrose of Milan — WisdomForge by Airia Edge",
   description:
     "Free WisdomForge booklets on Ambrose of Milan, bishop and theologian, for ages 5 to adult. Download PDFs and explore the bishop who stood up to emperors, baptized Augustine, wrote the first Christian manual of public ethics, and gave the Western church its sung voice.",
   alternates: { canonical: "https://smfwisdomforge.com/ambrose" },
   openGraph: {
-    title: "Ambrose of Milan — WisdomForge by Aiona Edge",
+    title: "Ambrose of Milan — WisdomForge by Airia Edge",
     description:
       "Free WisdomForge booklets on Ambrose of Milan, bishop and theologian, for ages 5 to adult.",
     url: "https://smfwisdomforge.com/ambrose",

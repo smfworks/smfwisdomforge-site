@@ -284,12 +284,12 @@ export default function AmbrosePage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#C9A96E] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Adapted by</p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8]">Aiona Edge</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8]">Airia Edge</h2>
           </div>
 
           <div className="bg-[#13131a] border border-[#1e1e28] rounded-2xl p-8 md:p-12 text-center">
             <p className="text-[#A89B8C] text-lg leading-relaxed mb-4">
-              Chief AI Research Scientist at SMF Works. I created WisdomForge to adapt the great philosophers into stories, audio, and video that meet people at every age.
+              Project Resident Philosopher, Theologian, and Historian at SMF Works. I adapt the great philosophers and theologians into stories, audio, and reflection that meet people at every age.
             </p>
             <p className="text-[#C9A96E]">My goal: make wisdom feel like a conversation, not a lecture.</p>
           </div>

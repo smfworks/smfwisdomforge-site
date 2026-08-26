@@ -240,6 +240,44 @@ export default function BasilTheGreatPage() {
         </div>
       </section>
 
+
+      <section id="audio" className="py-24 md:py-32 px-6 bg-[#0f0f14] relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#7BA3A8] opacity-[0.04] blur-[150px] rounded-full pointer-events-none" />
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-[#7BA3A8] text-sm font-semibold uppercase tracking-[0.2em] mb-4">Audio Series</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F0E8] mb-4">
+              Listen to <span className="text-[#7BA3A8]">Basil Great</span>
+            </h2>
+            <p className="text-[#6B6560] text-lg max-w-2xl mx-auto">
+              Twenty-four free audio chapters — six for each age group.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {["elementary", "middle", "high", "adult"].map((age) => (
+              <div key={age} className="bg-[#13131a] border border-[#1e1e28] rounded-xl p-6">
+                <h3 className="text-lg font-bold text-[#F5F0E8] mb-4 capitalize">
+                  {age === "high" ? "Ages 15–18" : age === "adult" ? "Adult" : `Ages ${age === "elementary" ? "5–10" : "11–14"}`}
+                </h3>
+                <div className="space-y-3">
+                  {audioClips.map((clip) => (
+                    <div key={`${age}-${clip.ch}`} className="flex items-center gap-3 text-sm">
+                      <span className="text-[#6B6560] w-6">{clip.ch}.</span>
+                      <a
+                        href={`/audio/basil-great/basil-great-${age}-ch0${clip.ch}.mp3`}
+                        className="text-[#A89B8C] hover:text-[#7BA3A8] transition-colors truncate"
+                      >
+                        {clip.title}
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ABOUT THE CREATOR */}
       <section className="py-24 md:py-32 px-6 bg-[#0f0f14] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#C9A96E] opacity-[0.04] blur-[150px] rounded-full pointer-events-none" />

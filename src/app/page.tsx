@@ -40,9 +40,10 @@ const pipeline = [
   { name: "Gregory the Great", status: "Live · Free", icon: "👑", href: "/gregory-great" },
   { name: "Ambrose of Milan", status: "Live · Free", icon: "⛪", href: "/ambrose" },
   { name: "Athanasius", status: "Live · Free", icon: "⚓", href: "/athanasius" },
-  { name: "Basil the Great", status: "In Progress*", icon: "🌿" },
-  { name: "Gregory of Nazianzus", status: "In Progress*", icon: "📝" },
+  { name: "Basil the Great", status: "Live · Free", icon: "🌿", href: "/basil-great" },
+  { name: "Gregory of Nazianzus", status: "Live · Free", icon: "📝", href: "/gregory-nazianzus" },
   { name: "Thomas Aquinas", status: "Live · Free", icon: "📜", href: "/thomas-aquinas" },
+  { name: "John Locke", status: "Live · Free", icon: "🗝️", href: "/locke" },
   { name: "The Constitution", status: "Planned", icon: "📜" },
   { name: "The Declaration", status: "Planned", icon: "✒️" },
 ];

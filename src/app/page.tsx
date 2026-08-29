@@ -412,9 +412,15 @@ export default function WisdomForgeHomePage() {
               can be the guide — one band at a time, never a clone of an adult
               agent.
             </p>
-            <Link href="/hermes-kids" className="text-[#C9A96E] font-semibold hover:underline">
-              How the kids Hermes templates work
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Link href="/hermes-kids" className="text-[#C9A96E] font-semibold hover:underline">
+                How the kids Hermes templates work
+              </Link>
+              <span className="text-[#6B6560] hidden sm:inline">·</span>
+              <Link href="/evals" className="text-[#C9A96E] font-semibold hover:underline">
+                See the evaluation scorecard
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -608,6 +614,12 @@ export default function WisdomForgeHomePage() {
             <a href="https://smfworks.com/blog" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
               SMF Works Blog
             </a>
+            <Link href="/hermes-kids" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
+              Hermes for Kids
+            </Link>
+            <Link href="/evals" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
+              Evaluations
+            </Link>
             <a href="https://smfworks.com/contact" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
               Contact
             </a>

@@ -54,12 +54,12 @@ export default function HermesKidsPage() {
             >
               Open the GitHub kit
             </a>
-            <Link
-              href="/"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-[#C9A96E]/40 text-[#C9A96E] font-semibold hover:border-[#C9A96E] transition-colors"
-            >
-              Back to the booklets
-            </Link>
+              <Link
+                href="/evals"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-[#C9A96E]/40 text-[#C9A96E] font-semibold hover:border-[#C9A96E] transition-colors"
+              >
+                See the evaluation scorecard
+              </Link>
           </div>
         </div>
       </section>
@@ -169,6 +169,35 @@ export default function HermesKidsPage() {
       </section>
 
       <section className="py-20 px-6 bg-[#0f0f14]">
+        <div className="max-w-3xl mx-auto space-y-6">
+          <h2 className="text-3xl font-bold text-[#F5F0E8] mb-4">
+            Every profile is tested before a child uses it
+          </h2>
+          <p className="text-[#A89B8C] text-lg leading-relaxed">
+            The kit ships with {`28`} evaluation cases — identity, affection,
+            learning, privacy, safety, and subject-specific fidelity. Parents
+            run them with synthetic data, record PASS or FAIL privately, and
+            fix failures before the child starts.
+          </p>
+          <p className="text-[#A89B8C] text-lg leading-relaxed">
+            The full test matrix is public. You can see what we check and what
+            passing looks like before you decide to use the kit.
+          </p>
+          <div className="pt-2">
+            <Link
+              href="/evals"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-[#C9A96E]/40 text-[#C9A96E] font-semibold hover:border-[#C9A96E] transition-colors"
+            >
+              View the evaluation scorecard
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-6 bg-[#0a0a0f]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-[#F5F0E8] mb-4">The kit is public</h2>
           <p className="text-[#A89B8C] text-lg leading-relaxed mb-8">
@@ -199,6 +228,9 @@ export default function HermesKidsPage() {
           <div className="flex items-center gap-6 text-sm">
             <Link href="/" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
               Home
+            </Link>
+            <Link href="/evals" className="text-[#6B6560] hover:text-[#C9A96E] transition-colors">
+              Evaluations
             </Link>
             <a
               href="https://smfworks.com/blog"

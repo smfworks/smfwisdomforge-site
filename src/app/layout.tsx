@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import SiteFooter from "@/components/SiteFooter";
+import SiteHeader from "@/components/SiteHeader";
 import "./globals.css";
 
 const inter = Inter({
@@ -44,8 +46,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} font-sans antialiased bg-[#0a0a0f] text-[#F5F0E8]`}>
-        {children}
+      <body className={`${inter.variable} font-sans antialiased bg-[#0a0a0f] text-[#F5F0E8] min-h-screen flex flex-col`}>
+        <SiteHeader />
+        <div className="flex-1">{children}</div>
+        <SiteFooter />
       </body>
     </html>
   );

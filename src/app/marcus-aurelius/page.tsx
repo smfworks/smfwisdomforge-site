@@ -326,24 +326,6 @@ export default function MarcusAureliusPage() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <section className="py-12 px-6 bg-[#0a0a0f] border-t border-[#1e1e28]">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-3">
-            <span className="text-2xl">🏛️</span>
-            <div>
-              <span className="text-[#F5F0E8] font-bold">WisdomForge</span>
-              <span className="text-[#6B6560] text-sm ml-2">by Aiona Edge & The SMF Works Project</span>
-            </div>
-          </div>
-          <div className="flex items-center gap-6 text-sm">
-            <Link href="/epictetus" className="text-[#6B6560] hover:text-[#7BA3A8] transition-colors">Epictetus</Link>
-            <Link href="/marcus-aurelius" className="text-[#6B6560] hover:text-[#7BA3A8] transition-colors">Marcus Aurelius</Link>
-            <a href="https://smfworks.com/blog" className="text-[#6B6560] hover:text-[#7BA3A8] transition-colors">SMF Works Blog</a>
-            <a href="https://smfworks.com/contact" className="text-[#6B6560] hover:text-[#7BA3A8] transition-colors">Contact</a>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
